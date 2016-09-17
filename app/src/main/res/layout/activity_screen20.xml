@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daniel.dotaznik.Screen20">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Späť"
+        android:id="@+id/button38"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ďalej"
+        android:id="@+id/button39"
+        android:layout_alignTop="@+id/button38"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView20"
+        android:src="@drawable/obr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText46"
+        android:text="Dajte respondentovi do ruky zoznam kandidátov na predsedu  (župana) BSK a zakrúžkujte len jednu možnosť podľa odpovede  respondenta pre každú osobnostnú charakteristiku."
+        android:textStyle="italic"
+        android:textColor="#F44336"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button39"
+        android:layout_toStartOf="@+id/button39" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText47"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:text="POKRAČOVANIE K OTÁZKE Č 18!"
+        android:textAlignment="center"
+        android:layout_below="@+id/editText46"
+        android:layout_toRightOf="@+id/checkBox149"
+        android:layout_toEndOf="@+id/checkBox149"
+        android:layout_marginTop="52dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="f) Pracovitý"
+        android:id="@+id/textView56"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/editText47"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="g) Vypočítavý"
+        android:id="@+id/textView57"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox149"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="h) Zodpovedný"
+        android:id="@+id/textView58"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox130"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="ch) Arogantný"
+        android:id="@+id/textView59"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox131"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="i) Priateľský i bezprostredný"
+        android:id="@+id/textView60"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox142"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox149"
+        android:checked="false"
+        android:layout_below="@+id/textView56"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox150"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox149"
+        android:layout_toRightOf="@+id/checkBox149"
+        android:layout_toEndOf="@+id/checkBox149"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox151"
+        android:checked="false"
+        android:textSize="12dp"
+        android:layout_below="@+id/textView56"
+        android:layout_toRightOf="@+id/checkBox150"
+        android:layout_toEndOf="@+id/checkBox150" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox152"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox151"
+        android:layout_toRightOf="@+id/checkBox151"
+        android:layout_toEndOf="@+id/checkBox151"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox153"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox152"
+        android:layout_toRightOf="@+id/checkBox152"
+        android:layout_toEndOf="@+id/checkBox152"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox154"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox153"
+        android:layout_toRightOf="@+id/checkBox153"
+        android:layout_toEndOf="@+id/checkBox153"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="j) Skúsený"
+        android:id="@+id/textView61"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/checkBox148"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox125"
+        android:checked="false"
+        android:layout_below="@+id/textView57"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox126"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox125"
+        android:layout_toRightOf="@+id/checkBox125"
+        android:layout_toEndOf="@+id/checkBox125"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox127"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox126"
+        android:layout_alignLeft="@+id/checkBox151"
+        android:layout_alignStart="@+id/checkBox151"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox128"
+        android:checked="false"
+        android:layout_below="@+id/textView57"
+        android:layout_toRightOf="@+id/checkBox127"
+        android:layout_toEndOf="@+id/checkBox127"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox129"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox128"
+        android:layout_toRightOf="@+id/checkBox128"
+        android:layout_toEndOf="@+id/checkBox128"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox130"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox129"
+        android:layout_toRightOf="@+id/checkBox129"
+        android:layout_toEndOf="@+id/checkBox129"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox131"
+        android:checked="false"
+        android:layout_below="@+id/textView58"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox132"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox131"
+        android:layout_toRightOf="@+id/checkBox131"
+        android:layout_toEndOf="@+id/checkBox131"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox133"
+        android:checked="false"
+        android:layout_below="@+id/textView58"
+        android:layout_alignLeft="@+id/checkBox127"
+        android:layout_alignStart="@+id/checkBox127"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox134"
+        android:checked="false"
+        android:layout_below="@+id/textView58"
+        android:layout_alignLeft="@+id/checkBox128"
+        android:layout_alignStart="@+id/checkBox128"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox135"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox134"
+        android:layout_toLeftOf="@+id/checkBox130"
+        android:layout_toStartOf="@+id/checkBox130"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox136"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox135"
+        android:layout_alignLeft="@+id/checkBox130"
+        android:layout_alignStart="@+id/checkBox130"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox137"
+        android:checked="false"
+        android:layout_below="@+id/textView59"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox138"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox137"
+        android:layout_toRightOf="@+id/checkBox137"
+        android:layout_toEndOf="@+id/checkBox137"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox139"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox138"
+        android:layout_alignLeft="@+id/checkBox133"
+        android:layout_alignStart="@+id/checkBox133"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox140"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox139"
+        android:layout_alignLeft="@+id/checkBox134"
+        android:layout_alignStart="@+id/checkBox134"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox141"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox140"
+        android:layout_toLeftOf="@+id/checkBox136"
+        android:layout_toStartOf="@+id/checkBox136"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox142"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox141"
+        android:layout_toRightOf="@+id/checkBox141"
+        android:layout_toEndOf="@+id/checkBox141"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox143"
+        android:checked="false"
+        android:layout_below="@+id/textView60"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox144"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox143"
+        android:layout_toRightOf="@+id/checkBox143"
+        android:layout_toEndOf="@+id/checkBox143"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox145"
+        android:checked="false"
+        android:layout_below="@+id/textView60"
+        android:layout_alignLeft="@+id/checkBox139"
+        android:layout_alignStart="@+id/checkBox139"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox146"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox145"
+        android:layout_toRightOf="@+id/checkBox145"
+        android:layout_toEndOf="@+id/checkBox145"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox147"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox146"
+        android:layout_toLeftOf="@+id/checkBox142"
+        android:layout_toStartOf="@+id/checkBox142"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox148"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_below="@+id/textView60"
+        android:layout_alignLeft="@+id/checkBox142"
+        android:layout_alignStart="@+id/checkBox142"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj  Droba"
+        android:id="@+id/checkBox155"
+        android:checked="false"
+        android:layout_below="@+id/textView61"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pavol  Frešo"
+        android:id="@+id/checkBox156"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox155"
+        android:layout_toRightOf="@+id/checkBox155"
+        android:layout_toEndOf="@+id/checkBox155"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Milan  Ftáčnik"
+        android:id="@+id/checkBox157"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox156"
+        android:layout_alignLeft="@+id/checkBox145"
+        android:layout_alignStart="@+id/checkBox145"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Boris  Kollár"
+        android:id="@+id/checkBox158"
+        android:checked="false"
+        android:layout_alignTop="@+id/checkBox157"
+        android:layout_toRightOf="@+id/checkBox157"
+        android:layout_toEndOf="@+id/checkBox157"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikto"
+        android:id="@+id/checkBox159"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox158"
+        android:layout_toLeftOf="@+id/checkBox148"
+        android:layout_toStartOf="@+id/checkBox148"
+        android:textSize="12dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox160"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_alignTop="@+id/checkBox159"
+        android:layout_alignLeft="@+id/checkBox148"
+        android:layout_alignStart="@+id/checkBox148"
+        android:textSize="12dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="18/25"
+        android:id="@+id/textView21"
+        android:layout_alignBottom="@+id/button39"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

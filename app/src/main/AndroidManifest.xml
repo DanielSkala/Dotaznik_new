@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daniel.dotaznik">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Screen2"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen3"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen4"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen5"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen6"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen7"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".Screen8"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen9"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen10"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen11"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen12"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen13"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen14"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen15"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen16"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen17"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen18"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen19"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen20"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen21"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen22"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen23"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen24"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen25"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen26"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".Screen27"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name=".FinalScreen"></activity>
+    </application>
+
+</manifest>
