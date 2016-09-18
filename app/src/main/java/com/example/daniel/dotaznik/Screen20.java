@@ -18,7 +18,7 @@ public class Screen20 extends AppCompatActivity {
     String Q19_5;
     String Q19_6;
 
-    public void onCheckboxClicked_1(View view) {
+    public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
@@ -47,14 +47,7 @@ public class Screen20 extends AppCompatActivity {
                 if (checked)
                     Q19_1 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_2(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox125:
                 if (checked)
                     Q19_2 = "Juraj Droba";
@@ -79,14 +72,7 @@ public class Screen20 extends AppCompatActivity {
                 if (checked)
                     Q19_2 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_3(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox131:
                 if (checked)
                     Q19_3 = "Juraj Droba";
@@ -111,14 +97,7 @@ public class Screen20 extends AppCompatActivity {
                 if (checked)
                     Q19_3 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_4(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox137:
                 if (checked)
                     Q19_4 = "Juraj Droba";
@@ -143,46 +122,32 @@ public class Screen20 extends AppCompatActivity {
                 if (checked)
                     Q19_4 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_5(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
-            case R.id.checkBox144:
+            //######################################################################################
+            case R.id.checkBox143:
                 if (checked)
                     Q19_5 = "Juraj Droba";
                 break;
-            case R.id.checkBox145:
+            case R.id.checkBox144:
                 if (checked)
                     Q19_5 = "Pavol Frešo";
                 break;
-            case R.id.checkBox146:
+            case R.id.checkBox145:
                 if (checked)
                     Q19_5 = "Milan Ftáčnik";
                 break;
-            case R.id.checkBox147:
+            case R.id.checkBox146:
                 if (checked)
                     Q19_5 = "Boris Kollár";
                 break;
-            case R.id.checkBox148:
+            case R.id.checkBox147:
                 if (checked)
                     Q19_5 = "Nikoho";
                 break;
-            case R.id.checkBox149:
+            case R.id.checkBox148:
                 if (checked)
                     Q19_5 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_6(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox155:
                 if (checked)
                     Q19_6 = "Juraj Droba";

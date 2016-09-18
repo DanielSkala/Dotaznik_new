@@ -18,7 +18,7 @@ public class Screen16 extends AppCompatActivity {
     String Q15_5;
     String Q15_6;
 
-    public void onCheckboxClicked_1(View view) {
+    public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
@@ -47,14 +47,7 @@ public class Screen16 extends AppCompatActivity {
                 if (checked)
                     Q15_1 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_2(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox60:
                 if (checked)
                     Q15_2 = "Juraj Droba";
@@ -79,14 +72,7 @@ public class Screen16 extends AppCompatActivity {
                 if (checked)
                     Q15_2 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_3(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox66:
                 if (checked)
                     Q15_3 = "Juraj Droba";
@@ -111,14 +97,7 @@ public class Screen16 extends AppCompatActivity {
                 if (checked)
                     Q15_3 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_4(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox72:
                 if (checked)
                     Q15_4 = "Juraj Droba";
@@ -143,14 +122,7 @@ public class Screen16 extends AppCompatActivity {
                 if (checked)
                     Q15_4 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_5(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox78:
                 if (checked)
                     Q15_5 = "Juraj Droba";
@@ -175,14 +147,7 @@ public class Screen16 extends AppCompatActivity {
                 if (checked)
                     Q15_5 = "Neviem";
                 break;
-        }
-    }
-
-    public void onCheckboxClicked_6(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        // Check which checkbox was clicked
-        switch (view.getId()) {
+            //######################################################################################
             case R.id.checkBox84:
                 if (checked)
                     Q15_6 = "Juraj Droba";
