@@ -19,13 +19,12 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
+
     public EditText editText,editText2,editText3;
     //Chronometer chrono;
     //long time = 0;
 
-    String info = editText.getText().toString();
-    String info2 = editText2.getText().toString();
-    String info3 = editText3.getText().toString();
+    //NOVE
 
     public void init() {
         button = (Button) findViewById(R.id.button);
@@ -34,17 +33,25 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             @Override
             public void onClick(View v) {
 
+                final String info = editText.getText().toString();
+                final String info2 = editText2.getText().toString();
+                final String info3 = editText3.getText().toString();
+
                 //chrono.setBase(SystemClock.elapsedRealtime() + time);
                 //chrono.start();
 
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 startActivity(toy);
 
+                //NOVE
+
+/*
                 Intent i = new Intent(MainActivity.this, AllData.class);
                 i.putExtra("Den1", info);
                 i.putExtra("Datum1", info2);
                 i.putExtra("Cas1", info3);
                 startActivity(i);
+                */
 
             }
         });
@@ -64,24 +71,21 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         editText2 = (EditText) findViewById(R.id.editText2);
         editText3 = (EditText) findViewById(R.id.editText3);
 
+
+
         init();
 
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
-            //    ActivityCompat#requestPermissions
-            // here to request the missing permissions, and then overriding
-            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-            //                                          int[] grantResults)
-            // to handle the case where the user grants the permission. See the documentation
-            // for ActivityCompat#requestPermissions for more details.
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 10, this);
 
     }
+
+    //TODO hodit do podmienky funkciu onLocationChanged
 
     @Override
     public void onLocationChanged(Location location) {
@@ -114,4 +118,5 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     }
 
 }
+
 

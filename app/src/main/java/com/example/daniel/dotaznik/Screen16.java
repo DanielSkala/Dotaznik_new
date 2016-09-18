@@ -11,6 +11,7 @@ public class Screen16 extends AppCompatActivity {
 
     public Button button30;
     public Button button31;
+    /*
     String Q15_1;
     String Q15_2;
     String Q15_3;
@@ -174,6 +175,7 @@ public class Screen16 extends AppCompatActivity {
                 break;
         }
     }
+    */
 
     public void init(){
         button31 = (Button)findViewById(R.id.button31);
@@ -183,7 +185,7 @@ public class Screen16 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen16.this, Screen17.class);
                 startActivity(toy);
-
+/*
                 Intent i = new Intent(Screen16.this, AllData.class);
                 i.putExtra("Sc16-1", Q15_1);
                 i.putExtra("Sc16-2", Q15_2);
@@ -192,6 +194,7 @@ public class Screen16 extends AppCompatActivity {
                 i.putExtra("Sc16-5", Q15_5);
                 i.putExtra("Sc16-6", Q15_6);
                 startActivity(i);
+                */
 
             }
         });

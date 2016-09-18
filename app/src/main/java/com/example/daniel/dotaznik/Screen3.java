@@ -11,9 +11,11 @@ public class Screen3 extends AppCompatActivity {
 
     public Button button4;
     public Button button5;
+    /*
     public EditText editText;
 
     String Q2 = editText.getText().toString();
+    */
 
     public void init(){
         button5 = (Button)findViewById(R.id.button5);
@@ -23,10 +25,11 @@ public class Screen3 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen3.this, Screen4.class);
                 startActivity(toy);
-
+/*
                 Intent i = new Intent(Screen3.this, AllData.class);
                 i.putExtra("Sc3", Q2);
                 startActivity(i);
+                */
 
             }
 
@@ -50,7 +53,7 @@ public class Screen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
 
-        editText = (EditText) findViewById(R.id.editText9);
+        //editText = (EditText) findViewById(R.id.editText9);
 
         init();
         BackPressed();
