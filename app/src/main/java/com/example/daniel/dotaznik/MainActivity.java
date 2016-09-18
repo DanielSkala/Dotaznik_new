@@ -1,32 +1,31 @@
 package com.example.daniel.dotaznik;
 
 import android.Manifest;
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.os.SystemClock;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.WindowManager;
-import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.view.View;
-import android.widget.Chronometer;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
+    public EditText editText,editText2,editText3;
     //Chronometer chrono;
     //long time = 0;
+
+    String info = editText.getText().toString();
+    String info2 = editText2.getText().toString();
+    String info3 = editText3.getText().toString();
 
     public void init() {
         button = (Button) findViewById(R.id.button);
@@ -41,6 +40,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 startActivity(toy);
 
+                Intent i = new Intent(MainActivity.this, AllData.class);
+                i.putExtra("Den1", info);
+                i.putExtra("Datum1", info2);
+                i.putExtra("Cas1", info3);
+                startActivity(i);
+
             }
         });
     }
@@ -54,6 +59,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         setContentView(R.layout.activity_main);
 
         //chrono = (Chronometer) findViewById(R.id.chronometer);
+
+        editText = (EditText) findViewById(R.id.editText);
+        editText2 = (EditText) findViewById(R.id.editText2);
+        editText3 = (EditText) findViewById(R.id.editText3);
 
         init();
 

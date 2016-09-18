@@ -5,11 +5,37 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 
 public class Screen5 extends AppCompatActivity {
 
     public Button button8;
     public Button button9;
+    String Q4;
+
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.checkBox6:
+                if (checked)
+                    Q4 = "Základné";
+                break;
+            case R.id.checkBox7:
+                if (checked)
+                    Q4 = "Stredoškolské bez maturity";
+                break;
+            case R.id.checkBox8:
+                if (checked)
+                    Q4 = "Stredoškolské s maturitou";
+                break;
+            case R.id.checkBox9:
+                if (checked)
+                    Q4 = "Vysokoškolské";
+                break;
+        }
+    }
 
     public void init(){
         button9 = (Button)findViewById(R.id.button9);
@@ -19,6 +45,11 @@ public class Screen5 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen5.this, Screen6.class);
                 startActivity(toy);
+
+                Intent i = new Intent(Screen5.this, AllData.class);
+                i.putExtra("Sc5", Q4);
+                startActivity(i);
+
             }
         });
     }

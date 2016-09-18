@@ -193,18 +193,18 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NEVOLIL SOM"
-        android:id="@+id/checkBox28"
+        android:id="@+id/checkBox31"
         android:checked="false"
         android:textColor="#878787"
-        android:layout_below="@+id/checkBox31"
-        android:layout_alignLeft="@+id/checkBox31"
-        android:layout_alignStart="@+id/checkBox31" />
+        android:layout_below="@+id/checkBox30"
+        android:layout_alignLeft="@+id/checkBox30"
+        android:layout_alignStart="@+id/checkBox30" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Gabriel Karácsony  (PRIAMA DEMOKRACIA)"
-        android:id="@+id/checkBox29"
+        android:id="@+id/checkBox288"
         android:checked="false"
         android:layout_below="@+id/checkBox27"
         android:layout_alignLeft="@+id/checkBox27"
@@ -214,23 +214,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="NIKOHO"
+        android:id="@+id/checkBox29"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_below="@+id/checkBox288"
+        android:layout_alignLeft="@+id/checkBox288"
+        android:layout_alignStart="@+id/checkBox288" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEVIEM"
         android:id="@+id/checkBox30"
         android:checked="false"
         android:textColor="#878787"
         android:layout_below="@+id/checkBox29"
         android:layout_alignLeft="@+id/checkBox29"
         android:layout_alignStart="@+id/checkBox29" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NEVIEM"
-        android:id="@+id/checkBox31"
-        android:checked="false"
-        android:textColor="#878787"
-        android:layout_below="@+id/checkBox30"
-        android:layout_alignLeft="@+id/checkBox30"
-        android:layout_alignStart="@+id/checkBox30" />
 
     <TextView
         android:layout_width="wrap_content"
