@@ -36,7 +36,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 final String info = editText.getText().toString();
                 final String info2 = editText2.getText().toString();
                 final String info3 = editText3.getText().toString();
-                //nefunguje
 
                 //chrono.setBase(SystemClock.elapsedRealtime() + time);
                 //chrono.start();
