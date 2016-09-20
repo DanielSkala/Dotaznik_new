@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
 
-    public EditText editText,editText2,editText3;
+    //public EditText editText,editText2,editText3;
     //Chronometer chrono;
     //long time = 0;
 
@@ -32,11 +32,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+/*
                 final String info = editText.getText().toString();
                 final String info2 = editText2.getText().toString();
                 final String info3 = editText3.getText().toString();
-
+*/
                 //chrono.setBase(SystemClock.elapsedRealtime() + time);
                 //chrono.start();
 
@@ -66,11 +66,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         setContentView(R.layout.activity_main);
 
         //chrono = (Chronometer) findViewById(R.id.chronometer);
-
+/*
         editText = (EditText) findViewById(R.id.editText);
         editText2 = (EditText) findViewById(R.id.editText2);
         editText3 = (EditText) findViewById(R.id.editText3);
-
+*/
 
 
         init();
