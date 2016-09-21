@@ -11,7 +11,7 @@ public class Screen2 extends AppCompatActivity {
 
     public Button button2;
     public Button button3;
-/*
+
     String Q1;
 
     public void onCheckboxClicked(View view) {
@@ -33,7 +33,7 @@ public class Screen2 extends AppCompatActivity {
                 break;
         }
     }
-    */
+
 
     public void init(){
         button3 = (Button)findViewById(R.id.button3);
@@ -41,14 +41,11 @@ public class Screen2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen2.this, Screen3.class);
+                final Intent toy = new Intent(Screen2.this, Screen3.class);
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen2.this, AllData.class);
-                i.putExtra("Sc2", Q1);
-                startActivity(i);
-                */
 
+                Intent i = new Intent(Screen2.this, MainActivity.class);
+                i.putExtra("Sc2", Q1);
             }
         });
     }
@@ -74,6 +71,7 @@ public class Screen2 extends AppCompatActivity {
         BackPressed();
 
     }
+
 
 
 }

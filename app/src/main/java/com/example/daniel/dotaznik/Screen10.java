@@ -11,7 +11,7 @@ public class Screen10 extends AppCompatActivity {
 
     public Button button18;
     public Button button19;
-    /*
+
     String Q9;
 
     public void onCheckboxClicked(View view) {
@@ -86,7 +86,7 @@ public class Screen10 extends AppCompatActivity {
 
         }
     }
-    */
+
 
     public void init(){
         button19 = (Button)findViewById(R.id.button19);
@@ -94,13 +94,12 @@ public class Screen10 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen10.this, Screen11.class);
+                final Intent toy = new Intent(Screen10.this, Screen11.class);
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen10.this, AllData.class);
+
+                Intent i = new Intent(Screen10.this, MainActivity.class);
                 i.putExtra("Sc10", Q9);
-                startActivity(i);
-                */
+
 
             }
         });

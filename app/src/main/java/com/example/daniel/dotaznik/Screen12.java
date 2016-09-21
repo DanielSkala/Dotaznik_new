@@ -11,25 +11,24 @@ public class Screen12 extends AppCompatActivity {
 
     public Button button22;
     public Button button23;
-    /*
+
     public EditText editText;
 
     String Q11 = editText.getText().toString();
 
-*/
+
     public void init(){
         button23 = (Button)findViewById(R.id.button23);
         button23.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen12.this, Screen13.class);
+                final Intent toy = new Intent(Screen12.this, Screen13.class);
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen12.this, AllData.class);
+
+                Intent i = new Intent(Screen12.this, MainActivity.class);
                 i.putExtra("Sc12", Q11);
-                startActivity(i);
-                */
+
 
             }
         });
@@ -52,7 +51,7 @@ public class Screen12 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen12);
 
-        //editText = (EditText) findViewById(R.id.editText17);
+        editText = (EditText) findViewById(R.id.editText17);
 
         init();
         BackPressed();
