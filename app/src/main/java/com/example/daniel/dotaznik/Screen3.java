@@ -12,9 +12,9 @@ public class Screen3 extends AppCompatActivity {
     public Button button4;
     public Button button5;
 
-    public EditText editText;
+    //public EditText editText;
 
-    String Q2 = editText.getText().toString();
+    //String Q2 = editText.getText().toString();
 
 
     public void init(){
@@ -26,8 +26,8 @@ public class Screen3 extends AppCompatActivity {
                 final Intent toy = new Intent(Screen3.this, Screen4.class);
                 startActivity(toy);
 
-                Intent i = new Intent(Screen3.this, MainActivity.class);
-                i.putExtra("Sc3", Q2);
+                //Intent i = new Intent(Screen3.this, MainActivity.class);
+                //i.putExtra("Sc3", Q2);
 
             }
 
@@ -51,7 +51,7 @@ public class Screen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
 
-        editText = (EditText) findViewById(R.id.editText9);
+        //editText = (EditText) findViewById(R.id.editText9);
 
         init();
         BackPressed();
