@@ -9,74 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.daniel.dotaznik.Screen26">
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Späť"
-        android:id="@+id/button50"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
+        android:id="@+id/textView123"
+        android:textColor="#f44336"
+        android:textStyle="bold"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ďalej"
-        android:id="@+id/button51"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView26"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imageView2"
         android:src="@drawable/obr"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText62"
-        android:text="Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana)  BSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta."
-        android:textStyle="italic"
-        android:textColor="#F44336"
-        android:textAlignment="center"
-        android:layout_below="@+id/imageView26"
-        android:layout_alignRight="@+id/editText63"
-        android:layout_alignEnd="@+id/editText63"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText63"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:text="Ak by Váš kandidát na predsedu (župana) Bratislavského samosprávneho  kraja (BSK) odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu  BSK?"
-        android:textAlignment="center"
-        android:layout_centerVertical="true"
-        android:layout_alignRight="@+id/button51"
-        android:layout_alignEnd="@+id/button51"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Juraj Droba (SaS, OľaNO-NOVA,  KDH)"
-        android:id="@+id/checkBox173"
-        android:layout_marginTop="39dp"
-        android:checked="false"
-        android:layout_below="@+id/editText63"
-        android:layout_centerHorizontal="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -86,7 +37,8 @@
         android:checked="false"
         android:layout_below="@+id/checkBox173"
         android:layout_alignLeft="@+id/checkBox173"
-        android:layout_alignStart="@+id/checkBox173" />
+        android:layout_alignStart="@+id/checkBox173"
+        android:textSize="18sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -96,7 +48,8 @@
         android:checked="false"
         android:layout_below="@+id/checkBox174"
         android:layout_alignLeft="@+id/checkBox174"
-        android:layout_alignStart="@+id/checkBox174" />
+        android:layout_alignStart="@+id/checkBox174"
+        android:textSize="18sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -106,7 +59,8 @@
         android:checked="false"
         android:layout_below="@+id/checkBox175"
         android:layout_alignLeft="@+id/checkBox175"
-        android:layout_alignStart="@+id/checkBox175" />
+        android:layout_alignStart="@+id/checkBox175"
+        android:textSize="18sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -148,6 +102,67 @@
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="24/25"
         android:id="@+id/textView29"
-        android:layout_alignBottom="@+id/button51"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Otázka: Ak by Váš kandidát na predsedu (župana) Bratislavského samosprávneho  kraja (BSK) odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu  BSK?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView122"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="125dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
+        android:id="@+id/textView121"
+        android:textColor="#f44336"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView29"
+        android:layout_toStartOf="@+id/textView29" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text="&lt;"
+        android:id="@+id/button50"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="36sp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button51"
+        android:layout_alignBaseline="@+id/button50"
+        android:layout_alignBottom="@+id/button50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="36sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juraj Droba (SaS, OľaNO-NOVA,  KDH)"
+        android:id="@+id/checkBox173"
+        android:checked="false"
+        android:textSize="18sp"
+        android:layout_marginTop="95dp"
+        android:layout_below="@+id/button51"
         android:layout_centerHorizontal="true" />
+
 </RelativeLayout>

@@ -72,17 +72,6 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pokyn: Bez pýtania zakrúžkujte pohlavie respondenta."
-        android:id="@+id/textView45"
-        android:textColor="#f44336"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -103,4 +92,15 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pokyn: Bez pýtania zakrúžkujte pohlavie respondenta."
+        android:id="@+id/textView45"
+        android:textColor="#f44336"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView4"
+        android:layout_toStartOf="@+id/textView4" />
 </RelativeLayout>

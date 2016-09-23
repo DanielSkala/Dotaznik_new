@@ -110,24 +110,24 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Otázka: Aké je Vaše najvyššie dosiahnuté vzdelanie?"
-        android:id="@+id/textView54"
-        android:layout_marginBottom="71dp"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_above="@+id/button8"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textAlignment="center" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
         android:id="@+id/textView55"
         android:textColor="#f44336"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Otázka: Aké je Vaše najvyššie dosiahnuté vzdelanie?"
+        android:id="@+id/textView54"
+        android:layout_marginBottom="69dp"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_above="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

@@ -9,78 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.daniel.dotaznik.Screen7">
 
-    <EditText
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText38"
-        android:text="Prečítajte otázku a jednu z možností zakrúžkujte."
-        android:textStyle="italic"
-        android:textColor="#F44336"
-        android:layout_below="@+id/imageView7"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText39"
-        android:text="Boli ste voliť predsedu (župana) a poslancov Bratislavského samosprávneho kraja (BSK)  v posledných voľbách v roku 2013?"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
+        android:id="@+id/textView66"
+        android:textColor="#f44336"
         android:textStyle="bold"
-        android:textSize="30dp"
-        android:textAlignment="center"
-        android:layout_centerVertical="true"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Späť"
-        android:id="@+id/button12"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ďalej"
-        android:id="@+id/button13"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView7"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:src="@drawable/obr" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ÁNO"
-        android:id="@+id/checkBox10"
-        android:layout_marginTop="85dp"
-        android:checked="false"
-        android:layout_below="@+id/editText39"
-        android:layout_alignLeft="@+id/editText38"
-        android:layout_alignStart="@+id/editText38" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NIE"
-        android:id="@+id/checkBox11"
-        android:checked="false"
-        android:layout_alignTop="@+id/checkBox10"
-        android:layout_alignRight="@+id/editText38"
-        android:layout_alignEnd="@+id/editText38" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -93,12 +31,92 @@
         android:layout_below="@+id/checkBox10"
         android:layout_centerHorizontal="true" />
 
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/imageView7"
+        android:src="@drawable/obr"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="50dp" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="6/25"
         android:id="@+id/textView7"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text="&lt;"
+        android:id="@+id/button12"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="36sp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button13"
+        android:layout_alignBaseline="@+id/button12"
         android:layout_alignBottom="@+id/button12"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="36sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIE"
+        android:id="@+id/checkBox11"
+        android:checked="false"
+        android:layout_above="@+id/checkBox12"
+        android:layout_toRightOf="@+id/checkBox12"
+        android:layout_toEndOf="@+id/checkBox12"
+        android:textSize="24sp" />
+
+    <TextView
+        android:text="Pokyn: Prečítajte otázku a jednu z možností zakrúžkujte."
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView65"
+        android:textStyle="italic"
+        android:textSize="18dp"
+        android:textColor="#f44336"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toRightOf="@+id/imageView7"
+        android:layout_toEndOf="@+id/imageView7" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ÁNO"
+        android:id="@+id/checkBox10"
+        android:layout_marginTop="92dp"
+        android:checked="false"
+        android:textSize="24sp"
+        android:layout_below="@+id/button13"
+        android:layout_toLeftOf="@+id/checkBox12"
+        android:layout_toStartOf="@+id/checkBox12" />
+
+    <TextView
+        android:text="Otázka: Boli ste voliť predsedu (župana) a poslancov Bratislavského samosprávneho kraja (BSK)  v posledných voľbách v roku 2013?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView67"
+        android:layout_above="@+id/button12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="92dp"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"/>
 </RelativeLayout>

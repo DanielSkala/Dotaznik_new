@@ -64,18 +64,6 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pokyn: Prečítajte otázku a zapíšte vek respondenta."
-        android:id="@+id/textView36"
-        android:textStyle="italic"
-        android:textColor="#f44336"
-        android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/textView3"
-        android:layout_alignEnd="@+id/textView3" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
@@ -97,4 +85,16 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pokyn: Prečítajte otázku a zapíšte vek respondenta."
+        android:id="@+id/textView36"
+        android:textStyle="italic"
+        android:textColor="#f44336"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3" />
 </RelativeLayout>

@@ -10,29 +10,13 @@
     tools:context="com.example.daniel.dotaznik.Screen10">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:id="@+id/imageView10"
         android:src="@drawable/obr"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText11"
-        android:text="Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť  podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná"
-        android:textStyle="italic"
-        android:textColor="#F44336"
-        android:textAlignment="center"
-        android:layout_alignBottom="@+id/imageView10"
-        android:layout_toRightOf="@+id/imageView10"
-        android:layout_toEndOf="@+id/imageView10"
-        android:layout_marginLeft="101dp"
-        android:layout_marginStart="101dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -43,55 +27,7 @@
         android:textColor="#000000"
         android:textSize="10dp"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/editText11"
         android:layout_alignParentLeft="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText12"
-        android:text="Ak by sa konali parlamentné voľby tento víkend, ktorú politickú stranu alebo hnutie zo  zoznamu by ste volili?"
-        android:textStyle="bold"
-        android:textSize="30dp"
-        android:layout_below="@+id/textView17"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="62dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KDH"
-        android:id="@+id/checkBox32"
-        android:layout_marginTop="121dp"
-        android:checked="false"
-        android:layout_below="@+id/editText12"
-        android:layout_alignRight="@+id/button18"
-        android:layout_alignEnd="@+id/button18" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KSS"
-        android:id="@+id/checkBox33"
-        android:layout_alignTop="@+id/checkBox32"
-        android:layout_toRightOf="@+id/checkBox32"
-        android:layout_toEndOf="@+id/checkBox32"
-        android:checked="false" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ĽS Naše Slovenskostrana Mariana Kotlebu"
-        android:id="@+id/checkBox34"
-        android:checked="false"
-        android:layout_alignTop="@+id/checkBox33"
-        android:layout_toRightOf="@+id/checkBox33"
-        android:layout_toEndOf="@+id/checkBox33" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -101,7 +37,8 @@
         android:checked="false"
         android:layout_alignTop="@+id/checkBox34"
         android:layout_toRightOf="@+id/checkBox34"
-        android:layout_toEndOf="@+id/checkBox34" />
+        android:layout_toEndOf="@+id/checkBox34"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -111,47 +48,8 @@
         android:checked="false"
         android:layout_below="@+id/checkBox32"
         android:layout_alignLeft="@+id/checkBox32"
-        android:layout_alignStart="@+id/checkBox32" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SaS"
-        android:id="@+id/checkBox37"
-        android:layout_alignTop="@+id/checkBox36"
-        android:layout_toRightOf="@+id/checkBox36"
-        android:layout_toEndOf="@+id/checkBox36"
-        android:checked="false" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SDKÚ-DS"
-        android:id="@+id/checkBox38"
-        android:layout_alignTop="@+id/checkBox37"
-        android:layout_toRightOf="@+id/checkBox37"
-        android:layout_toEndOf="@+id/checkBox37"
-        android:checked="false" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SKOK"
-        android:id="@+id/checkBox40"
-        android:checked="false"
-        android:layout_below="@+id/checkBox34"
-        android:layout_toRightOf="@+id/checkBox39"
-        android:layout_toEndOf="@+id/checkBox39" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SMER-SD"
-        android:id="@+id/checkBox41"
-        android:checked="false"
-        android:layout_alignTop="@+id/checkBox40"
-        android:layout_toRightOf="@+id/checkBox40"
-        android:layout_toEndOf="@+id/checkBox40" />
+        android:layout_alignStart="@+id/checkBox32"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -161,7 +59,42 @@
         android:checked="false"
         android:layout_below="@+id/checkBox36"
         android:layout_alignLeft="@+id/checkBox36"
-        android:layout_alignStart="@+id/checkBox36" />
+        android:layout_alignStart="@+id/checkBox36"
+        android:textSize="16sp" />
+
+    <TextView
+        android:text="Pokyn: Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť  podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView74"
+        android:textColor="#f44336"
+        android:textStyle="normal|italic"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="9/25"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Otázka: Ak by sa konali parlamentné voľby tento víkend, ktorú politickú stranu alebo hnutie zo  zoznamu by ste volili?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="82dp"
+        android:id="@+id/textView76"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/textView74"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -169,9 +102,10 @@
         android:text="SME RODINA Boris Kollár"
         android:id="@+id/checkBox43"
         android:checked="false"
-        android:layout_below="@+id/checkBox36"
-        android:layout_toRightOf="@+id/checkBox42"
-        android:layout_toEndOf="@+id/checkBox42" />
+        android:layout_below="@+id/checkBox42"
+        android:layout_alignLeft="@+id/textView74"
+        android:layout_alignStart="@+id/textView74"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -179,9 +113,44 @@
         android:text="SNS"
         android:id="@+id/checkBox44"
         android:checked="false"
-        android:layout_alignTop="@+id/checkBox48"
-        android:layout_toRightOf="@+id/checkBox43"
-        android:layout_toEndOf="@+id/checkBox43" />
+        android:layout_below="@+id/checkBox43"
+        android:layout_alignLeft="@+id/checkBox43"
+        android:layout_alignStart="@+id/checkBox43"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SaS"
+        android:id="@+id/checkBox37"
+        android:checked="false"
+        android:layout_below="@+id/checkBox44"
+        android:layout_alignLeft="@+id/checkBox44"
+        android:layout_alignStart="@+id/checkBox44"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SDKÚ-DS"
+        android:id="@+id/checkBox38"
+        android:checked="false"
+        android:layout_below="@+id/checkBox37"
+        android:layout_alignLeft="@+id/checkBox42"
+        android:layout_alignStart="@+id/checkBox42"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox47"
+        android:checked="false"
+        android:textColor="#666666"
+        android:layout_above="@+id/checkBox38"
+        android:layout_alignLeft="@+id/checkBox41"
+        android:layout_alignStart="@+id/checkBox41"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -189,9 +158,11 @@
         android:text="Nešiel by som voliť"
         android:id="@+id/checkBox48"
         android:checked="false"
-        android:layout_below="@+id/checkBox40"
-        android:layout_toRightOf="@+id/checkBox44"
-        android:layout_toEndOf="@+id/checkBox44" />
+        android:textColor="#666666"
+        android:layout_below="@+id/checkBox47"
+        android:layout_alignLeft="@+id/checkBox47"
+        android:layout_alignStart="@+id/checkBox47"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -200,54 +171,109 @@
         android:id="@+id/checkBox46"
         android:checked="false"
         android:textColor="#878787"
-        android:layout_below="@+id/checkBox42"
-        android:layout_alignLeft="@+id/checkBox42"
-        android:layout_alignStart="@+id/checkBox42" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Späť"
-        android:id="@+id/button18"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/textView17"
-        android:layout_toEndOf="@+id/textView17" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ďalej"
-        android:id="@+id/button19"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="9/25"
-        android:id="@+id/textView9"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:textAllCaps="false"
+        android:layout_below="@+id/checkBox48"
+        android:layout_alignLeft="@+id/checkBox48"
+        android:layout_alignStart="@+id/checkBox48"
+        android:textSize="16sp" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Neviem"
-        android:id="@+id/checkBox47"
-        android:layout_below="@+id/checkBox42"
-        android:layout_toRightOf="@+id/checkBox42"
-        android:layout_toEndOf="@+id/checkBox42"
-        android:checked="false" />
+        android:text="SMER-SD"
+        android:id="@+id/checkBox41"
+        android:checked="false"
+        android:layout_above="@+id/checkBox47"
+        android:layout_alignLeft="@+id/checkBox33"
+        android:layout_alignStart="@+id/checkBox33"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KSS"
+        android:id="@+id/checkBox33"
+        android:checked="false"
+        android:layout_above="@+id/checkBox41"
+        android:layout_alignLeft="@+id/checkBox34"
+        android:layout_alignStart="@+id/checkBox34"
+        android:textSize="16sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKOK"
+        android:id="@+id/checkBox40"
+        android:checked="false"
+        android:layout_above="@+id/checkBox33"
+        android:layout_alignLeft="@+id/checkBox33"
+        android:layout_alignStart="@+id/checkBox33"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text="&lt;"
+        android:id="@+id/button18"
+        android:textSize="36sp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/checkBox43"
+        android:layout_toStartOf="@+id/checkBox43" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="SIEŤ"
         android:id="@+id/checkBox39"
-        android:layout_below="@+id/checkBox34"
-        android:layout_toRightOf="@+id/checkBox38"
-        android:layout_toEndOf="@+id/checkBox38"
-        android:checked="false" />
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_above="@+id/checkBox34"
+        android:layout_toRightOf="@+id/checkBox43"
+        android:layout_toEndOf="@+id/checkBox43" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĽS Naše Slovensko strana Mariana Kotlebu"
+        android:id="@+id/checkBox34"
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_above="@+id/checkBox40"
+        android:layout_alignLeft="@+id/checkBox39"
+        android:layout_alignStart="@+id/checkBox39" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
+        android:id="@+id/textView77"
+        android:textColor="#f44336"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KDH"
+        android:id="@+id/checkBox32"
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_below="@+id/button19"
+        android:layout_toRightOf="@+id/imageView10"
+        android:layout_toEndOf="@+id/imageView10"
+        android:layout_marginTop="18dp" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button19"
+        android:textSize="36sp"
+        android:layout_alignBaseline="@+id/button18"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
 </RelativeLayout>
