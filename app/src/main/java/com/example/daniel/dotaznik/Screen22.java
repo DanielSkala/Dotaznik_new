@@ -11,11 +11,7 @@ public class Screen22 extends AppCompatActivity {
 
     public Button button42;
     public Button button43;
-    /*
-    public EditText editText;
 
-    String Q21 = editText.getText().toString();
-    */
 
     public void init(){
         button43 = (Button)findViewById(R.id.button43);
@@ -24,12 +20,14 @@ public class Screen22 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen22.this, Screen23.class);
+
+                EditText editText = (EditText) findViewById(R.id.editText53);
+                String Q2 = editText.getText().toString();
+                Intent info = new Intent (Screen22.this, MainActivity.class);
+                info.putExtra("sc22", Q2);
+
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen22.this, AllData.class);
-                i.putExtra("Sc22", Q21);
-                startActivity(i);
-                */
+                finish();
 
             }
         });
@@ -43,6 +41,7 @@ public class Screen22 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen22.this, Screen21.class);
                 startActivity(toy);
+                finish();
             }
         });
     }
@@ -52,7 +51,7 @@ public class Screen22 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen22);
 
-        //editText = (EditText) findViewById(R.id.editText53);
+
 
         init();
         BackPressed();

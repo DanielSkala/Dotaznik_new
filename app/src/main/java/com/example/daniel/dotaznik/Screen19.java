@@ -11,7 +11,7 @@ public class Screen19 extends AppCompatActivity {
 
     public Button button36;
     public Button button37;
-    /*
+
     String Q18_1;
     String Q18_2;
     String Q18_3;
@@ -148,8 +148,14 @@ public class Screen19 extends AppCompatActivity {
                     Q18_5 = "Neviem";
                 break;
         }
+        Intent i = new Intent(Screen19.this, AllData.class);
+        i.putExtra("Sc19-1", Q18_1);
+        i.putExtra("Sc19-2", Q18_2);
+        i.putExtra("Sc19-3", Q18_3);
+        i.putExtra("Sc19-4", Q18_4);
+        i.putExtra("Sc19-5", Q18_5);
     }
-    */
+
 
     public void init(){
         button37 = (Button)findViewById(R.id.button37);
@@ -159,15 +165,11 @@ public class Screen19 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen19.this, Screen20.class);
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen19.this, AllData.class);
-                i.putExtra("Sc19-1", Q18_1);
-                i.putExtra("Sc19-2", Q18_2);
-                i.putExtra("Sc19-3", Q18_3);
-                i.putExtra("Sc19-4", Q18_4);
-                i.putExtra("Sc19-5", Q18_5);
-                startActivity(i);
-                */
+                finish();
+
+
+
+
 
             }
         });
@@ -181,6 +183,7 @@ public class Screen19 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen19.this, Screen18.class);
                 startActivity(toy);
+                finish();
             }
         });
     }

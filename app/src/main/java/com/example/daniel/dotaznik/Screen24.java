@@ -24,13 +24,14 @@ public class Screen24 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen24.this, Screen25.class);
-                startActivity(toy);
-/*
-                Intent i = new Intent(Screen24.this, AllData.class);
-                i.putExtra("Sc24", Q23);
-                startActivity(i);
-                */
 
+                EditText editText = (EditText) findViewById(R.id.editText59);
+                String Q2 = editText.getText().toString();
+                Intent info = new Intent (Screen24.this, MainActivity.class);
+                info.putExtra("sc24", Q2);
+
+                startActivity(toy);
+                finish();
             }
         });
     }
@@ -43,6 +44,7 @@ public class Screen24 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen24.this, Screen23.class);
                 startActivity(toy);
+                finish();
             }
         });
     }

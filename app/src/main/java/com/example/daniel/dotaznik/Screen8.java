@@ -11,7 +11,7 @@ public class Screen8 extends AppCompatActivity {
 
     public Button button14;
     public Button button15;
-/*
+
     String Q7;
 
     public void onCheckboxClicked(View view) {
@@ -36,8 +36,9 @@ public class Screen8 extends AppCompatActivity {
                     Q7 = "Neviem";
                 break;
         }
+        Intent i = new Intent(Screen8.this, MainActivity.class);
+        i.putExtra("Sc8", Q7);
     }
-*/
 
     public void init(){
         button15 = (Button)findViewById(R.id.button15);
@@ -48,8 +49,7 @@ public class Screen8 extends AppCompatActivity {
                 final Intent toy = new Intent(Screen8.this, Screen9.class);
                 startActivity(toy);
 
-                //Intent i = new Intent(Screen8.this, MainActivity.class);
-                //i.putExtra("Sc8", Q7);
+
 
 
             }

@@ -59,30 +59,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:hint="Priestor pre dlhú odpoveď"
-        android:id="@+id/editText17"
-        android:layout_marginTop="130dp"
-        android:layout_below="@+id/button23"
-        android:layout_toRightOf="@+id/textView26"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
-        android:id="@+id/textView81"
-        android:textColor="#f44336"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
     <TextView
         android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
         android:layout_width="470dp"
@@ -107,4 +83,28 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginBottom="59dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
+        android:id="@+id/textView81"
+        android:textColor="#f44336"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Priestor pre dlhú odpoveď"
+        android:id="@+id/editText17"
+        android:layout_alignBaseline="@+id/textView81"
+        android:layout_alignBottom="@+id/textView81"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

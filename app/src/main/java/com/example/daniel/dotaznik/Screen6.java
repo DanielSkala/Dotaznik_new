@@ -12,9 +12,6 @@ public class Screen6 extends AppCompatActivity {
     public Button button10;
     public Button button11;
 
-    //public EditText editText;
-
-    //String Q5 = editText.getText().toString();
 
 
     public void init(){
@@ -24,11 +21,15 @@ public class Screen6 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Intent toy = new Intent(Screen6.this, Screen7.class);
+
+
+                EditText editText = (EditText) findViewById(R.id.editText50);
+                String Q5 = editText.getText().toString();
+                Intent info = new Intent (Screen6.this, MainActivity.class);
+                info.putExtra("sc6", Q5);
+
                 startActivity(toy);
-
-                //Intent i = new Intent(Screen6.this, MainActivity.class);
-                //i.putExtra("Sc6", Q5);
-
+                finish();
 
             }
         });
@@ -42,6 +43,7 @@ public class Screen6 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen6.this, Screen5.class);
                 startActivity(toy);
+                finish();
             }
         });
     }
@@ -51,7 +53,7 @@ public class Screen6 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen6);
 
-        //editText = (EditText) findViewById(R.id.editText50);
+
 
         init();
         BackPressed();

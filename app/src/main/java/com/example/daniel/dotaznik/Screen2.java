@@ -11,10 +11,10 @@ public class Screen2 extends AppCompatActivity {
 
     public Button button2;
     public Button button3;
-/*
+
     String Q1;
 
-    public void onCheckboxClicked(View view) {
+        public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
         // Check which checkbox was clicked
@@ -32,8 +32,11 @@ public class Screen2 extends AppCompatActivity {
                     Q1 = "Neviem";
                 break;
         }
+
+            Intent i = new Intent(Screen2.this, MainActivity.class);
+            i.putExtra("Sc2", Q1);
     }
-    */
+
 
 
     public void init(){
@@ -44,9 +47,7 @@ public class Screen2 extends AppCompatActivity {
             public void onClick(View v) {
                 final Intent toy = new Intent(Screen2.this, Screen3.class);
                 startActivity(toy);
-
-                //Intent i = new Intent(Screen2.this, MainActivity.class);
-                //i.putExtra("Sc2", Q1);
+                finish();
             }
         });
     }
@@ -59,6 +60,7 @@ public class Screen2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen2.this, MainActivity.class);
                 startActivity(toy);
+                finish();
             }
         });
     }

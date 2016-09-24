@@ -11,11 +11,7 @@ public class Screen21 extends AppCompatActivity {
 
     public Button button40;
     public Button button41;
-    /*
-    public EditText editText;
 
-    String Q20 = editText.getText().toString();
-    */
 
     public void init(){
         button41 = (Button)findViewById(R.id.button41);
@@ -24,13 +20,14 @@ public class Screen21 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen21.this, Screen22.class);
-                startActivity(toy);
-/*
-                Intent i = new Intent(Screen21.this, AllData.class);
-                i.putExtra("Sc21", Q20);
-                startActivity(i);
-                */
 
+                EditText editText = (EditText) findViewById(R.id.editText51);
+                String Q2 = editText.getText().toString();
+                Intent info = new Intent (Screen21.this, MainActivity.class);
+                info.putExtra("sc21", Q2);
+
+                startActivity(toy);
+                finish();
             }
         });
     }
@@ -43,6 +40,7 @@ public class Screen21 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen21.this, Screen20.class);
                 startActivity(toy);
+                finish();
             }
         });
     }
@@ -52,7 +50,7 @@ public class Screen21 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen21);
 
-        //editText = (EditText) findViewById(R.id.editText51);
+
 
         init();
         BackPressed();

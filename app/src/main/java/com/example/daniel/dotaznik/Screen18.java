@@ -24,12 +24,14 @@ public class Screen18 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen18.this, Screen19.class);
+
+                EditText editText = (EditText) findViewById(R.id.editText43);
+                String Q17 = editText.getText().toString();
+                Intent info = new Intent (Screen18.this, MainActivity.class);
+                info.putExtra("sc18", Q17);
+
                 startActivity(toy);
-/*
-                Intent i = new Intent(Screen18.this, AllData.class);
-                i.putExtra("Sc18", Q17);
-                startActivity(i);
-                */
+                finish();
 
             }
         });
@@ -43,6 +45,7 @@ public class Screen18 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen18.this, Screen17.class);
                 startActivity(toy);
+                finish();
             }
         });
     }
@@ -52,7 +55,6 @@ public class Screen18 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen18);
 
-        //editText = (EditText) findViewById(R.id.editText43);
 
         init();
         BackPressed();
