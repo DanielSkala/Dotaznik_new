@@ -13,9 +13,7 @@ public class FinalScreen extends AppCompatActivity {
     /*
     public EditText editText4,editText5,editText6;
 
-    String info4 = editText4.getText().toString();
-    String info5 = editText5.getText().toString();
-    String info6 = editText6.getText().toString();
+
     */
 
     public void init() {
@@ -26,14 +24,28 @@ public class FinalScreen extends AppCompatActivity {
             public void onClick(View v) {
 
                 Intent toy = new Intent(FinalScreen.this, MainActivity.class);
+
+
+                EditText editText4 =(EditText) findViewById(R.id.editText66);
+                EditText editText5 = (EditText) findViewById(R.id.editText67);
+                EditText editText6 = (EditText) findViewById(R.id.editText68);
+                String info4 = editText4.getText().toString();
+                String info5 = editText5.getText().toString();
+                String info6 = editText6.getText().toString();
+                Intent info = new Intent (FinalScreen.this, MainActivity.class);
+
+
+
+                info.putExtra("Den2", info6);
+                info.putExtra("Datum2", info5);
+                info.putExtra("Cas2", info4);
+                info.putExtra("end", "1");
                 startActivity(toy);
-/*
-                Intent i = new Intent(FinalScreen.this, AllData.class);
-                i.putExtra("Den2", info6);
-                i.putExtra("Datum2", info5);
-                i.putExtra("Cas2", info4);
-                startActivity(i);
-                */
+                finish();
+
+
+
+
 
             }
         });
@@ -44,9 +56,8 @@ public class FinalScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_screen);
 /*
-        editText4 = (EditText) findViewById(R.id.editText66);
-        editText5 = (EditText) findViewById(R.id.editText67);
-        editText6 = (EditText) findViewById(R.id.editText68);
+
+
 */
         init();
 

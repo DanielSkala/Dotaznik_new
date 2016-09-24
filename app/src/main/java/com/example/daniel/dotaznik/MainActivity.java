@@ -16,6 +16,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.TreeMap;
+
 public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
@@ -48,6 +50,89 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        Intent ready = getIntent();
+
+        final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
+        int iCounter = 0;
+        if(ready.getStringExtra("end").equals("1"))
+        {
+            map.put(iCounter,new Dotaznik_info(ready.getStringExtra("sc2"),
+                    ready.getStringExtra("sc2"),
+                    ready.getStringExtra("sc3"),
+                    ready.getStringExtra("sc4"),
+                    ready.getStringExtra("sc5"),
+                    ready.getStringExtra("sc6"),
+                    ready.getStringExtra("sc7"),
+                    ready.getStringExtra("sc8"),
+                    ready.getStringExtra("sc9"),
+                    ready.getStringExtra("sc10"),
+                    ready.getStringExtra("sc11"),
+                    ready.getStringExtra("sc12"),
+                    ready.getStringExtra("sc13"),
+                    ready.getStringExtra("sc14"),
+                    ready.getStringExtra("sc15"),
+                    ready.getStringExtra("sc16-1"),
+                    ready.getStringExtra("sc16-2"),
+                    ready.getStringExtra("sc16-3"),
+                    ready.getStringExtra("sc16-4"),
+                    ready.getStringExtra("sc16-5"),
+                    ready.getStringExtra("sc16-6"),
+                    ready.getStringExtra("sc17"),
+                    ready.getStringExtra("sc18-1"),
+                    ready.getStringExtra("sc18-2"),
+                    ready.getStringExtra("sc18-3"),
+                    ready.getStringExtra("sc18-4"),
+                    ready.getStringExtra("sc18-5"),
+                    ready.getStringExtra("sc19-1"),
+                    ready.getStringExtra("sc19-2"),
+                    ready.getStringExtra("sc19-3"),
+                    ready.getStringExtra("sc19-4"),
+                    ready.getStringExtra("sc19-5"),
+                    ready.getStringExtra("sc19-6"),
+                    ready.getStringExtra("sc20"),
+                    ready.getStringExtra("sc21"),
+                    ready.getStringExtra("sc22"),
+                    ready.getStringExtra("sc23"),
+                    ready.getStringExtra("sc24"),
+                    ready.getStringExtra("sc25"),
+                    ready.getStringExtra("sc26"),
+                    ready.getStringExtra("sc27")));
+
+            iCounter++;
+                String s = null;
+                ready.putExtra("end", "z");
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         //chrono = (Chronometer) findViewById(R.id.chronometer);
 
