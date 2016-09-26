@@ -110,7 +110,7 @@ public class Dotaznik_info {
        return data + "\t" + data1 + "\t" + data2 + "\t" + data3 + "\t" + data4 + "\t" + data5 + "\t" + data6 + "\t" + data7 + "\t" + data8 + "\t" + data9 + "\t" + data10 + "\t" +
                 data11 + "\t" + data12 + "\t" + data13 + "\t" + data14 + "\t" + data15 + "\t" + data16 + "\t" + data17 + "\t" + data18 + "\t" + data19 + "\t" + data20 + "\t" +
                 data21 + "\t" + data22 + "\t" + data23 + "\t" + data24 + "\t" + data25 + "\t" + data26 + "\t" + data27 + "\t" + data28 + "\t" + data29 + "\t" + data30 + "\t" +
-                data31 + "\t" + data32 + "\t" + data33 + "\t" + data34 + "\t" + data35 + "\t" + data36 + "\t" + data37 + "\t" + data38 + "\t" + data39 + "\t" + data40 + "\t" + "\n";
+                data31 + "\t" + data32 + "\t" + data33 + "\t" + data34 + "\t" + data35 + "\t" + data36 + "\t" + data37 + "\t" + data38 + "\t" + data39 + "\t" + data40 + "\n";
     }
 
 }
