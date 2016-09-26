@@ -1,5 +1,6 @@
 package com.example.daniel.dotaznik;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.annotation.IdRes;
@@ -16,8 +17,8 @@ public class Screen3 extends AppCompatActivity {
     public Button button5;
 
 
-    SharedPreferences settings = getSharedPreferences("lol", MODE_PRIVATE);
-    SharedPreferences.Editor editor = settings.edit() ;
+
+
 
     public void init(){
         button5 = (Button)findViewById(R.id.button5);
@@ -27,10 +28,13 @@ public class Screen3 extends AppCompatActivity {
             public void onClick(View v) {
                 final Intent toy = new Intent(Screen3.this, Screen4.class);
 
+                SharedPreferences.Editor editor = getSharedPreferences("Q2",MODE_PRIVATE).edit() ;
+
                 EditText editText = (EditText) findViewById(R.id.editText9);
                 String Q2 = editText.getText().toString();
                 Intent info = new Intent (Screen3.this, MainActivity.class);
                 info.putExtra("sc3", Q2);
+
 
                 editor.putString("Q2",Q2);
                 editor.commit();
@@ -49,6 +53,14 @@ public class Screen3 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen3.this, Screen2.class);
+
+
+                EditText editText = (EditText) findViewById(R.id.editText9);
+                String Q2 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q2",MODE_PRIVATE).edit() ;
+                editor.putString("Q2",Q2);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -60,10 +72,11 @@ public class Screen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
 
+        SharedPreferences settings = this.getSharedPreferences("Q2", MODE_PRIVATE);
         String restoredText = settings.getString("Q2", null);
         if (restoredText != null) {
         EditText editText = (EditText) findViewById(R.id.editText9);
-            editText.setHint(restoredText);
+            editText.setText(restoredText);
         }
 
         init();

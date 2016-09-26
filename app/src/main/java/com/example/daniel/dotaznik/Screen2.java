@@ -1,5 +1,6 @@
 package com.example.daniel.dotaznik;
 
+import android.content.Context;
 import android.content.Intent;
 
 import android.content.SharedPreferences;
@@ -16,17 +17,21 @@ public class Screen2 extends AppCompatActivity {
     public Button button2;
     public Button button3;
 
+
+
+
+
+
+
+
+
     String Q1;
-
-
-    SharedPreferences settings = getSharedPreferences("lol", MODE_PRIVATE);
-    SharedPreferences.Editor editor = settings.edit() ;
-
 
 
         public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
+            SharedPreferences.Editor editor = getSharedPreferences("Q1",MODE_PRIVATE).edit() ;
         // Check which checkbox was clicked
         switch(view.getId()) {
             case R.id.checkBox:
@@ -34,18 +39,24 @@ public class Screen2 extends AppCompatActivity {
                     Q1 = "Áno";
                     editor.putString("Q1",Q1);
                     editor.commit();
+                CheckBox check = (CheckBox) findViewById(R.id.checkBox2);check.setChecked(false);
+                CheckBox check2 = (CheckBox) findViewById(R.id.checkBox3);check2.setChecked(false);
                 break;
             case R.id.checkBox2:
                 if (checked)
                     Q1 = "Nie";
                     editor.putString("Q1",Q1);
                     editor.commit();
+                CheckBox check3 = (CheckBox) findViewById(R.id.checkBox);check3.setChecked(false);
+                CheckBox check4= (CheckBox) findViewById(R.id.checkBox3);check4.setChecked(false);
                 break;
             case R.id.checkBox3:
                 if (checked)
                     Q1 = "Neviem";
                     editor.putString("Q1",Q1);
                     editor.commit();
+                CheckBox check5 = (CheckBox) findViewById(R.id.checkBox2);check5.setChecked(false);
+                CheckBox check6 = (CheckBox) findViewById(R.id.checkBox);check6.setChecked(false);
                 break;
         }
 
@@ -85,6 +96,8 @@ public class Screen2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen2);
+
+        SharedPreferences settings = this.getSharedPreferences("Q1", MODE_PRIVATE);
 
         String restoredText = settings.getString("Q1", null);
         if (restoredText != null) {

@@ -64,6 +64,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
         int iCounter = 0;
+
+        if(ready.getStringExtra("end") == null)
+            ready.putExtra("end", "0");
+
         if(ready.getStringExtra("end").equals("1"))
         {
             map.put(iCounter,new Dotaznik_info(ready.getStringExtra("sc2"),
@@ -112,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 String s = null;
                 ready.putExtra("end", "z");
         }
-
+/*
         if (fileExistance("data1.txt"))//----------------------------------------------------////////////////
         {
             try {
@@ -159,7 +163,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         //
         //-------------------------------------------------------------------------------------------------------------------------------
 
-
+*/
 
 
         //chrono = (Chronometer) findViewById(R.id.chronometer);
