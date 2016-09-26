@@ -1,6 +1,7 @@
 package com.example.daniel.dotaznik;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,9 +23,13 @@ public class Screen21 extends AppCompatActivity {
                 Intent toy = new Intent(Screen21.this, Screen22.class);
 
                 EditText editText = (EditText) findViewById(R.id.editText51);
-                String Q2 = editText.getText().toString();
+                String Q20 = editText.getText().toString();
                 Intent info = new Intent (Screen21.this, MainActivity.class);
-                info.putExtra("sc21", Q2);
+                info.putExtra("sc21", Q20);
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q20",MODE_PRIVATE).edit() ;
+                editor.putString("Q20",Q20);
+                editor.commit();
 
                 startActivity(toy);
                 finish();
@@ -39,6 +44,13 @@ public class Screen21 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen21.this, Screen20.class);
+
+                EditText editText = (EditText) findViewById(R.id.editText51);
+                String Q20 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q20",MODE_PRIVATE).edit() ;
+                editor.putString("Q20",Q20);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -51,6 +63,12 @@ public class Screen21 extends AppCompatActivity {
         setContentView(R.layout.activity_screen21);
 
 
+        SharedPreferences settings = this.getSharedPreferences("Q20", MODE_PRIVATE);
+        String restoredText = settings.getString("Q20", null);
+        if (restoredText != null) {
+            EditText editText = (EditText) findViewById(R.id.editText51);
+            editText.setText(restoredText);
+        }
 
         init();
         BackPressed();

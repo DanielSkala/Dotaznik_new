@@ -1,6 +1,7 @@
 package com.example.daniel.dotaznik;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,9 +23,13 @@ public class Screen22 extends AppCompatActivity {
                 Intent toy = new Intent(Screen22.this, Screen23.class);
 
                 EditText editText = (EditText) findViewById(R.id.editText53);
-                String Q2 = editText.getText().toString();
+                String Q21 = editText.getText().toString();
                 Intent info = new Intent (Screen22.this, MainActivity.class);
-                info.putExtra("sc22", Q2);
+                info.putExtra("sc22", Q21);
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q21",MODE_PRIVATE).edit() ;
+                editor.putString("Q21",Q21);
+                editor.commit();
 
                 startActivity(toy);
                 finish();
@@ -40,6 +45,13 @@ public class Screen22 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen22.this, Screen21.class);
+
+                EditText editText = (EditText) findViewById(R.id.editText53);
+                String Q21 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q21",MODE_PRIVATE).edit() ;
+                editor.putString("Q21",Q21);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -51,6 +63,13 @@ public class Screen22 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen22);
 
+
+        SharedPreferences settings = this.getSharedPreferences("Q21", MODE_PRIVATE);
+        String restoredText = settings.getString("Q21", null);
+        if (restoredText != null) {
+            EditText editText = (EditText) findViewById(R.id.editText53);
+            editText.setText(restoredText);
+        }
 
 
         init();

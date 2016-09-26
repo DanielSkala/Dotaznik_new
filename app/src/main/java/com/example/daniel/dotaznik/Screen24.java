@@ -1,6 +1,7 @@
 package com.example.daniel.dotaznik;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,10 +27,12 @@ public class Screen24 extends AppCompatActivity {
                 Intent toy = new Intent(Screen24.this, Screen25.class);
 
                 EditText editText = (EditText) findViewById(R.id.editText59);
-                String Q2 = editText.getText().toString();
+                String Q23 = editText.getText().toString();
                 Intent info = new Intent (Screen24.this, MainActivity.class);
-                info.putExtra("sc24", Q2);
-
+                info.putExtra("sc24", Q23);
+                SharedPreferences.Editor editor = getSharedPreferences("Q23",MODE_PRIVATE).edit() ;
+                editor.putString("Q23",Q23);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -43,6 +46,13 @@ public class Screen24 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen24.this, Screen23.class);
+
+                EditText editText = (EditText) findViewById(R.id.editText59);
+                String Q23 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q23",MODE_PRIVATE).edit() ;
+                editor.putString("Q23",Q23);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -54,7 +64,13 @@ public class Screen24 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen24);
 
-        //editText = (EditText) findViewById(R.id.editText59);
+        SharedPreferences settings = this.getSharedPreferences("Q23", MODE_PRIVATE);
+        String restoredText = settings.getString("Q23", null);
+        if (restoredText != null) {
+            EditText editText = (EditText) findViewById(R.id.editText59);
+            editText.setText(restoredText);
+        }
+
 
         init();
         BackPressed();

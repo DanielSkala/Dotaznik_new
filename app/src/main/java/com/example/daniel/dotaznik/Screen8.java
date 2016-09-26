@@ -71,6 +71,7 @@ public class Screen8 extends AppCompatActivity {
             public void onClick(View v) {
                 final Intent toy = new Intent(Screen8.this, Screen9.class);
                 startActivity(toy);
+                finish();
 
 
 
@@ -87,6 +88,7 @@ public class Screen8 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen8.this, Screen7.class);
                 startActivity(toy);
+                finish();
             }
         });
     }

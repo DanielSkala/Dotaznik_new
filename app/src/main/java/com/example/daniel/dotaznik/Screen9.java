@@ -363,9 +363,9 @@ public class Screen9 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen9);
 
-        SharedPreferences settings = this.getSharedPreferences("Q6", MODE_PRIVATE);
+        SharedPreferences settings = this.getSharedPreferences("Q8", MODE_PRIVATE);
 
-        String restoredText = settings.getString("Q6", null);
+        String restoredText = settings.getString("Q8", null);
         if (restoredText != null) {
             if(restoredText.equals("1"))
             {
@@ -399,42 +399,42 @@ public class Screen9 extends AppCompatActivity {
             }
             if(restoredText.equals("7"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox22);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox23);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("8"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox23);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox24);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("9"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox24);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("10"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox25);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox26);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("11"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox26);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox27);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("12"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox27);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox28);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("13"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox28);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox30);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("14"))
             {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox29);
+                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox31);
                 checkBox.setChecked(true);
             }
             if(restoredText.equals("15"))
@@ -442,6 +442,7 @@ public class Screen9 extends AppCompatActivity {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox30);
                 checkBox.setChecked(true);
             }
+
         }
         init();
         BackPressed();

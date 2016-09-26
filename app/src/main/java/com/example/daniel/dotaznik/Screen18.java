@@ -1,6 +1,7 @@
 package com.example.daniel.dotaznik;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,6 +31,10 @@ public class Screen18 extends AppCompatActivity {
                 Intent info = new Intent (Screen18.this, MainActivity.class);
                 info.putExtra("sc18", Q17);
 
+                SharedPreferences.Editor editor = getSharedPreferences("Q17",MODE_PRIVATE).edit();
+                editor.putString("Q17",Q17);
+                editor.commit();
+
                 startActivity(toy);
                 finish();
 
@@ -44,6 +49,14 @@ public class Screen18 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen18.this, Screen17.class);
+
+
+                EditText editText = (EditText) findViewById(R.id.editText43);
+                String Q17 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q17",MODE_PRIVATE).edit() ;
+                editor.putString("Q17",Q17);
+                editor.commit();
                 startActivity(toy);
                 finish();
             }
@@ -55,6 +68,13 @@ public class Screen18 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen18);
 
+
+        SharedPreferences settings = this.getSharedPreferences("Q17", MODE_PRIVATE);
+        String restoredText = settings.getString("Q17", null);
+        if (restoredText != null) {
+            EditText editText = (EditText) findViewById(R.id.editText43);
+            editText.setText(restoredText);
+        }
 
         init();
         BackPressed();
