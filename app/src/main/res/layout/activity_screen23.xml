@@ -38,7 +38,8 @@
         android:layout_below="@+id/checkBox161"
         android:layout_alignLeft="@+id/checkBox161"
         android:layout_alignStart="@+id/checkBox161"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
         android:layout_below="@+id/checkBox162"
         android:layout_alignLeft="@+id/checkBox162"
         android:layout_alignStart="@+id/checkBox162"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -60,7 +62,8 @@
         android:layout_below="@+id/checkBox163"
         android:layout_toRightOf="@+id/button44"
         android:layout_toEndOf="@+id/button44"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -72,7 +75,8 @@
         android:textColor="#878787"
         android:layout_below="@+id/checkBox164"
         android:layout_toRightOf="@+id/button44"
-        android:layout_toEndOf="@+id/button44" />
+        android:layout_toEndOf="@+id/button44"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -128,7 +132,8 @@
         android:layout_below="@+id/button44"
         android:layout_alignLeft="@+id/checkBox164"
         android:layout_alignStart="@+id/checkBox164"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -142,7 +147,8 @@
         android:layout_toRightOf="@+id/checkBox167"
         android:layout_toEndOf="@+id/checkBox167"
         android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp" />
+        android:layout_marginStart="14dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -156,7 +162,8 @@
         android:layout_alignRight="@+id/checkBox161"
         android:layout_alignEnd="@+id/checkBox161"
         android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp" />
+        android:layout_marginEnd="15dp"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:text="Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana)  BSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta."

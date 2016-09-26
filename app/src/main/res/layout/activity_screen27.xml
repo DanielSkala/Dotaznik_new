@@ -29,7 +29,8 @@
         android:layout_below="@+id/checkBox180"
         android:layout_alignLeft="@+id/checkBox180"
         android:layout_alignStart="@+id/checkBox180"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -40,7 +41,8 @@
         android:layout_below="@+id/checkBox181"
         android:layout_alignLeft="@+id/checkBox181"
         android:layout_alignStart="@+id/checkBox181"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -51,7 +53,8 @@
         android:layout_below="@+id/checkBox182"
         android:layout_alignLeft="@+id/checkBox182"
         android:layout_alignStart="@+id/checkBox182"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -63,7 +66,8 @@
         android:layout_below="@+id/checkBox183"
         android:layout_alignLeft="@+id/checkBox183"
         android:layout_alignStart="@+id/checkBox183"
-        android:layout_marginTop="21dp" />
+        android:layout_marginTop="21dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -74,7 +78,8 @@
         android:textColor="#878787"
         android:layout_alignTop="@+id/checkBox184"
         android:layout_toRightOf="@+id/checkBox184"
-        android:layout_toEndOf="@+id/checkBox184" />
+        android:layout_toEndOf="@+id/checkBox184"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -85,7 +90,8 @@
         android:textColor="#878787"
         android:layout_alignTop="@+id/checkBox185"
         android:layout_alignRight="@+id/checkBox182"
-        android:layout_alignEnd="@+id/checkBox182" />
+        android:layout_alignEnd="@+id/checkBox182"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -96,18 +102,6 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:text="Otázka: Ak by sa tento víkend konali voľby na predsedu (župana) Bratislavského samosprávneho  kraja (BSK), ktorého zo zoznamu by ste URČITE NEVOLILI za predsedu BSK?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView125"
-        android:layout_below="@+id/textView124"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="74dp"
-        android:textStyle="normal|bold"
-        android:textSize="30sp"
-        android:textColor="#000000" />
 
     <Button
         android:layout_width="50dp"
@@ -128,7 +122,8 @@
         android:checked="false"
         android:textSize="18sp"
         android:layout_below="@+id/button53"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onCheckboxClicked" />
 
     <ImageView
         android:layout_width="50dp"
@@ -161,4 +156,16 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView26"
         android:layout_toEndOf="@+id/imageView26" />
+
+    <TextView
+        android:text="Otázka: Ak by sa tento víkend konali voľby na predsedu (župana) Bratislavského samosprávneho  kraja (BSK), ktorého zo zoznamu by ste URČITE NEVOLILI za predsedu BSK?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView125"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

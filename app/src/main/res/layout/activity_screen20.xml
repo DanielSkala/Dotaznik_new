@@ -89,7 +89,8 @@
         android:layout_below="@+id/textView56"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -100,7 +101,8 @@
         android:layout_alignTop="@+id/checkBox149"
         android:layout_toRightOf="@+id/checkBox149"
         android:layout_toEndOf="@+id/checkBox149"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -111,7 +113,8 @@
         android:textSize="12dp"
         android:layout_below="@+id/textView56"
         android:layout_toRightOf="@+id/checkBox150"
-        android:layout_toEndOf="@+id/checkBox150" />
+        android:layout_toEndOf="@+id/checkBox150"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -122,7 +125,8 @@
         android:layout_alignTop="@+id/checkBox151"
         android:layout_toRightOf="@+id/checkBox151"
         android:layout_toEndOf="@+id/checkBox151"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -134,7 +138,8 @@
         android:layout_alignTop="@+id/checkBox152"
         android:layout_toRightOf="@+id/checkBox152"
         android:layout_toEndOf="@+id/checkBox152"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -146,7 +151,8 @@
         android:layout_alignTop="@+id/checkBox153"
         android:layout_toRightOf="@+id/checkBox153"
         android:layout_toEndOf="@+id/checkBox153"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -170,7 +176,8 @@
         android:layout_below="@+id/textView57"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -181,7 +188,8 @@
         android:layout_alignTop="@+id/checkBox125"
         android:layout_toRightOf="@+id/checkBox125"
         android:layout_toEndOf="@+id/checkBox125"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -192,7 +200,8 @@
         android:layout_alignTop="@+id/checkBox126"
         android:layout_alignLeft="@+id/checkBox151"
         android:layout_alignStart="@+id/checkBox151"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -203,7 +212,8 @@
         android:layout_below="@+id/textView57"
         android:layout_toRightOf="@+id/checkBox127"
         android:layout_toEndOf="@+id/checkBox127"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -215,7 +225,8 @@
         android:layout_alignTop="@+id/checkBox128"
         android:layout_toRightOf="@+id/checkBox128"
         android:layout_toEndOf="@+id/checkBox128"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -227,7 +238,8 @@
         android:layout_alignTop="@+id/checkBox129"
         android:layout_toRightOf="@+id/checkBox129"
         android:layout_toEndOf="@+id/checkBox129"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -238,7 +250,8 @@
         android:layout_below="@+id/textView58"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -249,7 +262,8 @@
         android:layout_alignTop="@+id/checkBox131"
         android:layout_toRightOf="@+id/checkBox131"
         android:layout_toEndOf="@+id/checkBox131"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -260,7 +274,8 @@
         android:layout_below="@+id/textView58"
         android:layout_alignLeft="@+id/checkBox127"
         android:layout_alignStart="@+id/checkBox127"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -271,7 +286,8 @@
         android:layout_below="@+id/textView58"
         android:layout_alignLeft="@+id/checkBox128"
         android:layout_alignStart="@+id/checkBox128"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -283,7 +299,8 @@
         android:layout_alignTop="@+id/checkBox134"
         android:layout_toLeftOf="@+id/checkBox130"
         android:layout_toStartOf="@+id/checkBox130"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -295,7 +312,8 @@
         android:layout_alignTop="@+id/checkBox135"
         android:layout_alignLeft="@+id/checkBox130"
         android:layout_alignStart="@+id/checkBox130"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -306,7 +324,8 @@
         android:layout_below="@+id/textView59"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -317,7 +336,8 @@
         android:layout_alignTop="@+id/checkBox137"
         android:layout_toRightOf="@+id/checkBox137"
         android:layout_toEndOf="@+id/checkBox137"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -328,7 +348,8 @@
         android:layout_alignTop="@+id/checkBox138"
         android:layout_alignLeft="@+id/checkBox133"
         android:layout_alignStart="@+id/checkBox133"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -339,7 +360,8 @@
         android:layout_alignTop="@+id/checkBox139"
         android:layout_alignLeft="@+id/checkBox134"
         android:layout_alignStart="@+id/checkBox134"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -351,7 +373,8 @@
         android:layout_alignTop="@+id/checkBox140"
         android:layout_toLeftOf="@+id/checkBox136"
         android:layout_toStartOf="@+id/checkBox136"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -363,7 +386,8 @@
         android:layout_alignTop="@+id/checkBox141"
         android:layout_toRightOf="@+id/checkBox141"
         android:layout_toEndOf="@+id/checkBox141"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -374,7 +398,8 @@
         android:layout_below="@+id/textView60"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -385,7 +410,8 @@
         android:layout_alignTop="@+id/checkBox143"
         android:layout_toRightOf="@+id/checkBox143"
         android:layout_toEndOf="@+id/checkBox143"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -396,7 +422,8 @@
         android:layout_below="@+id/textView60"
         android:layout_alignLeft="@+id/checkBox139"
         android:layout_alignStart="@+id/checkBox139"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -407,7 +434,8 @@
         android:layout_alignTop="@+id/checkBox145"
         android:layout_toRightOf="@+id/checkBox145"
         android:layout_toEndOf="@+id/checkBox145"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -419,7 +447,8 @@
         android:layout_alignTop="@+id/checkBox146"
         android:layout_toLeftOf="@+id/checkBox142"
         android:layout_toStartOf="@+id/checkBox142"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -431,7 +460,8 @@
         android:layout_below="@+id/textView60"
         android:layout_alignLeft="@+id/checkBox142"
         android:layout_alignStart="@+id/checkBox142"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -442,7 +472,8 @@
         android:layout_below="@+id/textView61"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -453,7 +484,8 @@
         android:layout_alignTop="@+id/checkBox155"
         android:layout_toRightOf="@+id/checkBox155"
         android:layout_toEndOf="@+id/checkBox155"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -464,7 +496,8 @@
         android:layout_alignTop="@+id/checkBox156"
         android:layout_alignLeft="@+id/checkBox145"
         android:layout_alignStart="@+id/checkBox145"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -475,7 +508,8 @@
         android:layout_alignTop="@+id/checkBox157"
         android:layout_toRightOf="@+id/checkBox157"
         android:layout_toEndOf="@+id/checkBox157"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -487,7 +521,8 @@
         android:layout_alignTop="@+id/checkBox158"
         android:layout_toLeftOf="@+id/checkBox148"
         android:layout_toStartOf="@+id/checkBox148"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -499,7 +534,8 @@
         android:layout_alignTop="@+id/checkBox159"
         android:layout_alignLeft="@+id/checkBox148"
         android:layout_alignStart="@+id/checkBox148"
-        android:textSize="12dp" />
+        android:textSize="12dp"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -48,7 +48,8 @@
         android:layout_marginTop="122dp"
         android:layout_below="@+id/button6"
         android:layout_alignLeft="@+id/textView46"
-        android:layout_alignStart="@+id/textView46" />
+        android:layout_alignStart="@+id/textView46"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -59,7 +60,8 @@
         android:textSize="20dp"
         android:layout_alignTop="@+id/checkBox4"
         android:layout_alignRight="@+id/textView46"
-        android:layout_alignEnd="@+id/textView46" />
+        android:layout_alignEnd="@+id/textView46"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"

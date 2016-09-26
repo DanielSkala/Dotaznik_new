@@ -25,11 +25,12 @@
         android:layout_height="wrap_content"
         android:text="NEVIEM"
         android:id="@+id/checkBox12"
-        android:checked="false"
         android:textColor="#878787"
         android:layout_marginTop="30dp"
         android:layout_below="@+id/checkBox10"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onCheckboxClicked"
+        android:checked="false" />
 
     <ImageView
         android:layout_width="50dp"
@@ -80,7 +81,8 @@
         android:layout_above="@+id/checkBox12"
         android:layout_toRightOf="@+id/checkBox12"
         android:layout_toEndOf="@+id/checkBox12"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:text="Pokyn: Prečítajte otázku a jednu z možností zakrúžkujte."
@@ -105,7 +107,8 @@
         android:textSize="24sp"
         android:layout_below="@+id/button13"
         android:layout_toLeftOf="@+id/checkBox12"
-        android:layout_toStartOf="@+id/checkBox12" />
+        android:layout_toStartOf="@+id/checkBox12"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:text="Otázka: Boli ste voliť predsedu (župana) a poslancov Bratislavského samosprávneho kraja (BSK)  v posledných voľbách v roku 2013?"

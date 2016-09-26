@@ -38,7 +38,8 @@
         android:layout_alignTop="@+id/checkBox34"
         android:layout_toRightOf="@+id/checkBox34"
         android:layout_toEndOf="@+id/checkBox34"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
         android:layout_below="@+id/checkBox32"
         android:layout_alignLeft="@+id/checkBox32"
         android:layout_alignStart="@+id/checkBox32"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -60,7 +62,8 @@
         android:layout_below="@+id/checkBox36"
         android:layout_alignLeft="@+id/checkBox36"
         android:layout_alignStart="@+id/checkBox36"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:text="Pokyn: Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť  podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná"
@@ -105,7 +108,8 @@
         android:layout_below="@+id/checkBox42"
         android:layout_alignLeft="@+id/textView74"
         android:layout_alignStart="@+id/textView74"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -116,7 +120,8 @@
         android:layout_below="@+id/checkBox43"
         android:layout_alignLeft="@+id/checkBox43"
         android:layout_alignStart="@+id/checkBox43"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -127,7 +132,8 @@
         android:layout_below="@+id/checkBox44"
         android:layout_alignLeft="@+id/checkBox44"
         android:layout_alignStart="@+id/checkBox44"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -138,7 +144,8 @@
         android:layout_below="@+id/checkBox37"
         android:layout_alignLeft="@+id/checkBox42"
         android:layout_alignStart="@+id/checkBox42"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -150,7 +157,8 @@
         android:layout_above="@+id/checkBox38"
         android:layout_alignLeft="@+id/checkBox41"
         android:layout_alignStart="@+id/checkBox41"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -162,7 +170,8 @@
         android:layout_below="@+id/checkBox47"
         android:layout_alignLeft="@+id/checkBox47"
         android:layout_alignStart="@+id/checkBox47"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -175,7 +184,8 @@
         android:layout_below="@+id/checkBox48"
         android:layout_alignLeft="@+id/checkBox48"
         android:layout_alignStart="@+id/checkBox48"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -186,7 +196,8 @@
         android:layout_above="@+id/checkBox47"
         android:layout_alignLeft="@+id/checkBox33"
         android:layout_alignStart="@+id/checkBox33"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -197,7 +208,8 @@
         android:layout_above="@+id/checkBox41"
         android:layout_alignLeft="@+id/checkBox34"
         android:layout_alignStart="@+id/checkBox34"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -208,7 +220,8 @@
         android:layout_above="@+id/checkBox33"
         android:layout_alignLeft="@+id/checkBox33"
         android:layout_alignStart="@+id/checkBox33"
-        android:textSize="16sp" />
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked" />
 
     <Button
         android:layout_width="50dp"
@@ -218,7 +231,8 @@
         android:textSize="36sp"
         android:layout_centerVertical="true"
         android:layout_toLeftOf="@+id/checkBox43"
-        android:layout_toStartOf="@+id/checkBox43" />
+        android:layout_toStartOf="@+id/checkBox43"
+        android:visibility="visible" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -229,7 +243,8 @@
         android:textSize="16sp"
         android:layout_above="@+id/checkBox34"
         android:layout_toRightOf="@+id/checkBox43"
-        android:layout_toEndOf="@+id/checkBox43" />
+        android:layout_toEndOf="@+id/checkBox43"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -240,7 +255,8 @@
         android:textSize="16sp"
         android:layout_above="@+id/checkBox40"
         android:layout_alignLeft="@+id/checkBox39"
-        android:layout_alignStart="@+id/checkBox39" />
+        android:layout_alignStart="@+id/checkBox39"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -263,7 +279,8 @@
         android:layout_below="@+id/button19"
         android:layout_toRightOf="@+id/imageView10"
         android:layout_toEndOf="@+id/imageView10"
-        android:layout_marginTop="18dp" />
+        android:layout_marginTop="18dp"
+        android:onClick="onCheckboxClicked" />
 
     <Button
         android:layout_width="50dp"

@@ -38,7 +38,8 @@
         android:layout_below="@+id/checkBox173"
         android:layout_alignLeft="@+id/checkBox173"
         android:layout_alignStart="@+id/checkBox173"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -49,7 +50,8 @@
         android:layout_below="@+id/checkBox174"
         android:layout_alignLeft="@+id/checkBox174"
         android:layout_alignStart="@+id/checkBox174"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -60,7 +62,8 @@
         android:layout_below="@+id/checkBox175"
         android:layout_alignLeft="@+id/checkBox175"
         android:layout_alignStart="@+id/checkBox175"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -72,7 +75,8 @@
         android:layout_below="@+id/checkBox176"
         android:layout_alignLeft="@+id/checkBox176"
         android:layout_alignStart="@+id/checkBox176"
-        android:layout_marginTop="25dp" />
+        android:layout_marginTop="25dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -83,7 +87,8 @@
         android:textColor="#878787"
         android:layout_alignTop="@+id/checkBox177"
         android:layout_toRightOf="@+id/checkBox177"
-        android:layout_toEndOf="@+id/checkBox177" />
+        android:layout_toEndOf="@+id/checkBox177"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -94,7 +99,8 @@
         android:textColor="#878787"
         android:layout_alignTop="@+id/checkBox178"
         android:layout_toRightOf="@+id/checkBox178"
-        android:layout_toEndOf="@+id/checkBox178" />
+        android:layout_toEndOf="@+id/checkBox178"
+        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -163,6 +169,7 @@
         android:textSize="18sp"
         android:layout_marginTop="95dp"
         android:layout_below="@+id/button51"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:onClick="onCheckboxClicked" />
 
 </RelativeLayout>
