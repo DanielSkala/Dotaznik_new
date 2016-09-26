@@ -1,6 +1,7 @@
 package com.example.daniel.dotaznik;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.annotation.IdRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +16,8 @@ public class Screen3 extends AppCompatActivity {
     public Button button5;
 
 
-
+    SharedPreferences settings = getSharedPreferences("lol", MODE_PRIVATE);
+    SharedPreferences.Editor editor = settings.edit() ;
 
     public void init(){
         button5 = (Button)findViewById(R.id.button5);
@@ -29,6 +31,9 @@ public class Screen3 extends AppCompatActivity {
                 String Q2 = editText.getText().toString();
                 Intent info = new Intent (Screen3.this, MainActivity.class);
                 info.putExtra("sc3", Q2);
+
+                editor.putString("Q2",Q2);
+                editor.commit();
 
                 startActivity(toy);
                 finish();
@@ -55,6 +60,11 @@ public class Screen3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen3);
 
+        String restoredText = settings.getString("Q2", null);
+        if (restoredText != null) {
+        EditText editText = (EditText) findViewById(R.id.editText9);
+            editText.setHint(restoredText);
+        }
 
         init();
         BackPressed();

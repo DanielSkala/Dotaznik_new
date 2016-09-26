@@ -18,8 +18,7 @@ public class Screen2 extends AppCompatActivity {
 
     String Q1;
 
-    // MY_PREFS_NAME - a static String variable like:
-//public static final String MY_PREFS_NAME = "MyPrefsFile";
+
     SharedPreferences settings = getSharedPreferences("lol", MODE_PRIVATE);
     SharedPreferences.Editor editor = settings.edit() ;
 
