@@ -486,11 +486,7 @@ public class Screen16 extends AppCompatActivity {
         setContentView(R.layout.activity_screen16);
 
         SharedPreferences settings = getSharedPreferences("Q15",MODE_PRIVATE);
-
-
         String restoredText =   settings.getString("Q15", null);
-
-
         if (restoredText != null) {
             if (restoredText.equals("1")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox54);
