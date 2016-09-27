@@ -103,8 +103,10 @@
         android:ems="10"
         android:hint="Priestor pre dlhú odpoveď"
         android:id="@+id/editText17"
-        android:layout_alignBaseline="@+id/textView81"
-        android:layout_alignBottom="@+id/textView81"
+        android:layout_marginBottom="134dp"
+        android:layout_above="@+id/textView81"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

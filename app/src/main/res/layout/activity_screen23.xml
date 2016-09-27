@@ -173,8 +173,7 @@
         android:textStyle="normal|italic"
         android:textSize="18sp"
         android:textColor="#f44336"
-        android:layout_alignBaseline="@+id/textView25"
-        android:layout_alignBottom="@+id/textView25"
+        android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/button45"
         android:layout_toStartOf="@+id/button45" />
 </RelativeLayout>

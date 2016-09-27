@@ -201,18 +201,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monika Flašíková Beňová (SMER-SD)"
-        android:id="@+id/checkBox18"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_below="@+id/checkBox17"
-        android:layout_toRightOf="@+id/textView16"
-        android:layout_toEndOf="@+id/textView16"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Daniel Krajcer  (NOVA – D. Lipšic)"
         android:id="@+id/checkBox19"
         android:checked="false"
@@ -280,5 +268,17 @@
         android:layout_alignBottom="@+id/button16"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monika Flašíková Beňová (SMER-SD)"
+        android:id="@+id/checkBox18"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox17"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

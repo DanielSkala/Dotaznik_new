@@ -168,9 +168,8 @@
         android:textStyle="normal|italic"
         android:textSize="18sp"
         android:textColor="#f44336"
-        android:layout_alignBaseline="@+id/textView10"
-        android:layout_alignBottom="@+id/textView10"
-        android:layout_toLeftOf="@+id/textView10"
-        android:layout_toStartOf="@+id/textView10" />
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView11"
+        android:layout_toEndOf="@+id/imageView11" />
 
 </RelativeLayout>

@@ -100,32 +100,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Skôr definitívne"
-        android:id="@+id/checkBox169"
-        android:checked="false"
-        android:layout_marginTop="111dp"
-        android:textSize="18sp"
-        android:layout_below="@+id/button49"
-        android:layout_toRightOf="@+id/checkBox170"
-        android:layout_toEndOf="@+id/checkBox170"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Definitívne"
-        android:id="@+id/checkBox168"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/checkBox169"
-        android:layout_alignBottom="@+id/checkBox169"
-        android:layout_toLeftOf="@+id/checkBox172"
-        android:layout_toStartOf="@+id/checkBox172"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Neviem"
         android:id="@+id/checkBox172"
         android:checked="false"
@@ -146,4 +120,32 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView25"
         android:layout_toEndOf="@+id/imageView25" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skôr definitívne"
+        android:id="@+id/checkBox169"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_above="@+id/checkBox172"
+        android:layout_toRightOf="@+id/checkBox170"
+        android:layout_toEndOf="@+id/checkBox170"
+        android:layout_marginBottom="93dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Definitívne"
+        android:id="@+id/checkBox168"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp"
+        android:layout_alignBaseline="@+id/checkBox169"
+        android:layout_alignBottom="@+id/checkBox169"
+        android:layout_toLeftOf="@+id/checkBox172"
+        android:layout_toStartOf="@+id/checkBox172" />
 </RelativeLayout>
