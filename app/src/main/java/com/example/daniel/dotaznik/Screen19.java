@@ -27,7 +27,7 @@ public class Screen19 extends AppCompatActivity {
         SharedPreferences.Editor editor3 = getSharedPreferences("Q18-3",MODE_PRIVATE).edit() ;
         SharedPreferences.Editor editor4 = getSharedPreferences("Q18-4",MODE_PRIVATE).edit() ;
         SharedPreferences.Editor editor5 = getSharedPreferences("Q18-5",MODE_PRIVATE).edit() ;
-        SharedPreferences.Editor editor6 = getSharedPreferences("Q18-6",MODE_PRIVATE).edit() ;
+
 
         CheckBox check1;
         // Check which checkbox was clicked
