@@ -104,8 +104,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox125:
                 if (checked)
                     Q19_2 = "Juraj Droba";
-                editor.putString("Q19-2","1");
-                editor.commit();
+                editor2.putString("Q19-2","1");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox126);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox127);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox128);check1.setChecked(false);
@@ -115,8 +115,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox126:
                 if (checked)
                     Q19_2 = "Pavol Frešo";
-                editor.putString("Q19-2","2");
-                editor.commit();
+                editor2.putString("Q19-2","2");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox125);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox127);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox128);check1.setChecked(false);
@@ -126,8 +126,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox127:
                 if (checked)
                     Q19_2 = "Milan Ftáčnik";
-                editor.putString("Q19-2","3");
-                editor.commit();
+                editor2.putString("Q19-2","3");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox126);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox125);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox128);check1.setChecked(false);
@@ -137,8 +137,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox128:
                 if (checked)
                     Q19_2 = "Boris Kollár";
-                editor.putString("Q19-2","4");
-                editor.commit();
+                editor2.putString("Q19-2","4");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox126);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox127);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox125);check1.setChecked(false);
@@ -148,8 +148,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox129:
                 if (checked)
                     Q19_2 = "Nikoho";
-                editor.putString("Q19-2","5");
-                editor.commit();
+                editor2.putString("Q19-2","5");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox126);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox127);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox128);check1.setChecked(false);
@@ -159,8 +159,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox130:
                 if (checked)
                     Q19_2 = "Neviem";
-                editor.putString("Q19-2","6");
-                editor.commit();
+                editor2.putString("Q19-2","6");
+                editor2.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox126);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox127);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox128);check1.setChecked(false);
@@ -171,8 +171,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox131:
                 if (checked)
                     Q19_3 = "Juraj Droba";
-                editor.putString("Q19-3","1");
-                editor.commit();
+                editor3.putString("Q19-3","1");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox132);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox133);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox134);check1.setChecked(false);
@@ -182,8 +182,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox132:
                 if (checked)
                     Q19_3 = "Pavol Frešo";
-                editor.putString("Q19-3","2");
-                editor.commit();
+                editor3.putString("Q19-3","2");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox131);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox133);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox134);check1.setChecked(false);
@@ -193,8 +193,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox133:
                 if (checked)
                     Q19_3 = "Milan Ftáčnik";
-                editor.putString("Q19-3","3");
-                editor.commit();
+                editor3.putString("Q19-3","3");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox132);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox131);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox134);check1.setChecked(false);
@@ -204,8 +204,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox134:
                 if (checked)
                     Q19_3 = "Boris Kollár";
-                editor.putString("Q19-3","4");
-                editor.commit();
+                editor3.putString("Q19-3","4");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox132);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox133);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox131);check1.setChecked(false);
@@ -215,8 +215,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox135:
                 if (checked)
                     Q19_3 = "Nikoho";
-                editor.putString("Q19-3","5");
-                editor.commit();
+                editor3.putString("Q19-3","5");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox132);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox133);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox134);check1.setChecked(false);
@@ -226,8 +226,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox136:
                 if (checked)
                     Q19_3 = "Neviem";
-                editor.putString("Q19-3","6");
-                editor.commit();
+                editor3.putString("Q19-3","6");
+                editor3.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox132);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox133);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox134);check1.setChecked(false);
@@ -238,8 +238,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox137:
                 if (checked)
                     Q19_4 = "Juraj Droba";
-                editor.putString("Q19-4","1");
-                editor.commit();
+                editor4.putString("Q19-4","1");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox138);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox139);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox140);check1.setChecked(false);
@@ -249,8 +249,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox138:
                 if (checked)
                     Q19_4 = "Pavol Frešo";
-                editor.putString("Q19-4","2");
-                editor.commit();
+                editor4.putString("Q19-4","2");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox137);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox139);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox140);check1.setChecked(false);
@@ -260,8 +260,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox139:
                 if (checked)
                     Q19_4 = "Milan Ftáčnik";
-                editor.putString("Q19-4","3");
-                editor.commit();
+                editor4.putString("Q19-4","3");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox138);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox137);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox140);check1.setChecked(false);
@@ -271,8 +271,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox140:
                 if (checked)
                     Q19_4 = "Boris Kollár";
-                editor.putString("Q19-4","4");
-                editor.commit();
+                editor4.putString("Q19-4","4");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox138);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox139);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox137);check1.setChecked(false);
@@ -282,8 +282,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox141:
                 if (checked)
                     Q19_4 = "Nikoho";
-                editor.putString("Q19-4","5");
-                editor.commit();
+                editor4.putString("Q19-4","5");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox138);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox139);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox140);check1.setChecked(false);
@@ -293,8 +293,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox142:
                 if (checked)
                     Q19_4 = "Neviem";
-                editor.putString("Q19-4","6");
-                editor.commit();
+                editor4.putString("Q19-4","6");
+                editor4.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox138);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox139);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox140);check1.setChecked(false);
@@ -305,8 +305,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox143:
                 if (checked)
                     Q19_5 = "Juraj Droba";
-                editor.putString("Q19-5","1");
-                editor.commit();
+                editor5.putString("Q19-5","1");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox144);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox145);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox146);check1.setChecked(false);
@@ -316,8 +316,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox144:
                 if (checked)
                     Q19_5 = "Pavol Frešo";
-                editor.putString("Q19-5","2");
-                editor.commit();
+                editor5.putString("Q19-5","2");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox143);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox145);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox146);check1.setChecked(false);
@@ -327,8 +327,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox145:
                 if (checked)
                     Q19_5 = "Milan Ftáčnik";
-                editor.putString("Q19-5","3");
-                editor.commit();
+                editor5.putString("Q19-5","3");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox144);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox143);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox146);check1.setChecked(false);
@@ -338,8 +338,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox146:
                 if (checked)
                     Q19_5 = "Boris Kollár";
-                editor.putString("Q19-5","4");
-                editor.commit();
+                editor5.putString("Q19-5","4");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox144);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox145);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox143);check1.setChecked(false);
@@ -349,8 +349,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox147:
                 if (checked)
                     Q19_5 = "Nikoho";
-                editor.putString("Q19-5","5");
-                editor.commit();
+                editor5.putString("Q19-5","5");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox144);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox145);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox146);check1.setChecked(false);
@@ -360,8 +360,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox148:
                 if (checked)
                     Q19_5 = "Neviem";
-                editor.putString("Q19-5","6");
-                editor.commit();
+                editor5.putString("Q19-5","6");
+                editor5.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox144);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox145);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox146);check1.setChecked(false);
@@ -372,8 +372,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox155:
                 if (checked)
                     Q19_6 = "Juraj Droba";
-                editor.putString("Q19-6","1");
-                editor.commit();
+                editor6.putString("Q19-6","1");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox156);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox157);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox158);check1.setChecked(false);
@@ -383,8 +383,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox156:
                 if (checked)
                     Q19_6 = "Pavol Frešo";
-                editor.putString("Q19-6","2");
-                editor.commit();
+                editor6.putString("Q19-6","2");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox155);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox157);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox158);check1.setChecked(false);
@@ -394,8 +394,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox157:
                 if (checked)
                     Q19_6 = "Milan Ftáčnik";
-                editor.putString("Q19-6","3");
-                editor.commit();
+                editor6.putString("Q19-6","3");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox156);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox155);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox158);check1.setChecked(false);
@@ -405,8 +405,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox158:
                 if (checked)
                     Q19_6 = "Boris Kollár";
-                editor.putString("Q19-6","4");
-                editor.commit();
+                editor6.putString("Q19-6","4");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox156);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox157);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox155);check1.setChecked(false);
@@ -416,8 +416,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox159:
                 if (checked)
                     Q19_6 = "Nikoho";
-                editor.putString("Q19-6","5");
-                editor.commit();
+                editor6.putString("Q19-6","5");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox156);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox157);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox158);check1.setChecked(false);
@@ -427,8 +427,8 @@ public class Screen20 extends AppCompatActivity {
             case R.id.checkBox160:
                 if (checked)
                     Q19_6 = "Neviem";
-                editor.putString("Q19-6","6");
-                editor.commit();
+                editor6.putString("Q19-6","6");
+                editor6.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox156);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox157);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox158);check1.setChecked(false);
