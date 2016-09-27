@@ -521,27 +521,27 @@ public class Screen16 extends AppCompatActivity {
         String restoredText2 = settings2.getString("Q15-2", null);
 
         if (restoredText2 != null) {
-            if (restoredText.equals("1")) {
+            if (restoredText2.equals("1")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox60);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("2")) {
+            if (restoredText2.equals("2")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox61);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("3")) {
+            if (restoredText2.equals("3")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox62);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("4")) {
+            if (restoredText2.equals("4")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox63);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("5")) {
+            if (restoredText2.equals("5")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox64);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("6")) {
+            if (restoredText2.equals("6")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox65);
                 checkBox.setChecked(true);
             }
@@ -550,27 +550,27 @@ public class Screen16 extends AppCompatActivity {
         String restoredText3 = settings3.getString("Q15-3", null);
 
         if (restoredText3 != null) {
-            if (restoredText.equals("1")) {
+            if (restoredText3.equals("1")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox66);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("2")) {
+            if (restoredText3.equals("2")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox67);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("3")) {
+            if (restoredText3.equals("3")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox68);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("4")) {
+            if (restoredText3.equals("4")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox69);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("5")) {
+            if (restoredText3.equals("5")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox70);
                 checkBox.setChecked(true);
             }
-            if (restoredText.equals("6")) {
+            if (restoredText3.equals("6")) {
                 CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox71);
                 checkBox.setChecked(true);
             }
@@ -579,27 +579,27 @@ public class Screen16 extends AppCompatActivity {
         String restoredText4 = settings4.getString("Q15-4", null);
 
             if (restoredText4 != null) {
-                if (restoredText.equals("1")) {
+                if (restoredText4.equals("1")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox72);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("2")) {
+                if (restoredText4.equals("2")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox73);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("3")) {
+                if (restoredText4.equals("3")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox74);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("4")) {
+                if (restoredText4.equals("4")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox75);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("5")) {
+                if (restoredText4.equals("5")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox76);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("6")) {
+                if (restoredText4.equals("6")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox77);
                     checkBox.setChecked(true);
                 }
@@ -608,27 +608,27 @@ public class Screen16 extends AppCompatActivity {
         String restoredText5 = settings5.getString("Q15-5", null);
 
                 if (restoredText5 != null) {
-                    if (restoredText.equals("1")) {
+                    if (restoredText5.equals("1")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox78);
                         checkBox.setChecked(true);
                     }
-                    if (restoredText.equals("2")) {
+                    if (restoredText5.equals("2")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox79);
                         checkBox.setChecked(true);
                     }
-                    if (restoredText.equals("3")) {
+                    if (restoredText5.equals("3")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox80);
                         checkBox.setChecked(true);
                     }
-                    if (restoredText.equals("4")) {
+                    if (restoredText5.equals("4")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox81);
                         checkBox.setChecked(true);
                     }
-                    if (restoredText.equals("5")) {
+                    if (restoredText5.equals("5")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox82);
                         checkBox.setChecked(true);
                     }
-                    if (restoredText.equals("6")) {
+                    if (restoredText5.equals("6")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox83);
                         checkBox.setChecked(true);
                     }
@@ -636,27 +636,27 @@ public class Screen16 extends AppCompatActivity {
         SharedPreferences settings6 = getSharedPreferences("Q15-6",MODE_PRIVATE) ;
         String restoredText6 = settings6.getString("Q15-6", null);
                     if (restoredText6 != null) {
-                        if (restoredText.equals("1")) {
+                        if (restoredText6.equals("1")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox84);
                             checkBox.setChecked(true);
                         }
-                        if (restoredText.equals("2")) {
+                        if (restoredText6.equals("2")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox85);
                             checkBox.setChecked(true);
                         }
-                        if (restoredText.equals("3")) {
+                        if (restoredText6.equals("3")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox86);
                             checkBox.setChecked(true);
                         }
-                        if (restoredText.equals("4")) {
+                        if (restoredText6.equals("4")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox87);
                             checkBox.setChecked(true);
                         }
-                        if (restoredText.equals("5")) {
+                        if (restoredText6.equals("5")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox88);
                             checkBox.setChecked(true);
                         }
-                        if (restoredText.equals("6")) {
+                        if (restoredText6.equals("6")) {
                             CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox89);
                             checkBox.setChecked(true);
                         }

@@ -121,9 +121,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         {
             try {
                 FileInputStream fis1 = openFileInput("data1.txt"); //opens file
-                InputStreamReader isr1 = new InputStreamReader(fis1);
-                BufferedReader bufferedReader1 = new BufferedReader(isr1);
-                String data;
+             1\                 String data;
 
                 while ((data = bufferedReader1.readLine()) != null)
                 {
