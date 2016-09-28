@@ -45,8 +45,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 //chrono.setBase(SystemClock.elapsedRealtime() + time);
                 //chrono.start();
 
-                final Intent toy = new Intent(MainActivity.this, Screen2.class);
-                startActivity(toy);
+                final Intent ready = new Intent(MainActivity.this, Screen2.class);
+
+                startActivity(sendIsChecked(ready));
+                finish();
 
             }
         });
@@ -54,6 +56,68 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     private LocationManager locationManager;
 
+    public Intent sendIsChecked(Intent ready)
+    {
+
+        boolean isChecked;
+        Intent get = getIntent();
+        if(get.getStringExtra("isChecked") == null)
+            isChecked = true;
+        else {
+            if (get.getStringExtra("isChecked").equals("true"))
+                isChecked = true;
+            else
+                isChecked = false;
+        }
+
+
+        if(isChecked)
+        {
+            ready.putExtra("ksc2","false");
+            ready.putExtra("ksc2","false");
+            ready.putExtra("ksc3","false");
+            ready.putExtra("ksc4","false");
+            ready.putExtra("ksc5","false");
+            ready.putExtra("ksc6","false");
+            ready.putExtra("ksc7","false");
+            ready.putExtra("ksc8","false");
+            ready.putExtra("ksc9","false");
+            ready.putExtra("ksc10","false");
+            ready.putExtra("ksc11","false");
+            ready.putExtra("ksc12","false");
+            ready.putExtra("ksc13","false");
+            ready.putExtra("ksc14","false");
+            ready.putExtra("ksc15","false");
+            ready.putExtra("ksc16-1","false");
+            ready.putExtra("ksc16-2","false");
+            ready.putExtra("ksc16-3","false");
+            ready.putExtra("ksc16-4","false");
+            ready.putExtra("ksc16-5","false");
+            ready.putExtra("ksc16-6","false");
+            ready.putExtra("ksc17","false");
+            ready.putExtra("ksc18-1","false");
+            ready.putExtra("ksc18-2","false");
+            ready.putExtra("ksc18-3","false");
+            ready.putExtra("ksc18-4","false");
+            ready.putExtra("ksc18-5","false");
+            ready.putExtra("ksc19-1","false");
+            ready.putExtra("ksc19-2","false");
+            ready.putExtra("ksc19-3","false");
+            ready.putExtra("ksc19-4","false");
+            ready.putExtra("ksc19-5","false");
+            ready.putExtra("ksc19-6","false");
+            ready.putExtra("ksc20","false");
+            ready.putExtra("ksc21","false");
+            ready.putExtra("ksc22","false");
+            ready.putExtra("ksc23","false");
+            ready.putExtra("ksc24","false");
+            ready.putExtra("ksc25","false");
+            ready.putExtra("ksc26","false");
+            ready.putExtra("ksc27","false");
+
+    }
+        return ready;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -61,14 +125,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         setContentView(R.layout.activity_main);
 
         Intent ready = getIntent();
-
+/*
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
         int iCounter = 0;
 
         if(ready.getStringExtra("end") == null)
             ready.putExtra("end", "0");
 
-        if(ready.getStringExtra("end").equals("1"))
+      if(ready.getStringExtra("end").equals("1"))
         {
             map.put(iCounter,new Dotaznik_info(ready.getStringExtra("sc2"),
                     ready.getStringExtra("sc2"),
@@ -116,6 +180,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 String s = null;
                 ready.putExtra("end", "z");
         }
+        */
 /*
         if (fileExistance("data1.txt"))//----------------------------------------------------////////////////
         {
