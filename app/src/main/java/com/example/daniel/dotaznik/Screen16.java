@@ -30,7 +30,12 @@ public class Screen16 extends AppCompatActivity {
         SharedPreferences.Editor editor4 = getSharedPreferences("Q15-4",MODE_PRIVATE).edit() ;
         SharedPreferences.Editor editor5 = getSharedPreferences("Q15-5",MODE_PRIVATE).edit() ;
         SharedPreferences.Editor editor6 = getSharedPreferences("Q15-6",MODE_PRIVATE).edit() ;
-
+        sChecked = "true";
+        sChecked2 = "true";
+        sChecked3 = "true";
+        sChecked4 = "true";
+        sChecked5 = "true";
+        sChecked6 = "true";
         CheckBox check1;
         CheckBox check2;
         CheckBox check3;
@@ -729,6 +734,7 @@ public class Screen16 extends AppCompatActivity {
         ready.putExtra("ksc16-5",sChecked5);
         ready.putExtra("ksc16-6",sChecked6);
         ready.putExtra("ksc17",toy.getStringExtra("ksc17"));
+        ready.putExtra("ksc18",toy.getStringExtra("ksc18"));
         ready.putExtra("ksc18-1",toy.getStringExtra("ksc18-1"));
         ready.putExtra("ksc18-2",toy.getStringExtra("ksc18-2"));
         ready.putExtra("ksc18-3",toy.getStringExtra("ksc18-3"));

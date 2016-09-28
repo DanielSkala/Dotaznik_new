@@ -95,6 +95,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             ready.putExtra("ksc16-5","false");
             ready.putExtra("ksc16-6","false");
             ready.putExtra("ksc17","false");
+            ready.putExtra("ksc18","false");
             ready.putExtra("ksc18-1","false");
             ready.putExtra("ksc18-2","false");
             ready.putExtra("ksc18-3","false");

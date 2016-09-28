@@ -158,6 +158,7 @@ public class Screen5 extends AppCompatActivity {
         ready.putExtra("ksc16-5",toy.getStringExtra("ksc16-5"));
         ready.putExtra("ksc16-6",toy.getStringExtra("ksc16-6"));
         ready.putExtra("ksc17",toy.getStringExtra("ksc17"));
+        ready.putExtra("ksc18",toy.getStringExtra("ksc18"));
         ready.putExtra("ksc18-1",toy.getStringExtra("ksc18-1"));
         ready.putExtra("ksc18-2",toy.getStringExtra("ksc18-2"));
         ready.putExtra("ksc18-3",toy.getStringExtra("ksc18-3"));

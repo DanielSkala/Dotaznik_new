@@ -19,6 +19,7 @@ public class Screen20 extends AppCompatActivity {
     String Q19_4;
     String Q19_5;
     String Q19_6;
+    String sChecked,sChecked2,sChecked3,sChecked4,sChecked5,sChecked6;
 
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
@@ -32,6 +33,12 @@ public class Screen20 extends AppCompatActivity {
         SharedPreferences.Editor editor6 = getSharedPreferences("Q19-6",MODE_PRIVATE).edit() ;
 
         CheckBox check1;
+        sChecked = "true";
+        sChecked2 = "true";
+        sChecked3 = "true";
+        sChecked4 = "true";
+        sChecked5 = "true";
+        sChecked6 = "true";
         // Check which checkbox was clicked
         switch (view.getId()) {
             case R.id.checkBox149:
@@ -437,12 +444,12 @@ public class Screen20 extends AppCompatActivity {
                 break;
         }
         Intent i = new Intent(Screen20.this, AllData.class);
-        i.putExtra("Sc20-1", Q19_1);
-        i.putExtra("Sc20-2", Q19_2);
-        i.putExtra("Sc20-3", Q19_3);
-        i.putExtra("Sc20-4", Q19_4);
-        i.putExtra("Sc20-5", Q19_5);
-        i.putExtra("Sc20-6", Q19_6);
+        i.putExtra("Sc19-1", Q19_1);
+        i.putExtra("Sc19-2", Q19_2);
+        i.putExtra("Sc19-3", Q19_3);
+        i.putExtra("Sc19-4", Q19_4);
+        i.putExtra("Sc19-5", Q19_5);
+        i.putExtra("Sc19-6", Q19_6);
     }
 
 
@@ -453,13 +460,8 @@ public class Screen20 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen20.this, Screen21.class);
-                startActivity(toy);
+                startActivity(sendIsChecked(toy));
                 finish();
-
-
-
-
-
             }
         });
     }
@@ -471,7 +473,7 @@ public class Screen20 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen20.this, Screen19.class);
-                startActivity(toy);
+                startActivity(sendIsChecked(toy));
                 finish();
             }
         });
@@ -481,179 +483,271 @@ public class Screen20 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen20);
-        SharedPreferences settings = getSharedPreferences("Q19",MODE_PRIVATE);
-        String restoredText =   settings.getString("Q19", null);
-        if (restoredText != null) {
-            if (restoredText.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox149);
-                checkBox.setChecked(true);
-            }
-            if (restoredText.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox150);
-                checkBox.setChecked(true);
-            }
-            if (restoredText.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox151);
-                checkBox.setChecked(true);
-            }
-            if (restoredText.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox152);
-                checkBox.setChecked(true);
-            }
-            if (restoredText.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox153);
-                checkBox.setChecked(true);
-            }
-            if (restoredText.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox154);
-                checkBox.setChecked(true);
+        Intent i = getIntent();
+        String s = i.getStringExtra("ksc19-1");
+        if (i.getStringExtra("ksc19-1") == null)
+            s = "true";
+        if(s.equals("true")) {
+            SharedPreferences settings = getSharedPreferences("Q19", MODE_PRIVATE);
+            String restoredText = settings.getString("Q19", null);
+            if (restoredText != null) {
+                if (restoredText.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox149);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox150);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox151);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox152);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox153);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox154);
+                    checkBox.setChecked(true);
+                }
             }
         }
-        SharedPreferences settings2 = getSharedPreferences("Q19-2",MODE_PRIVATE);
-        String restoredText2 = settings2.getString("Q19-2", null);
+        Intent i2 = getIntent();
+        String s2 = i2.getStringExtra("ksc19-2");
+        if (i2.getStringExtra("ksc19-2") == null)
+            s2 = "true";
+        if(s2.equals("true")) {
+            SharedPreferences settings2 = getSharedPreferences("Q19-2", MODE_PRIVATE);
+            String restoredText2 = settings2.getString("Q19-2", null);
 
-        if (restoredText2 != null) {
-            if (restoredText2.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox125);
-                checkBox.setChecked(true);
-            }
-            if (restoredText2.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox126);
-                checkBox.setChecked(true);
-            }
-            if (restoredText2.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox127);
-                checkBox.setChecked(true);
-            }
-            if (restoredText2.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox128);
-                checkBox.setChecked(true);
-            }
-            if (restoredText2.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox129);
-                checkBox.setChecked(true);
-            }
-            if (restoredText2.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox130);
-                checkBox.setChecked(true);
+            if (restoredText2 != null) {
+                if (restoredText2.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox125);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText2.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox126);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText2.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox127);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText2.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox128);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText2.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox129);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText2.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox130);
+                    checkBox.setChecked(true);
+                }
             }
         }
-        SharedPreferences settings3 = getSharedPreferences("Q19-3",MODE_PRIVATE);
-        String restoredText3 = settings3.getString("Q19-3", null);
+        Intent i3 = getIntent();
+        String s3 = i3.getStringExtra("ksc19-3");
+        if (i3.getStringExtra("ksc19-3") == null)
+            s3 = "true";
+        if(s3.equals("true")) {
+            SharedPreferences settings3 = getSharedPreferences("Q19-3", MODE_PRIVATE);
+            String restoredText3 = settings3.getString("Q19-3", null);
 
-        if (restoredText3 != null) {
-            if (restoredText3.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox131);
-                checkBox.setChecked(true);
-            }
-            if (restoredText3.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox132);
-                checkBox.setChecked(true);
-            }
-            if (restoredText3.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox133);
-                checkBox.setChecked(true);
-            }
-            if (restoredText3.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox134);
-                checkBox.setChecked(true);
-            }
-            if (restoredText3.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox135);
-                checkBox.setChecked(true);
-            }
-            if (restoredText3.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox136);
-                checkBox.setChecked(true);
+            if (restoredText3 != null) {
+                if (restoredText3.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox131);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText3.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox132);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText3.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox133);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText3.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox134);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText3.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox135);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText3.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox136);
+                    checkBox.setChecked(true);
+                }
             }
         }
-        SharedPreferences settings4 = getSharedPreferences("Q19-4",MODE_PRIVATE) ;
-        String restoredText4 = settings4.getString("Q19-4", null);
+        Intent i4 = getIntent();
+        String s4 = i4.getStringExtra("ksc19-4");
+        if (i4.getStringExtra("ksc16-19") == null)
+            s4 = "true";
+        if(s4.equals("true")) {
+            SharedPreferences settings4 = getSharedPreferences("Q19-4", MODE_PRIVATE);
+            String restoredText4 = settings4.getString("Q19-4", null);
 
-        if (restoredText4 != null) {
-            if (restoredText4.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox137);
-                checkBox.setChecked(true);
-            }
-            if (restoredText4.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox138);
-                checkBox.setChecked(true);
-            }
-            if (restoredText4.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox139);
-                checkBox.setChecked(true);
-            }
-            if (restoredText4.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox140);
-                checkBox.setChecked(true);
-            }
-            if (restoredText4.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox141);
-                checkBox.setChecked(true);
-            }
-            if (restoredText4.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox142);
-                checkBox.setChecked(true);
+            if (restoredText4 != null) {
+                if (restoredText4.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox137);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText4.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox138);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText4.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox139);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText4.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox140);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText4.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox141);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText4.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox142);
+                    checkBox.setChecked(true);
+                }
             }
         }
-        SharedPreferences settings5 = getSharedPreferences("Q19-5",MODE_PRIVATE) ;
-        String restoredText5 = settings5.getString("Q19-5", null);
+        Intent i5 = getIntent();
+        String s5 = i5.getStringExtra("ksc19-5");
+        if (i5.getStringExtra("ksc19-5") == null)
+            s5 = "true";
+        if(s5.equals("true")) {
+            SharedPreferences settings5 = getSharedPreferences("Q19-5", MODE_PRIVATE);
+            String restoredText5 = settings5.getString("Q19-5", null);
 
-        if (restoredText5 != null) {
-            if (restoredText5.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox143);
-                checkBox.setChecked(true);
-            }
-            if (restoredText5.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox144);
-                checkBox.setChecked(true);
-            }
-            if (restoredText5.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox145);
-                checkBox.setChecked(true);
-            }
-            if (restoredText5.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox146);
-                checkBox.setChecked(true);
-            }
-            if (restoredText5.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox147);
-                checkBox.setChecked(true);
-            }
-            if (restoredText5.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox148);
-                checkBox.setChecked(true);
+            if (restoredText5 != null) {
+                if (restoredText5.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox143);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText5.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox144);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText5.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox145);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText5.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox146);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText5.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox147);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText5.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox148);
+                    checkBox.setChecked(true);
+                }
             }
         }
-        SharedPreferences settings6 = getSharedPreferences("Q19-6",MODE_PRIVATE) ;
-        String restoredText6 = settings6.getString("Q19-6", null);
-        if (restoredText6 != null) {
-            if (restoredText6.equals("1")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox155);
-                checkBox.setChecked(true);
-            }
-            if (restoredText6.equals("2")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox156);
-                checkBox.setChecked(true);
-            }
-            if (restoredText6.equals("3")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox157);
-                checkBox.setChecked(true);
-            }
-            if (restoredText6.equals("4")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox158);
-                checkBox.setChecked(true);
-            }
-            if (restoredText6.equals("5")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox159);
-                checkBox.setChecked(true);
-            }
-            if (restoredText6.equals("6")) {
-                CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox160);
-                checkBox.setChecked(true);
+        Intent i6 = getIntent();
+        String s6 = i6.getStringExtra("ksc19-6");
+        if (i6.getStringExtra("ksc19-6") == null)
+            s6 = "true";
+        if(s6.equals("true")) {
+            SharedPreferences settings6 = getSharedPreferences("Q19-6", MODE_PRIVATE);
+            String restoredText6 = settings6.getString("Q19-6", null);
+            if (restoredText6 != null) {
+                if (restoredText6.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox155);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText6.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox156);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText6.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox157);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText6.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox158);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText6.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox159);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText6.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox160);
+                    checkBox.setChecked(true);
+                }
             }
         }
         init();
         BackPressed();
+    }
+    public Intent sendIsChecked(Intent ready)
+    {
+        Intent toy = getIntent();
+        boolean isChecked;
+
+
+        ready.putExtra("sc19-1", Q19_1);
+        ready.putExtra("sc19-2", Q19_2);
+        ready.putExtra("sc19-3", Q19_3);
+        ready.putExtra("sc19-4", Q19_4);
+        ready.putExtra("sc19-5", Q19_5);
+        ready.putExtra("sc19-6", Q19_6);
+        ready.putExtra("ksc2",toy.getStringExtra("ksc2"));
+        ready.putExtra("ksc3",toy.getStringExtra("ksc3"));
+        ready.putExtra("ksc4",toy.getStringExtra("ksc4"));
+        ready.putExtra("ksc5",toy.getStringExtra("ksc5"));
+        ready.putExtra("ksc6",toy.getStringExtra("ksc6"));
+        ready.putExtra("ksc7",toy.getStringExtra("ksc7"));
+        ready.putExtra("ksc8",toy.getStringExtra("ksc8"));
+        ready.putExtra("ksc9",toy.getStringExtra("ksc9"));
+        ready.putExtra("ksc10",toy.getStringExtra("ksc10"));
+        ready.putExtra("ksc11",toy.getStringExtra("ksc11"));
+        ready.putExtra("ksc12",toy.getStringExtra("ksc12"));
+        ready.putExtra("ksc13",toy.getStringExtra("ksc13"));
+        ready.putExtra("ksc14",toy.getStringExtra("ksc14"));
+        ready.putExtra("ksc15",toy.getStringExtra("ksc15"));
+        ready.putExtra("ksc19-1",sChecked);
+        ready.putExtra("ksc19-2",sChecked2);
+        ready.putExtra("ksc19-3",sChecked3);
+        ready.putExtra("ksc19-4",sChecked4);
+        ready.putExtra("ksc19-5",sChecked5);
+        ready.putExtra("ksc19-6",sChecked6);
+        ready.putExtra("ksc17",toy.getStringExtra("ksc17"));
+        ready.putExtra("ksc18",toy.getStringExtra("ksc18"));
+        ready.putExtra("ksc18-1",toy.getStringExtra("ksc18-1"));
+        ready.putExtra("ksc18-2",toy.getStringExtra("ksc18-2"));
+        ready.putExtra("ksc18-3",toy.getStringExtra("ksc18-3"));
+        ready.putExtra("ksc18-4",toy.getStringExtra("ksc18-4"));
+        ready.putExtra("ksc18-5",toy.getStringExtra("ksc18-5"));
+        ready.putExtra("ksc16-1",toy.getStringExtra("ksc16-1"));
+        ready.putExtra("ksc16-2",toy.getStringExtra("ksc16-2"));
+        ready.putExtra("ksc16-3",toy.getStringExtra("ksc16-3"));
+        ready.putExtra("ksc16-4",toy.getStringExtra("ksc16-4"));
+        ready.putExtra("ksc16-5",toy.getStringExtra("ksc16-5"));
+        ready.putExtra("ksc16-6",toy.getStringExtra("ksc16-6"));
+        ready.putExtra("ksc20",toy.getStringExtra("ksc20"));
+        ready.putExtra("ksc21",toy.getStringExtra("ksc21"));
+        ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
+        ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
+        ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
+        ready.putExtra("ksc26",toy.getStringExtra("ksc26"));
+        ready.putExtra("ksc27",toy.getStringExtra("ksc27"));
+
+        return ready;
     }
 }
