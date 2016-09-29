@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             public void onClick(View v) {
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 try {
-                    AudioRecorder.start();
+                    AudioRecorder.start( Calendar.getInstance().getTimeInMillis() + ".3gp");
                 }catch (Exception e){
                     //Handle exception
                 }
