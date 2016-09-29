@@ -19,14 +19,4 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
-        android:text="Send data to email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button55"
-        android:layout_marginBottom="54dp"
-        android:elevation="0dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
-
 </RelativeLayout>
