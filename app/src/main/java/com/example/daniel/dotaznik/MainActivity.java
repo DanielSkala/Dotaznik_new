@@ -7,6 +7,8 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.Uri;
+import android.os.Environment;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -37,6 +39,32 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     //long time = 0;
 
     //NOVE
+    public void send() {
+        button = (Button) findViewById(R.id.button55);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                File root = android.os.Environment.getExternalStorageDirectory();
+                File dir = new File (root.getAbsolutePath() + "/download");
+
+                File filelocation = new File(dir, "myData.txt");
+
+                Uri path = Uri.fromFile(filelocation);
+                Intent emailIntent = new Intent(Intent.ACTION_SEND);
+// set the type to 'email'
+                emailIntent .setType("vnd.android.cursor.dir/email");
+                String to[] = {"jakubko.ondrusek@gmail.com"};
+                emailIntent .putExtra(Intent.EXTRA_EMAIL, to);
+// the attachment
+                emailIntent .putExtra(Intent.EXTRA_STREAM, path);
+// the mail subject
+                emailIntent .putExtra(Intent.EXTRA_SUBJECT, "data");
+                startActivity(Intent.createChooser(emailIntent , "hoj tu su data"));
+            }
+        });
+    }
 
     public void init() {
         button = (Button) findViewById(R.id.button);
@@ -243,7 +271,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         //chrono = (Chronometer) findViewById(R.id.chronometer);
 
         init();
-
+        send();
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
@@ -263,7 +291,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
                     + "\nLongitude: " + location.getLongitude();
             i++;
-            getGps = myLocation;
+            getGps = location.getLatitude() + " " + location.getLongitude();
         }
         //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
     }

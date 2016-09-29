@@ -12,13 +12,16 @@ import android.widget.Button;
 import android.widget.EditText;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.util.Calendar;
 import java.util.TreeMap;
 
 public class FinalScreen extends AppCompatActivity {
@@ -41,6 +44,13 @@ public class FinalScreen extends AppCompatActivity {
                 Intent ready = getIntent();
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
                 int iCounter = 0;
+
+                Calendar c = Calendar.getInstance();
+                String sDate = c.get(Calendar.YEAR) + "-"
+                        + c.get(Calendar.MONTH)
+                        + "-" + c.get(Calendar.DAY_OF_MONTH)
+                        + " at " + c.get(Calendar.HOUR_OF_DAY)
+                        + ":" + c.get(Calendar.MINUTE);
 
                 map.put(iCounter,new Dotaznik_info(
                         ready.getStringExtra("sc2"),
@@ -84,16 +94,17 @@ public class FinalScreen extends AppCompatActivity {
                         ready.getStringExtra("sc25"),
                         ready.getStringExtra("sc26"),
                         ready.getStringExtra("sc27"),//gps
-                        ready.getStringExtra("sc28"),"1")); // time
+                        ready.getStringExtra("sc28"),sDate)); // time
                 iCounter++;
 
+                File root1 = android.os.Environment.getExternalStorageDirectory();
+                File dir1 = new File (root1.getAbsolutePath() + "/download");
+                File file1 = new File(dir1, "myData.txt");
 
-                /*if (fileExistance("data1.txt"))//----------------------------------------------------////////////////
-                {
+
                     try {
-                        FileInputStream fis1 = openFileInput("data1.txt"); //opens file
-                        InputStreamReader isr1 = new InputStreamReader(fis1);
-                        BufferedReader bufferedReader1 = new BufferedReader(isr1);
+
+                        BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1),"UTF-8"),8192);
                         String data;
                         while ((data = bufferedReader1.readLine()) != null)
                         {
@@ -110,8 +121,8 @@ public class FinalScreen extends AppCompatActivity {
                     } catch (IOException e) {
                         e.printStackTrace();
                     }
-                }
-*/
+
+
                 File root = android.os.Environment.getExternalStorageDirectory();
 
 
@@ -122,15 +133,18 @@ public class FinalScreen extends AppCompatActivity {
                 File file = new File(dir, "myData.txt");
 
                 try {
-                    FileOutputStream f = new FileOutputStream(file);
+
+                    //FileOutputStream f = new FileOutputStream(file), "utf8"),8192);
+                    BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(file),"UTF-8"),8192);
 
                     for (int i = 0; i < iCounter; i++) {
                         if (map.get(i) != null)
-                            f.write(map.get(i).toString().getBytes());
+                            bw.write(map.get(i).toString());
+
                     }
 
 
-                    f.close();
+                    bw.close();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
 
