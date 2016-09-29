@@ -589,7 +589,7 @@ public class Screen20 extends AppCompatActivity {
         }
         Intent i4 = getIntent();
         String s4 = i4.getStringExtra("ksc19-4");
-        if (i4.getStringExtra("ksc16-19") == null)
+        if (i4.getStringExtra("ksc19-4") == null)
             s4 = "true";
         if(s4.equals("true")) {
             SharedPreferences settings4 = getSharedPreferences("Q19-4", MODE_PRIVATE);

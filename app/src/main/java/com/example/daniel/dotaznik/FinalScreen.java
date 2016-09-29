@@ -48,7 +48,7 @@ public class FinalScreen extends AppCompatActivity {
                 Calendar c = Calendar.getInstance();
                 String sDate = c.get(Calendar.YEAR) + "-"
                         + c.get(Calendar.MONTH)
-                        + "-" + c.get(Calendar.DAY_OF_MONTH)
+                        + "-" + c.get(Calendar.DAY_OF_MONTH)+1
                         + " at " + c.get(Calendar.HOUR_OF_DAY)
                         + ":" + c.get(Calendar.MINUTE);
 
@@ -99,7 +99,7 @@ public class FinalScreen extends AppCompatActivity {
 
                 File root1 = android.os.Environment.getExternalStorageDirectory();
                 File dir1 = new File (root1.getAbsolutePath() + "/download");
-                File file1 = new File(dir1, "myData.txt");
+                File file1 = new File(dir1, "myData1.txt");
 
 
                     try {
@@ -130,7 +130,7 @@ public class FinalScreen extends AppCompatActivity {
 
                 File dir = new File (root.getAbsolutePath() + "/download");
                 dir.mkdirs();
-                File file = new File(dir, "myData.txt");
+                File file = new File(dir, "myData1.txt");
 
                 try {
 

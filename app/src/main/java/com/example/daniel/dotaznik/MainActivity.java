@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 File root = android.os.Environment.getExternalStorageDirectory();
                 File dir = new File (root.getAbsolutePath() + "/download");
 
-                File filelocation = new File(dir, "myData.txt");
+                File filelocation = new File(dir, "myData1.txt");
 
                 Uri path = Uri.fromFile(filelocation);
                 Intent emailIntent = new Intent(Intent.ACTION_SEND);
@@ -91,7 +91,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         Calendar c = Calendar.getInstance();
         String sDate = c.get(Calendar.YEAR) + "-"
                 + c.get(Calendar.MONTH)
-                + "-" + c.get(Calendar.DAY_OF_MONTH)
+                + "-" + c.get(Calendar.DAY_OF_MONTH)+1
                 + " at " + c.get(Calendar.HOUR_OF_DAY)
                 + ":" + c.get(Calendar.MINUTE);
 
@@ -269,16 +269,17 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
 
         //chrono = (Chronometer) findViewById(R.id.chronometer);
-
-        init();
-        send();
-
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 10, this);
+
+        init();
+        send();
+
+
 
     }
 
