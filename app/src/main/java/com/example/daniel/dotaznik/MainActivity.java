@@ -7,15 +7,20 @@ import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
+import android.media.MediaRecorder;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -39,32 +44,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     //long time = 0;
 
     //NOVE
-    public void send() {
-        button = (Button) findViewById(R.id.button55);
 
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                File root = android.os.Environment.getExternalStorageDirectory();
-                File dir = new File (root.getAbsolutePath() + "/download");
-
-                File filelocation = new File(dir, "myData1.txt");
-
-                Uri path = Uri.fromFile(filelocation);
-                Intent emailIntent = new Intent(Intent.ACTION_SEND);
-// set the type to 'email'
-                emailIntent .setType("vnd.android.cursor.dir/email");
-                String to[] = {"jakubko.ondrusek@gmail.com"};
-                emailIntent .putExtra(Intent.EXTRA_EMAIL, to);
-// the attachment
-                emailIntent .putExtra(Intent.EXTRA_STREAM, path);
-// the mail subject
-                emailIntent .putExtra(Intent.EXTRA_SUBJECT, "data");
-                startActivity(Intent.createChooser(emailIntent , "hoj tu su data"));
-            }
-        });
-    }
 
     public void init() {
         button = (Button) findViewById(R.id.button);
@@ -159,11 +139,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        i = 0;
-        Intent ready = getIntent();
 /*
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
         int iCounter = 0;
@@ -277,7 +252,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 10, this);
 
         init();
-        send();
+
 
 
 
@@ -286,16 +261,20 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     //TODO hodit do podmienky funkciu onLocationChanged
 
     @Override
-    public void onLocationChanged(Location location) {
+        public void onLocationChanged(Location location) {
 
-        while (i == 0) {
-            String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
-                    + "\nLongitude: " + location.getLongitude();
-            i++;
-            getGps = location.getLatitude() + " " + location.getLongitude();
+            while (i == 0) {
+                String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
+                        + "\nLongitude: " + location.getLongitude();
+                i++;
+                getGps = location.getLatitude() + " " + location.getLongitude();
+            }
+            //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
+
         }
-        //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
-    }
+
+
+
 
     @Override
     public void onProviderDisabled(String provider) {
