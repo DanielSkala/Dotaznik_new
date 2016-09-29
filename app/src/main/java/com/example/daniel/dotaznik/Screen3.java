@@ -39,8 +39,11 @@ String Q2,sChecked;
                 editor.putString("Q2",Q2);
                 editor.commit();
 
-                startActivity(sendIsChecked(toy));
-                finish();
+                if(Q2 != null)
+                {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
             }
 
         });

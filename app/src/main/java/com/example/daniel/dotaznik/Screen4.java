@@ -52,8 +52,14 @@ public class Screen4 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ready = new Intent(Screen4.this, Screen5.class);
 
-                startActivity(sendIsChecked(ready));
-                finish();
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox4);
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox5);
+
+
+                if(c1.isChecked() || c2.isChecked()) {
+                    startActivity(sendIsChecked(ready));
+                    finish();
+                }
 
             }
         });
