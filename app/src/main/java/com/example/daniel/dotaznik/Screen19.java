@@ -389,8 +389,53 @@ public class Screen19 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen19.this, Screen20.class);
-                startActivity(sendIsChecked(toy));
-                finish();
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox95);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox96);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox97);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox98);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox99);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox100);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox101);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox102);
+                CheckBox c9 = (CheckBox)findViewById(R.id.checkBox103);
+                CheckBox c10 = (CheckBox)findViewById(R.id.checkBox104);
+                CheckBox c11 = (CheckBox)findViewById(R.id.checkBox105);
+                CheckBox c12 = (CheckBox)findViewById(R.id.checkBox106);
+                CheckBox c13 = (CheckBox)findViewById(R.id.checkBox107);
+                CheckBox c14 = (CheckBox)findViewById(R.id.checkBox108);
+                CheckBox c15 = (CheckBox)findViewById(R.id.checkBox109);
+                CheckBox c16 = (CheckBox)findViewById(R.id.checkBox110);
+                CheckBox c17 = (CheckBox)findViewById(R.id.checkBox111);
+                CheckBox c18 = (CheckBox)findViewById(R.id.checkBox112);
+                CheckBox c19 = (CheckBox)findViewById(R.id.checkBox113);
+                CheckBox c20 = (CheckBox)findViewById(R.id.checkBox114);
+                CheckBox c21 = (CheckBox)findViewById(R.id.checkBox115);
+                CheckBox c22 = (CheckBox)findViewById(R.id.checkBox116);
+                CheckBox c23 = (CheckBox)findViewById(R.id.checkBox117);
+                CheckBox c24 = (CheckBox)findViewById(R.id.checkBox118);
+                CheckBox c25 = (CheckBox)findViewById(R.id.checkBox119);
+                CheckBox c26 = (CheckBox)findViewById(R.id.checkBox120);
+                CheckBox c27 = (CheckBox)findViewById(R.id.checkBox121);
+                CheckBox c28 = (CheckBox)findViewById(R.id.checkBox122);
+                CheckBox c29 = (CheckBox)findViewById(R.id.checkBox123);
+                CheckBox c30 = (CheckBox)findViewById(R.id.checkBox124);
+
+
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() ) {
+                    if(c7.isChecked() || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() ) {
+                        if(c13.isChecked() || c14.isChecked() || c15.isChecked() || c16.isChecked() || c17.isChecked() || c18.isChecked() ){
+                            if(c19.isChecked() || c20.isChecked() || c21.isChecked() || c22.isChecked() || c23.isChecked() || c24.isChecked() ){
+                                if(c25.isChecked() || c26.isChecked() || c27.isChecked() || c28.isChecked() || c29.isChecked() || c30.isChecked() ){
+
+                                        finish();startActivity(sendIsChecked(toy));
+
+                                }
+                            }
+                        }
+                    }
+
+
+                }
 
 
 

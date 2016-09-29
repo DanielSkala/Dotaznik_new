@@ -38,8 +38,11 @@ public class Screen12 extends AppCompatActivity {
                 editor.commit();
 
 
-                startActivity(sendIsChecked(toy));
-                finish();
+                if(!Q11.equals(""))
+                {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
 
             }
         });

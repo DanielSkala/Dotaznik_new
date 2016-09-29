@@ -34,8 +34,11 @@ public class Screen24 extends AppCompatActivity {
                 SharedPreferences.Editor editor = getSharedPreferences("Q23",MODE_PRIVATE).edit() ;
                 editor.putString("Q23",Q23);
                 editor.commit();
-                startActivity(sendIsChecked(toy));
-                finish();
+                if(!Q23.equals(""))
+                {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
             }
         });
     }

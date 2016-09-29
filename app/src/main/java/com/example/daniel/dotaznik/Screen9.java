@@ -337,9 +337,27 @@ public class Screen9 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent ready = new Intent(Screen9.this, Screen10.class);
-
-                startActivity(sendIsChecked(ready));
-                finish();
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox17);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox18);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox19);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox20);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox21);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox22);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox23);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox24);
+                CheckBox c9 = (CheckBox)findViewById(R.id.checkBox25);
+                CheckBox c10 = (CheckBox)findViewById(R.id.checkBox26);
+                CheckBox c11 = (CheckBox)findViewById(R.id.checkBox27);
+                CheckBox c12 = (CheckBox)findViewById(R.id.checkBox28);
+                CheckBox c13 = (CheckBox)findViewById(R.id.checkBox29);
+                CheckBox c14 = (CheckBox)findViewById(R.id.checkBox30);
+                CheckBox c15 = (CheckBox)findViewById(R.id.checkBox31);
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked()
+                        || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() || c13.isChecked()
+                        || c14.isChecked() || c15.isChecked()) {
+                    startActivity(sendIsChecked(ready));
+                    finish();
+                }
             }
         });
     }
@@ -352,8 +370,12 @@ public class Screen9 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ready = new Intent(Screen9.this, Screen8.class);
 
+
                 startActivity(sendIsChecked(ready));
                 finish();
+
+
+
             }
         });
     }

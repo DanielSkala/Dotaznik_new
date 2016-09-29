@@ -33,8 +33,11 @@ public class Screen6 extends AppCompatActivity {
                 editor.putString("Q5",Q5);
                 editor.commit();
 
-                startActivity(sendIsChecked(toy));
-                finish();
+                if(!Q5.equals(""))
+                {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
 
             }
         });

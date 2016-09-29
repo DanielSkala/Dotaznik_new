@@ -32,8 +32,11 @@ public class Screen15 extends AppCompatActivity {
                 editor.putString("Q14",Q14);
                 editor.commit();
 
-                startActivity(sendIsChecked(toy));
-                finish();
+                if(!Q14.equals(""))
+                {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
 
             }
         });

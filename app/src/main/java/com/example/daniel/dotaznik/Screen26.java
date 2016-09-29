@@ -120,8 +120,18 @@ public class Screen26 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen26.this, Screen27.class);
-                startActivity(sendIsChecked(toy));
-                finish();;
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox173);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox174);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox175);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox176);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox177);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox178);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox179);
+
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked()) {
+                    startActivity(sendIsChecked(toy));
+                    finish();
+                }
 
 
 

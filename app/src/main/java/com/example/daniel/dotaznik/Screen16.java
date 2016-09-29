@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 
-public class Screen16 extends AppCompatActivity {
+public class    Screen16 extends AppCompatActivity {
 
     public Button button30;
     public Button button31;
@@ -463,8 +463,60 @@ public class Screen16 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen16.this, Screen17.class);
-                startActivity(sendIsChecked(toy));
-                finish();
+
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox54);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox55);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox56);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox57);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox58);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox59);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox60);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox61);
+                CheckBox c9 = (CheckBox)findViewById(R.id.checkBox62);
+                CheckBox c10 = (CheckBox)findViewById(R.id.checkBox63);
+                CheckBox c11 = (CheckBox)findViewById(R.id.checkBox64);
+                CheckBox c12 = (CheckBox)findViewById(R.id.checkBox65);
+                CheckBox c13 = (CheckBox)findViewById(R.id.checkBox66);
+                CheckBox c14 = (CheckBox)findViewById(R.id.checkBox67);
+                CheckBox c15 = (CheckBox)findViewById(R.id.checkBox68);
+                CheckBox c16 = (CheckBox)findViewById(R.id.checkBox69);
+                CheckBox c17 = (CheckBox)findViewById(R.id.checkBox70);
+                CheckBox c18 = (CheckBox)findViewById(R.id.checkBox71);
+                CheckBox c19 = (CheckBox)findViewById(R.id.checkBox72);
+                CheckBox c20 = (CheckBox)findViewById(R.id.checkBox73);
+                CheckBox c21 = (CheckBox)findViewById(R.id.checkBox74);
+                CheckBox c22 = (CheckBox)findViewById(R.id.checkBox75);
+                CheckBox c23 = (CheckBox)findViewById(R.id.checkBox76);
+                CheckBox c24 = (CheckBox)findViewById(R.id.checkBox77);
+                CheckBox c25 = (CheckBox)findViewById(R.id.checkBox78);
+                CheckBox c26 = (CheckBox)findViewById(R.id.checkBox79);
+                CheckBox c27 = (CheckBox)findViewById(R.id.checkBox80);
+                CheckBox c28 = (CheckBox)findViewById(R.id.checkBox81);
+                CheckBox c29 = (CheckBox)findViewById(R.id.checkBox82);
+                CheckBox c30 = (CheckBox)findViewById(R.id.checkBox83);
+                CheckBox c31 = (CheckBox)findViewById(R.id.checkBox84);
+                CheckBox c32 = (CheckBox)findViewById(R.id.checkBox85);
+                CheckBox c33 = (CheckBox)findViewById(R.id.checkBox86);
+                CheckBox c34 = (CheckBox)findViewById(R.id.checkBox87);
+                CheckBox c35 = (CheckBox)findViewById(R.id.checkBox88);
+                CheckBox c36 = (CheckBox)findViewById(R.id.checkBox89);
+
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() ) {
+                    if(c7.isChecked() || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() ) {
+                        if(c13.isChecked() || c14.isChecked() || c15.isChecked() || c16.isChecked() || c17.isChecked() || c18.isChecked() ){
+                            if(c19.isChecked() || c20.isChecked() || c21.isChecked() || c22.isChecked() || c23.isChecked() || c24.isChecked() ){
+                                if(c25.isChecked() || c26.isChecked() || c27.isChecked() || c28.isChecked() || c29.isChecked() || c30.isChecked() ){
+                                    if(c31.isChecked() || c32.isChecked() || c33.isChecked() || c34.isChecked() || c35.isChecked() || c36.isChecked() ){
+                                       startActivity(sendIsChecked(toy)); finish();
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
+
 
 
 

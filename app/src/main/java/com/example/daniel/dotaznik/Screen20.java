@@ -460,8 +460,58 @@ public class Screen20 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen20.this, Screen21.class);
-                startActivity(sendIsChecked(toy));
-                finish();
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox125);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox126);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox127);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox128);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox129);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox130);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox131);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox132);
+                CheckBox c9 = (CheckBox)findViewById(R.id.checkBox133);
+                CheckBox c10 = (CheckBox)findViewById(R.id.checkBox134);
+                CheckBox c11 = (CheckBox)findViewById(R.id.checkBox135);
+                CheckBox c12 = (CheckBox)findViewById(R.id.checkBox136);
+                CheckBox c13 = (CheckBox)findViewById(R.id.checkBox137);
+                CheckBox c14 = (CheckBox)findViewById(R.id.checkBox138);
+                CheckBox c15 = (CheckBox)findViewById(R.id.checkBox139);
+                CheckBox c16 = (CheckBox)findViewById(R.id.checkBox140);
+                CheckBox c17 = (CheckBox)findViewById(R.id.checkBox141);
+                CheckBox c18 = (CheckBox)findViewById(R.id.checkBox142);
+                CheckBox c19 = (CheckBox)findViewById(R.id.checkBox143);
+                CheckBox c20 = (CheckBox)findViewById(R.id.checkBox144);
+                CheckBox c21 = (CheckBox)findViewById(R.id.checkBox145);
+                CheckBox c22 = (CheckBox)findViewById(R.id.checkBox146);
+                CheckBox c23 = (CheckBox)findViewById(R.id.checkBox147);
+                CheckBox c24 = (CheckBox)findViewById(R.id.checkBox148);
+                CheckBox c25 = (CheckBox)findViewById(R.id.checkBox149);
+                CheckBox c26 = (CheckBox)findViewById(R.id.checkBox150);
+                CheckBox c27 = (CheckBox)findViewById(R.id.checkBox151);
+                CheckBox c28 = (CheckBox)findViewById(R.id.checkBox152);
+                CheckBox c29 = (CheckBox)findViewById(R.id.checkBox153);
+                CheckBox c30 = (CheckBox)findViewById(R.id.checkBox154);
+                CheckBox c31 = (CheckBox)findViewById(R.id.checkBox155);
+                CheckBox c32 = (CheckBox)findViewById(R.id.checkBox156);
+                CheckBox c33 = (CheckBox)findViewById(R.id.checkBox157);
+                CheckBox c34 = (CheckBox)findViewById(R.id.checkBox158);
+                CheckBox c35 = (CheckBox)findViewById(R.id.checkBox159);
+                CheckBox c36 = (CheckBox)findViewById(R.id.checkBox160);
+
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() ) {
+                    if(c7.isChecked() || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() ) {
+                        if(c13.isChecked() || c14.isChecked() || c15.isChecked() || c16.isChecked() || c17.isChecked() || c18.isChecked() ){
+                            if(c19.isChecked() || c20.isChecked() || c21.isChecked() || c22.isChecked() || c23.isChecked() || c24.isChecked() ){
+                                if(c25.isChecked() || c26.isChecked() || c27.isChecked() || c28.isChecked() || c29.isChecked() || c30.isChecked() ){
+                                    if(c31.isChecked() || c32.isChecked() || c33.isChecked() || c34.isChecked() || c35.isChecked() || c36.isChecked() ){
+                                        startActivity(sendIsChecked(toy)); finish();
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+
+                }
             }
         });
     }

@@ -137,8 +137,8 @@ public class Screen10 extends AppCompatActivity {
                 check1 = (CheckBox) findViewById(R.id.checkBox34);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox35);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox36);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox37);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox32);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox38);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox39);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox40);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox41);check1.setChecked(false);
@@ -373,8 +373,27 @@ public class Screen10 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ready = new Intent(Screen10.this, Screen11.class);
 
-                startActivity(sendIsChecked(ready));
-                finish();
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox33);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox34);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox35);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox36);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox37);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox38);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox39);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox40);
+                CheckBox c9 = (CheckBox)findViewById(R.id.checkBox41);
+                CheckBox c10 = (CheckBox)findViewById(R.id.checkBox42);
+                CheckBox c11 = (CheckBox)findViewById(R.id.checkBox43);
+                CheckBox c12 = (CheckBox)findViewById(R.id.checkBox44);
+                CheckBox c13 = (CheckBox)findViewById(R.id.checkBox46);
+                CheckBox c14 = (CheckBox)findViewById(R.id.checkBox47);
+                CheckBox c15 = (CheckBox)findViewById(R.id.checkBox48);
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked()
+                        || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() || c13.isChecked()
+                        || c14.isChecked() || c15.isChecked()) {
+                    startActivity(sendIsChecked(ready));
+                    finish();
+                }
             }
         });
     }
