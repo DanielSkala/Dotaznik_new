@@ -71,8 +71,14 @@ public class Screen2 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent ready = new Intent(Screen2.this, Screen3.class);
 
-                startActivity(sendIsChecked(ready));
-                finish();
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox);
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox2);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox3);
+
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked()) {
+                    startActivity(sendIsChecked(ready));
+                    finish();
+                }
             }
         });
     }
