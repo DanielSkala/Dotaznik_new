@@ -123,13 +123,13 @@ public class FinalScreen extends AppCompatActivity {
 
                 try {
                     FileOutputStream f = new FileOutputStream(file);
-                    PrintWriter pw = new PrintWriter(f);
+
                     for (int i = 0; i < iCounter; i++) {
                         if (map.get(i) != null)
-                            pw.print(map.get(i).toString().getBytes());
+                            f.write(map.get(i).toString().getBytes());
                     }
 
-                    pw.close();
+
                     f.close();
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
