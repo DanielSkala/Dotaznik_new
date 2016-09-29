@@ -195,7 +195,56 @@ public class Screen26 extends AppCompatActivity {
         boolean isChecked;
 
 
-        ready.putExtra("sc25", Q25);
+
+
+
+        if(toy.getStringExtra("sc25") == null ||  !toy.getStringExtra("sc25").equals(Q25))
+
+            ready.putExtra("sc25", Q25);
+        else
+            ready.putExtra("sc25", toy.getStringExtra("sc25"));
+        ready.putExtra("sc2", toy.getStringExtra("sc2"));
+        ready.putExtra("sc3", toy.getStringExtra("sc3"));
+        ready.putExtra("sc4", toy.getStringExtra("sc4"));
+        ready.putExtra("sc5", toy.getStringExtra("sc5"));
+        ready.putExtra("sc6", toy.getStringExtra("sc6"));
+        ready.putExtra("sc7", toy.getStringExtra("sc7"));
+        ready.putExtra("sc8", toy.getStringExtra("sc8"));
+        ready.putExtra("sc9", toy.getStringExtra("sc9"));
+        ready.putExtra("sc10", toy.getStringExtra("sc10"));
+        ready.putExtra("sc11", toy.getStringExtra("sc11"));
+        ready.putExtra("sc12", toy.getStringExtra("sc12"));
+        ready.putExtra("sc13", toy.getStringExtra("sc13"));
+        ready.putExtra("sc14", toy.getStringExtra("sc14"));
+        ready.putExtra("sc16-1", toy.getStringExtra("sc16-1"));
+        ready.putExtra("sc16-2", toy.getStringExtra("sc16-2"));
+        ready.putExtra("sc16-3", toy.getStringExtra("sc16-3"));
+        ready.putExtra("sc16-4", toy.getStringExtra("sc16-4"));
+        ready.putExtra("sc16-5", toy.getStringExtra("sc16-5"));
+        ready.putExtra("sc16-6", toy.getStringExtra("sc16-6"));
+        ready.putExtra("sc15", toy.getStringExtra("sc15"));
+        ready.putExtra("sc17", toy.getStringExtra("sc17"));
+        ready.putExtra("sc18-1", toy.getStringExtra("sc18-1"));
+        ready.putExtra("sc18-2", toy.getStringExtra("sc18-2"));
+        ready.putExtra("sc18-3", toy.getStringExtra("sc18-3"));
+        ready.putExtra("sc18-4", toy.getStringExtra("sc18-4"));
+        ready.putExtra("sc18-5", toy.getStringExtra("sc18-5"));
+        ready.putExtra("sc19-1", toy.getStringExtra("sc19-1"));
+        ready.putExtra("sc19-2", toy.getStringExtra("sc19-2"));
+        ready.putExtra("sc19-3", toy.getStringExtra("sc19-3"));
+        ready.putExtra("sc19-4", toy.getStringExtra("sc19-4"));
+        ready.putExtra("sc19-5", toy.getStringExtra("sc19-5"));
+        ready.putExtra("sc19-6", toy.getStringExtra("sc19-6"));
+        ready.putExtra("sc18", toy.getStringExtra("sc18"));
+        ready.putExtra("sc20", toy.getStringExtra("sc20"));
+        ready.putExtra("sc21", toy.getStringExtra("sc21"));
+        ready.putExtra("sc22", toy.getStringExtra("sc22"));
+        ready.putExtra("sc23", toy.getStringExtra("sc23"));
+        ready.putExtra("sc24", toy.getStringExtra("sc24"));
+        ready.putExtra("sc26", toy.getStringExtra("sc26"));
+        ready.putExtra("sc27", toy.getStringExtra("sc27"));
+        ready.putExtra("sc28", toy.getStringExtra("sc28"));
+
         ready.putExtra("ksc2",toy.getStringExtra("ksc2"));
         ready.putExtra("ksc3",toy.getStringExtra("ksc3"));
         ready.putExtra("ksc4",toy.getStringExtra("ksc4"));

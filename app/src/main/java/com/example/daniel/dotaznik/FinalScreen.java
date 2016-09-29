@@ -6,11 +6,20 @@ import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import java.io.BufferedReader;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.util.TreeMap;
 
 public class FinalScreen extends AppCompatActivity {
 
@@ -27,6 +36,135 @@ public class FinalScreen extends AppCompatActivity {
         button54.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+
+                Intent ready = getIntent();
+                final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
+                int iCounter = 0;
+
+                map.put(iCounter,new Dotaznik_info(
+                        ready.getStringExtra("sc2"),
+                        ready.getStringExtra("sc3"),
+                        ready.getStringExtra("sc4"),
+                        ready.getStringExtra("sc5"),
+                        ready.getStringExtra("sc6"),
+                        ready.getStringExtra("sc7"),
+                        ready.getStringExtra("sc8"),
+                        ready.getStringExtra("sc9"),
+                        ready.getStringExtra("sc10"),
+                        ready.getStringExtra("sc11"),
+                        ready.getStringExtra("sc12"),
+                        ready.getStringExtra("sc13"),
+                        ready.getStringExtra("sc14"),
+                        ready.getStringExtra("sc15"),
+                        ready.getStringExtra("sc16-1"),
+                        ready.getStringExtra("sc16-2"),
+                        ready.getStringExtra("sc16-3"),
+                        ready.getStringExtra("sc16-4"),
+                        ready.getStringExtra("sc16-5"),
+                        ready.getStringExtra("sc16-6"),
+                        ready.getStringExtra("sc17"),
+                        ready.getStringExtra("sc18"),
+                        ready.getStringExtra("sc18-1"),
+                        ready.getStringExtra("sc18-2"),
+                        ready.getStringExtra("sc18-3"),
+                        ready.getStringExtra("sc18-4"),
+                        ready.getStringExtra("sc18-5"),
+                        ready.getStringExtra("sc19-1"),
+                        ready.getStringExtra("sc19-2"),
+                        ready.getStringExtra("sc19-3"),
+                        ready.getStringExtra("sc19-4"),
+                        ready.getStringExtra("sc19-5"),
+                        ready.getStringExtra("sc19-6"),
+                        ready.getStringExtra("sc20"),
+                        ready.getStringExtra("sc21"),
+                        ready.getStringExtra("sc22"),
+                        ready.getStringExtra("sc23"),
+                        ready.getStringExtra("sc24"),
+                        ready.getStringExtra("sc25"),
+                        ready.getStringExtra("sc26"),
+                        ready.getStringExtra("sc27"),//gps
+                        ready.getStringExtra("sc28"),"1")); // time
+                iCounter++;
+
+
+                /*if (fileExistance("data1.txt"))//----------------------------------------------------////////////////
+                {
+                    try {
+                        FileInputStream fis1 = openFileInput("data1.txt"); //opens file
+                        InputStreamReader isr1 = new InputStreamReader(fis1);
+                        BufferedReader bufferedReader1 = new BufferedReader(isr1);
+                        String data;
+                        while ((data = bufferedReader1.readLine()) != null)
+                        {
+                            String get[]= data.split("\t");
+                            map.put(iCounter,new Dotaznik_info( get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
+                                    get[11],get[12],get[13],get[14],get[15],get[16],get[17],get[18],get[19],get[20],
+                                    get[21],get[22],get[23],get[24],get[25],get[26],get[27],get[28],get[29],get[30],
+                                    get[31],get[32],get[33],get[34],get[35],get[36],get[37],get[38],get[39],get[40],get[41],get[42]));
+                            iCounter++;
+
+                        }
+                    } catch (FileNotFoundException e) {
+                        e.printStackTrace();
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
+                }
+*/
+                File root = android.os.Environment.getExternalStorageDirectory();
+
+
+                // See http://stackoverflow.com/questions/3551821/android-write-to-sd-card-folder
+
+                File dir = new File (root.getAbsolutePath() + "/download");
+                dir.mkdirs();
+                File file = new File(dir, "myData.txt");
+
+                try {
+                    FileOutputStream f = new FileOutputStream(file);
+                    PrintWriter pw = new PrintWriter(f);
+                    for (int i = 0; i < iCounter; i++) {
+                        if (map.get(i) != null)
+                            pw.print(map.get(i).toString().getBytes());
+                            pw.flush();
+                    }
+
+                    pw.close();
+                    f.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+
+
+            //-------------------------------------------------------------------------------------------------------------------------------
+                // !Writing into File!
+                //-------------------------------------------------------------------------------------------------------------------------------
+
+/*
+
+                try {
+                    FileOutputStream fos = openFileOutput("data1.txt", MODE_PRIVATE);
+
+                    for (int i = 0; i < iCounter; i++) {
+                        if (map.get(i) != null)
+                            fos.write(map.get(i).toString().getBytes());
+                    }
+                    fos.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                //-------------------------------------------------------------------------------------------------------------------------------
+                //
+                //-------------------------------------------------------------------------------------------------------------------------------
+
+
+*/
+
 
 
 
@@ -79,11 +217,16 @@ public class FinalScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_screen);
-/*
 
 
-*/
+
+
+
         init();
 
+    }
+    public boolean fileExistance(String fname){
+        File file = getBaseContext().getFileStreamPath(fname);
+        return file.exists();
     }
 }

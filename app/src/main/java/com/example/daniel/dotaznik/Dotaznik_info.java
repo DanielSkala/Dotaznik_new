@@ -45,6 +45,8 @@ public class Dotaznik_info {
     private String data38;
     private String data39;
     private String data40;
+    private String data41;
+    private String data42;
 
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     //constructors
@@ -55,19 +57,19 @@ public class Dotaznik_info {
         data = "";data1 = "";data2 = "";data3 = "";data4 = "";data5 = "";data6 = "";data7 = "";data8 = "";data9 = "";data10 = "";
         data11 = "";data12 = "";data13 = "";data14 = "";data15 = "";data16 = "";data17 = "";data18 = "";data19 = "";data20 = "";
         data21 = "";data22 = "";data23 = "";data24 = "";data25 = "";data26 = "";data27 = "";data28 = "";data29 = "";data30 = "";
-        data31 = "";data32 = "";data33 = "";data34 = "";data35 = "";data36 = "";data37 = "";data38 = "";data39 = "";data40 = "";
+        data31 = "";data32 = "";data33 = "";data34 = "";data35 = "";data36 = "";data37 = "";data38 = "";data39 = "";data40 = "";data41 = "";data42 = "";
     }
 
     public Dotaznik_info(String sData,String sData1,String sData2,String sData3,String sData4,String sData5,String sData6,
                          String sData7,String sData8,String sData9,String sData10,String sData11,String sData12,String sData13,
                          String sData14,String sData15,String sData16,String sData17,String sData18,String sData19,String sData20,
                          String sData21,String sData22,String sData23,String sData24,String sData25,String sData26,String sData27,String sData28,String sData29,String sData30,
-                         String sData31,String sData32,String sData33,String sData34,String sData35,String sData36,String sData37,String sData38,String sData39,String sData40)
+                         String sData31,String sData32,String sData33,String sData34,String sData35,String sData36,String sData37,String sData38,String sData39,String sData40,String sData41,String sData42)
     {
         data = sData;     data1 = sData1;   data2 = sData2;   data3 = sData3;   data4 = sData4;   data5 = sData5;   data6 = sData6;   data7 = sData7;   data8 = sData8;   data9 = sData9;   data10 = sData10;
         data11 = sData11; data12 = sData12; data13 = sData13; data14 = sData14; data15 = sData15; data16 = sData16; data17 = sData17; data18 = sData18; data19 = sData19; data20 = sData21;
         data21 = sData21; data22 = sData22; data23 = sData23; data24 = sData24; data25 = sData25; data26 = sData26; data27 = sData27; data28 = sData28; data29 = sData29; data30 = sData30;
-        data31 = sData31; data32 = sData32; data33 = sData33; data34 = sData34; data35 = sData35; data36 = sData36; data37 = sData37; data38 = sData38; data39 = sData39; data40 = sData40;
+        data31 = sData31; data32 = sData32; data33 = sData33; data34 = sData34; data35 = sData35; data36 = sData36; data37 = sData37; data38 = sData38; data39 = sData39; data40 = sData40;data41 = sData41;data42 = sData42;
     }
 
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -84,6 +86,7 @@ public class Dotaznik_info {
     public String getData31(){return data31;}   public String getData32(){return data32;}
     public String getData33(){return data33;}   public String getData34(){return data34;}   public String getData35(){return data35;}   public String getData36(){return data36;}
     public String getData37(){return data37;}   public String getData38(){return data38;}   public String getData39(){return data39;}   public String getData40(){return data40;}
+    public String getData41(){return data41;}   public String getData42(){return data42;}
 
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     //setters
@@ -100,6 +103,7 @@ public class Dotaznik_info {
     public void setData31(String sData31){data31 = sData31;}    public void setData32(String sData32){data32 = sData32;}
     public void setData33(String sData33){data33 = sData33;}    public void setData34(String sData34){data34 = sData34;}    public void setData35(String sData35){data35 = sData35;}    public void setData36(String sData36){data36 = sData36;}
     public void setData37(String sData37){data37 = sData37;}    public void setData38(String sData38){data38 = sData38;}    public void setData39(String sData39){data39 = sData39;}    public void setData40(String sData40){data40 = sData40;}
+    public void setData41(String sData41){data41 = sData41;}    public void setData42(String sData42){data42 = sData42;}
 
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     //toString
@@ -110,7 +114,7 @@ public class Dotaznik_info {
        return data + "\t" + data1 + "\t" + data2 + "\t" + data3 + "\t" + data4 + "\t" + data5 + "\t" + data6 + "\t" + data7 + "\t" + data8 + "\t" + data9 + "\t" + data10 + "\t" +
                 data11 + "\t" + data12 + "\t" + data13 + "\t" + data14 + "\t" + data15 + "\t" + data16 + "\t" + data17 + "\t" + data18 + "\t" + data19 + "\t" + data20 + "\t" +
                 data21 + "\t" + data22 + "\t" + data23 + "\t" + data24 + "\t" + data25 + "\t" + data26 + "\t" + data27 + "\t" + data28 + "\t" + data29 + "\t" + data30 + "\t" +
-                data31 + "\t" + data32 + "\t" + data33 + "\t" + data34 + "\t" + data35 + "\t" + data36 + "\t" + data37 + "\t" + data38 + "\t" + data39 + "\t" + data40 + "\n";
+                data31 + "\t" + data32 + "\t" + data33 + "\t" + data34 + "\t" + data35 + "\t" + data36 + "\t" + data37 + "\t" + data38 + "\t" + data39 + "\t" + data40 + "\t" + data41+ "\t" + data42+ "\n";
     }
 
 }
