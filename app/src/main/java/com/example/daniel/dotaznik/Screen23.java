@@ -204,8 +204,8 @@ public class Screen23 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc22") == null ||  !toy.getStringExtra("sc22").equals(Q22))
+//toy.getStringExtra("sc22") == null ||  !toy.getStringExtra("sc22").equals(Q22)
+        if(Q22!=null)
 
             ready.putExtra("sc22", Q22);
         else

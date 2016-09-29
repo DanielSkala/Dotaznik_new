@@ -126,8 +126,8 @@ public class Screen7 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc7") == null  || !toy.getStringExtra("sc7").equals(Q6))
+//toy.getStringExtra("sc7") == null  || !toy.getStringExtra("sc7").equals(Q6)
+        if(Q6 != null)
             ready.putExtra("sc7", Q6);
         else
             ready.putExtra("sc7", toy.getStringExtra("sc7"));

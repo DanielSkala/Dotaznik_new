@@ -177,8 +177,8 @@ public class Screen11 extends AppCompatActivity {
     {
         Intent toy = getIntent();
         boolean isChecked;
-
-        if(toy.getStringExtra("sc11") == null ||  !toy.getStringExtra("sc11").equals(Q10))
+//toy.getStringExtra("sc11") == null ||  !toy.getStringExtra("sc11").equals(Q10)
+        if(Q10 != null)
             ready.putExtra("sc11", Q10);
         else
             ready.putExtra("sc11", toy.getStringExtra("sc11"));

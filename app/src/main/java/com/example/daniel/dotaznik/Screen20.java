@@ -751,8 +751,8 @@ public class Screen20 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc19-1") == null ||  !toy.getStringExtra("sc19-1").equals(Q19_1))
+//toy.getStringExtra("sc19-1") == null ||  !toy.getStringExtra("sc19-1").equals(Q19_1)
+        if(Q19_1!=null)
 
             ready.putExtra("sc19-1", Q19_1);
         else
@@ -760,16 +760,16 @@ public class Screen20 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc19-2") == null ||  !toy.getStringExtra("sc19-2").equals(Q19_2))
+//toy.getStringExtra("sc19-2") == null ||  !toy.getStringExtra("sc19-2").equals(Q19_2)
+        if(Q19_2!=null)
 
             ready.putExtra("sc19-2", Q19_2);
         else
             ready.putExtra("sc19-2", toy.getStringExtra("sc19-2"));
 
 
-
-        if(toy.getStringExtra("sc19-3") == null ||  !toy.getStringExtra("sc19-3").equals(Q19_3))
+//toy.getStringExtra("sc19-3") == null ||  !toy.getStringExtra("sc19-3").equals(Q19_3)
+        if(Q19_3!=null)
 
             ready.putExtra("sc19-3", Q19_3);
         else
@@ -777,8 +777,8 @@ public class Screen20 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc19-4") == null ||  !toy.getStringExtra("sc19-4").equals(Q19_4))
+//toy.getStringExtra("sc19-4") == null ||  !toy.getStringExtra("sc19-4").equals(Q19_4)
+        if(Q19_4!=null)
 
             ready.putExtra("sc19-4", Q19_4);
         else
@@ -786,16 +786,16 @@ public class Screen20 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc19-5") == null ||  !toy.getStringExtra("sc19-5").equals(Q19_5))
+//toy.getStringExtra("sc19-5") == null ||  !toy.getStringExtra("sc19-5").equals(Q19_5)
+        if(Q19_5!=null)
 
             ready.putExtra("sc19-5", Q19_5);
         else
             ready.putExtra("sc19-5", toy.getStringExtra("sc19-5"));
 
 
-
-        if(toy.getStringExtra("sc19-6") == null ||  !toy.getStringExtra("sc19-6").equals(Q19_6))
+//toy.getStringExtra("sc19-6") == null ||  !toy.getStringExtra("sc19-6").equals(Q19_6)
+        if(Q19_6!=null)
 
             ready.putExtra("sc19-6", Q19_6);
         else

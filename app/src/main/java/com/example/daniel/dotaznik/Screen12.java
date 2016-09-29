@@ -95,8 +95,8 @@ public class Screen12 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc12") == null ||  !toy.getStringExtra("sc12").equals(Q11))
+//
+        if(Q11!=null)
             ready.putExtra("sc12", Q11);
         else
             ready.putExtra("sc12", toy.getStringExtra("sc12"));

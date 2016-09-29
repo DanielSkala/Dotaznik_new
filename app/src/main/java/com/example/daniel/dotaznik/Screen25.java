@@ -164,8 +164,8 @@ public class Screen25 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc24") == null ||  !toy.getStringExtra("sc24").equals(Q24))
+//toy.getStringExtra("sc24") == null ||  !toy.getStringExtra("sc24").equals(Q24)
+        if(Q24!=null)
 
             ready.putExtra("sc24", Q24);
         else

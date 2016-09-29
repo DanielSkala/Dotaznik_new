@@ -90,8 +90,8 @@ public class Screen15 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc15") == null ||  !toy.getStringExtra("sc15").equals(Q14))
+        //toy.getStringExtra("sc15") == null ||  !toy.getStringExtra("sc15").equals(Q14)
+        if(Q14!=null)
 
             ready.putExtra("sc15", Q14);
         else

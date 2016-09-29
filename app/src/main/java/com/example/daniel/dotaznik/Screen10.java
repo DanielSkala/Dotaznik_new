@@ -500,8 +500,8 @@ public class Screen10 extends AppCompatActivity {
         Intent toy = getIntent();
         boolean isChecked;
 
-
-        if(toy.getStringExtra("sc10") == null ||  !toy.getStringExtra("sc10").equals(Q9))
+//toy.getStringExtra("sc10") == null ||  !toy.getStringExtra("sc10").equals(Q9)
+        if(Q9 != null)
             ready.putExtra("sc10", Q9);
         else
             ready.putExtra("sc10", toy.getStringExtra("sc10"));

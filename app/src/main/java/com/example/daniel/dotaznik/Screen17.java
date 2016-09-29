@@ -162,8 +162,8 @@ public class Screen17 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc17") == null ||  !toy.getStringExtra("sc17").equals(Q16))
+//toy.getStringExtra("sc17") == null ||  !toy.getStringExtra("sc17").equals(Q16)
+        if(Q16!=null)
 
             ready.putExtra("sc17", Q16);
         else

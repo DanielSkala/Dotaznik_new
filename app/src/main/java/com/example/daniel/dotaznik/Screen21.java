@@ -90,8 +90,8 @@ public class Screen21 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc20") == null ||  !toy.getStringExtra("sc20").equals(Q20))
+//toy.getStringExtra("sc20") == null ||  !toy.getStringExtra("sc20").equals(Q20)
+        if(Q20!=null)
 
             ready.putExtra("sc20", Q20);
         else

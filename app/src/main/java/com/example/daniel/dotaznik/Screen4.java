@@ -110,8 +110,8 @@ public class Screen4 extends AppCompatActivity {
     {
         Intent toy = getIntent();
         boolean isChecked;
-
-        if(toy.getStringExtra("sc4") == null ||  !toy.getStringExtra("sc4").equals(Q3))
+        //toy.getStringExtra("sc4") == null ||  !toy.getStringExtra("sc4").equals(Q3)
+        if(Q3 != null)
             ready.putExtra("sc4", Q3);
         else
             ready.putExtra("sc4", toy.getStringExtra("sc4"));
@@ -159,7 +159,7 @@ public class Screen4 extends AppCompatActivity {
 
 
 
-        ready.putExtra("sc4", Q3);
+
         ready.putExtra("ksc2",toy.getStringExtra("ksc2"));
         ready.putExtra("ksc3",toy.getStringExtra("ksc3"));
         ready.putExtra("ksc4",sChecked);

@@ -649,8 +649,8 @@ public class Screen19 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc18-1") == null ||  !toy.getStringExtra("sc18-1").equals(Q18_1))
+//toy.getStringExtra("sc18-1") == null ||  !toy.getStringExtra("sc18-1").equals(Q18_1)
+        if(Q18_1!=null)
 
             ready.putExtra("sc18-1", Q18_1);
         else
@@ -658,16 +658,16 @@ public class Screen19 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc18-2") == null ||  !toy.getStringExtra("sc18-2").equals(Q18_2))
+//toy.getStringExtra("sc18-2") == null ||  !toy.getStringExtra("sc18-2").equals(Q18_2)
+        if(Q18_2!=null)
 
             ready.putExtra("sc18-2", Q18_2);
         else
             ready.putExtra("sc18-2", toy.getStringExtra("sc18-2"));
 
 
-
-        if(toy.getStringExtra("sc18-3") == null ||  !toy.getStringExtra("sc18-3").equals(Q18_3))
+//toy.getStringExtra("sc18-3") == null ||  !toy.getStringExtra("sc18-3").equals(Q18_3)
+        if(Q18_3!=null)
 
             ready.putExtra("sc18-3", Q18_3);
         else
@@ -675,8 +675,8 @@ public class Screen19 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc18-4") == null ||  !toy.getStringExtra("sc18-4").equals(Q18_4))
+//toy.getStringExtra("sc18-4") == null ||  !toy.getStringExtra("sc18-4").equals(Q18_4)
+        if(Q18_4!=null)
 
             ready.putExtra("sc18-4", Q18_4);
         else
@@ -684,8 +684,8 @@ public class Screen19 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc18-5") == null ||  !toy.getStringExtra("sc18-5").equals(Q18_5))
+//toy.getStringExtra("sc18-5") == null ||  !toy.getStringExtra("sc18-5").equals(Q18_5)
+        if(Q18_5!=null)
 
             ready.putExtra("sc18-5", Q18_5);
         else

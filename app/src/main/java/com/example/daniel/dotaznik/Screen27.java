@@ -206,8 +206,8 @@ public class Screen27 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc26") == null ||  !toy.getStringExtra("sc26").equals(Q26))
+//toy.getStringExtra("sc26") == null ||  !toy.getStringExtra("sc26").equals(Q26)
+        if(Q26!=null)
 
             ready.putExtra("sc26", Q26);
         else

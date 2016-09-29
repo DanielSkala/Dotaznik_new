@@ -95,8 +95,8 @@ String Q17,sChecked;
 
 
 
-
-        if(toy.getStringExtra("sc18") == null ||  !toy.getStringExtra("sc18").equals(Q17))
+//toy.getStringExtra("sc18") == null ||  !toy.getStringExtra("sc18").equals(Q17)
+        if(Q17!=null)
 
             ready.putExtra("sc18", Q17);
         else

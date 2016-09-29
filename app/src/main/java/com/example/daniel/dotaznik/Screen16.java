@@ -760,8 +760,8 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc16-1") == null ||  !toy.getStringExtra("sc16-1").equals(Q15_1))
+//toy.getStringExtra("sc16-1") == null ||  !toy.getStringExtra("sc16-1").equals(Q15_1)
+        if(Q15_1!=null)
 
             ready.putExtra("sc16-1", Q15_1);
         else
@@ -769,16 +769,16 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc16-2") == null ||  !toy.getStringExtra("sc16-2").equals(Q15_2))
+//toy.getStringExtra("sc16-2") == null ||  !toy.getStringExtra("sc16-2").equals(Q15_2)
+        if(Q15_2!=null)
 
             ready.putExtra("sc16-2", Q15_2);
         else
             ready.putExtra("sc16-2", toy.getStringExtra("sc16-2"));
 
 
-
-        if(toy.getStringExtra("sc16-3") == null ||  !toy.getStringExtra("sc16-3").equals(Q15_3))
+//toy.getStringExtra("sc16-3") == null ||  !toy.getStringExtra("sc16-3").equals(Q15_3)
+        if(Q15_3!=null)
 
             ready.putExtra("sc16-3", Q15_3);
         else
@@ -786,8 +786,8 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc16-4") == null ||  !toy.getStringExtra("sc16-4").equals(Q15_4))
+        //toy.getStringExtra("sc16-4") == null ||  !toy.getStringExtra("sc16-4").equals(Q15_4)
+        if(Q15_4!=null)
 
             ready.putExtra("sc16-4", Q15_4);
         else
@@ -795,8 +795,8 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc16-5") == null ||  !toy.getStringExtra("sc16-5").equals(Q15_5))
+//toy.getStringExtra("sc16-5") == null ||  !toy.getStringExtra("sc16-5").equals(Q15_5)
+        if(Q15_5!=null)
 
             ready.putExtra("sc16-5", Q15_5);
         else
@@ -804,8 +804,8 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc16-6") == null ||  !toy.getStringExtra("sc16-6").equals(Q15_6))
+//toy.getStringExtra("sc16-6") == null ||  !toy.getStringExtra("sc16-6").equals(Q15_6)
+        if(Q15_6!=null)
 
             ready.putExtra("sc16-6", Q15_6);
         else

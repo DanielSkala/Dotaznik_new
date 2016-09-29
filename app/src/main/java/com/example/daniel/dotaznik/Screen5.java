@@ -144,8 +144,8 @@ public class Screen5 extends AppCompatActivity {
 
 
 
-
-        if(toy.getStringExtra("sc5") == null ||  !toy.getStringExtra("sc5").equals(Q4))
+        //toy.getStringExtra("sc5") == null ||  !toy.getStringExtra("sc5").equals(Q4)
+        if(Q4 != null)
             ready.putExtra("sc5", Q4);
         else
             ready.putExtra("sc5", toy.getStringExtra("sc5"));

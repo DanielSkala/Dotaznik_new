@@ -137,8 +137,8 @@ public class Screen8 extends AppCompatActivity {
         Intent toy = getIntent();
         boolean isChecked;
 
-
-        if(toy.getStringExtra("sc8") == null ||  !toy.getStringExtra("sc8").equals(Q7))
+//toy.getStringExtra("sc8") == null ||  !toy.getStringExtra("sc8").equals(Q7)
+        if(Q7 != null)
             ready.putExtra("sc8", Q7);
         else
             ready.putExtra("sc8", toy.getStringExtra("sc8"));

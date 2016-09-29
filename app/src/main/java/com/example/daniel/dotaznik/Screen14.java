@@ -88,8 +88,8 @@ public class Screen14 extends AppCompatActivity {
     {
         Intent toy = getIntent();
         boolean isChecked;
-
-        if(toy.getStringExtra("sc14") == null ||  !toy.getStringExtra("sc14").equals(Q13))
+//toy.getStringExtra("sc14") == null ||  !toy.getStringExtra("sc14").equals(Q13)
+        if(Q13!=null)
             ready.putExtra("sc14", Q13);
         else
             ready.putExtra("sc14", toy.getStringExtra("sc14"));
