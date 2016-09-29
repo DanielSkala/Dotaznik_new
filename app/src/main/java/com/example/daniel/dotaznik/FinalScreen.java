@@ -35,11 +35,10 @@ public class FinalScreen extends AppCompatActivity {
 
     public void init() {
         button54 = (Button) findViewById(R.id.button54);
-
         button54.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                AudioRecorder.stop();
 
                 Intent ready = getIntent();
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();

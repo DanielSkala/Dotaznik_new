@@ -7,7 +7,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -101,7 +101,8 @@
             android:name=".Screen27"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".FinalScreen" />
-        <activity android:name=".DotaznikReset"></activity>
+        <activity android:name=".DotaznikReset" />
+        <activity android:name=".AudioRecorder"></activity>
     </application>
 
 </manifest>

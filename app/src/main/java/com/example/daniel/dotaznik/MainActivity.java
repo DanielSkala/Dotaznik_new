@@ -40,6 +40,7 @@ import static android.R.attr.x;
 public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
+    public String address;
     int i;
     String getGps;
     //Chronometer chrono;
@@ -54,6 +55,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
+                try {
+                    AudioRecorder.start();
+                }catch (Exception e){
+                    //Handle exception
+                }
                 startActivity(sendIsChecked(toy));
                 finish();
             }
@@ -131,19 +137,22 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             ready.putExtra("ksc25","false");
             ready.putExtra("ksc26","false");
             ready.putExtra("ksc27","false");
-
+            ready.putExtra("macAddress",address);
     }
         return ready;
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //tu je kod pre mac adresu
+        //TODO uz vieme ziskavat mac adress uz to len treba posielat!!
         WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
-        String address = info.getMacAddress();
+        address = info.getMacAddress();
+
+
 
 /*
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
