@@ -4,11 +4,15 @@ import android.content.Context;
 import android.content.Intent;
 
 import android.content.SharedPreferences;
+import android.media.Image;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import static android.content.Context.MODE_PRIVATE;
 
@@ -16,16 +20,11 @@ public class Screen2 extends AppCompatActivity {
 
     public Button button2;
     public Button button3;
+    public Button button01;
+    public Button button02;
+    public Image img;
 
-
-
-
-
-
-
-
-
-    String Q1,sChecked;
+    String Q1, sChecked;
 
 
         public void onCheckboxClicked(View view) {
@@ -63,8 +62,6 @@ public class Screen2 extends AppCompatActivity {
 
 
     }
-
-
 
     public void init(){
         button3 = (Button)findViewById(R.id.button3);
@@ -189,13 +186,6 @@ public class Screen2 extends AppCompatActivity {
         ready.putExtra("sc26", toy.getStringExtra("sc26"));
         ready.putExtra("sc27", toy.getStringExtra("sc27"));
         ready.putExtra("sc28", toy.getStringExtra("sc28"));
-
-
-
-
-
-
-
 
 
             ready.putExtra("ksc2",sChecked);

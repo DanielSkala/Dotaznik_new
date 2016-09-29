@@ -8,7 +8,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.daniel.dotaznik.Screen2">
+    tools:context="com.example.daniel.dotaznik.Screen2"
+    android:id="@+id/rl">
 
     <Button
         android:layout_width="50dp"
@@ -97,7 +98,8 @@
         android:layout_alignTop="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:src="@drawable/obr" />
+        android:src="@drawable/obr"
+        android:clickable="false" />
 
     <TextView
         android:layout_width="wrap_content"

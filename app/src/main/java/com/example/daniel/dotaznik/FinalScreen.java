@@ -48,7 +48,7 @@ public class FinalScreen extends AppCompatActivity {
                 Calendar c = Calendar.getInstance();
                 String sDate = c.get(Calendar.YEAR) + "-"
                         + c.get(Calendar.MONTH)
-                        + "-" + c.get(Calendar.DAY_OF_MONTH)+1
+                        + "-" + c.get(Calendar.DAY_OF_MONTH)
                         + " at " + c.get(Calendar.HOUR_OF_DAY)
                         + ":" + c.get(Calendar.MINUTE);
 
@@ -101,18 +101,17 @@ public class FinalScreen extends AppCompatActivity {
                 File dir1 = new File (root1.getAbsolutePath() + "/download");
                 File file1 = new File(dir1, "myData1.txt");
 
-
+                //if(file1.exists()) {
                     try {
 
-                        BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1),"UTF-8"),8192);
+                        BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1), "UTF-8"), 8192);
                         String data;
-                        while ((data = bufferedReader1.readLine()) != null)
-                        {
-                            String get[]= data.split("\t");
-                            map.put(iCounter,new Dotaznik_info( get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
-                                    get[11],get[12],get[13],get[14],get[15],get[16],get[17],get[18],get[19],get[20],
-                                    get[21],get[22],get[23],get[24],get[25],get[26],get[27],get[28],get[29],get[30],
-                                    get[31],get[32],get[33],get[34],get[35],get[36],get[37],get[38],get[39],get[40],get[41],get[42]));
+                        while ((data = bufferedReader1.readLine()) != null) {
+                            String get[] = data.split("\t");
+                            map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
+                                    get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
+                                    get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
+                                    get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40], get[41], get[42]));
                             iCounter++;
 
                         }
@@ -122,7 +121,7 @@ public class FinalScreen extends AppCompatActivity {
                         e.printStackTrace();
                     }
 
-
+                //}
                 File root = android.os.Environment.getExternalStorageDirectory();
 
 
@@ -179,14 +178,8 @@ public class FinalScreen extends AppCompatActivity {
 */
 
 
-
-
-
-
                 Intent info = new Intent (FinalScreen.this, MainActivity.class);
                 info.putExtra("isChecked","true");
-
-
 
                 //info.putExtra("Den2", info6);
                // info.putExtra("Datum2", info5);
@@ -231,15 +224,10 @@ public class FinalScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_screen);
 
-
-
-
-
         init();
-
     }
     public boolean fileExistance(String fname){
         File file = getBaseContext().getFileStreamPath(fname);
-        return file.exists();
-    }
+    return file.exists();
+}
 }

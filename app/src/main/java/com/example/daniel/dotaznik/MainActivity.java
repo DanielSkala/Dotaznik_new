@@ -45,21 +45,15 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     //NOVE
 
-
-    public void init() {
-        button = (Button) findViewById(R.id.button);
-
+    public void init(){
+        button = (Button)findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
-                //chrono.setBase(SystemClock.elapsedRealtime() + time);
-                //chrono.start();
-
-                final Intent ready = new Intent(MainActivity.this, Screen2.class);
-
-                startActivity(sendIsChecked(ready));
+                Intent toy = new Intent(MainActivity.this, Screen2.class);
+                startActivity(sendIsChecked(toy));
                 finish();
-
             }
         });
     }
@@ -71,7 +65,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         Calendar c = Calendar.getInstance();
         String sDate = c.get(Calendar.YEAR) + "-"
                 + c.get(Calendar.MONTH)
-                + "-" + c.get(Calendar.DAY_OF_MONTH)+1
+                + "-" + c.get(Calendar.DAY_OF_MONTH)
                 + " at " + c.get(Calendar.HOUR_OF_DAY)
                 + ":" + c.get(Calendar.MINUTE);
 
@@ -139,6 +133,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
 /*
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
         int iCounter = 0;
@@ -254,8 +250,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         init();
 
 
-
-
     }
 
     //TODO hodit do podmienky funkciu onLocationChanged
@@ -272,9 +266,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
 
         }
-
-
-
 
     @Override
     public void onProviderDisabled(String provider) {

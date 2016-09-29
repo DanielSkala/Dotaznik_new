@@ -127,18 +127,6 @@
         android:textSize="30sp"
         android:textStyle="normal|bold" />
 
-    <TextView
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
-        android:id="@+id/textView121"
-        android:textColor="#f44336"
-        android:textStyle="italic"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/textView29"
-        android:layout_toStartOf="@+id/textView29" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -171,5 +159,17 @@
         android:layout_below="@+id/button51"
         android:layout_centerHorizontal="true"
         android:onClick="onCheckboxClicked" />
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
+        android:id="@+id/textView121"
+        android:textColor="#f44336"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="13dp" />
 
 </RelativeLayout>

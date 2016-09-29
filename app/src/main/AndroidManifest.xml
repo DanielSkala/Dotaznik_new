@@ -39,47 +39,68 @@
         <activity
             android:name=".Screen7"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name=".Screen8"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen9"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen10"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen11"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen12"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen13"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen14"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen15"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen16"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen17"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen18"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen19"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen20"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen21"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen22"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen23"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen24"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen25"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen26"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".Screen27"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name=".FinalScreen"></activity>
+        <activity
+            android:name=".Screen8"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen9"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen10"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen11"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen12"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen13"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen14"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen15"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen16"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen17"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen18"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen19"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen20"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen21"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen22"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen23"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen24"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen25"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen26"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen27"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".FinalScreen" />
+        <activity android:name=".DotaznikReset"></activity>
     </application>
 
 </manifest>
