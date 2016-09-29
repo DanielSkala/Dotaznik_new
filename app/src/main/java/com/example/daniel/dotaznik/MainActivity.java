@@ -73,6 +73,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         if(isChecked)
         {
+            ready.putExtra("sc27","1");
+            ready.putExtra("sc28","2");
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc3","false");
