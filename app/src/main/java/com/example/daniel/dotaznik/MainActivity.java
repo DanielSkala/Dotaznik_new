@@ -23,6 +23,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Calendar;
 import java.util.TreeMap;
 
 import static android.R.attr.x;
@@ -30,7 +31,8 @@ import static android.R.attr.x;
 public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Button button;
-
+    int i;
+    String getGps;
     //Chronometer chrono;
     //long time = 0;
 
@@ -58,6 +60,12 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     public Intent sendIsChecked(Intent ready)
     {
+        Calendar c = Calendar.getInstance();
+        String sDate = c.get(Calendar.YEAR) + "-"
+                + c.get(Calendar.MONTH)
+                + "-" + c.get(Calendar.DAY_OF_MONTH)
+                + " at " + c.get(Calendar.HOUR_OF_DAY)
+                + ":" + c.get(Calendar.MINUTE);
 
         boolean isChecked;
         Intent get = getIntent();
@@ -73,8 +81,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         if(isChecked)
         {
-            ready.putExtra("sc27","1");
-            ready.putExtra("sc28","2");
+            ready.putExtra("sc27",getGps);
+            ready.putExtra("sc28", sDate);
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc3","false");
@@ -126,7 +134,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        i = 0;
         Intent ready = getIntent();
 /*
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
@@ -251,10 +259,13 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     @Override
     public void onLocationChanged(Location location) {
 
-        String myLocation ="Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
-                + "\nLongitude: " + location.getLongitude();
-
-        Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
+        while (i == 0) {
+            String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
+                    + "\nLongitude: " + location.getLongitude();
+            i++;
+            getGps = myLocation;
+        }
+        //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
     }
 
     @Override

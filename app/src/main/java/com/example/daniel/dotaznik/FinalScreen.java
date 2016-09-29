@@ -127,7 +127,6 @@ public class FinalScreen extends AppCompatActivity {
                     for (int i = 0; i < iCounter; i++) {
                         if (map.get(i) != null)
                             pw.print(map.get(i).toString().getBytes());
-                            pw.flush();
                     }
 
                     pw.close();
