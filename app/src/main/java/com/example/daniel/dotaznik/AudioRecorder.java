@@ -14,15 +14,17 @@ import java.io.IOException;
  *  - <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
  */
 public class AudioRecorder {
-    public static final String FILE_NAME = "audio.3gp";
+    //public static final String FILE_NAME = "audio.3gp";
     public static final String DIRECTORY = "com.example.daniel.dotaznik/audio/";
 
     private static MediaRecorder mediaRecorder = null;
     private static boolean recording = false;
+    private static String currentFileName = null;
 
-    public static void start () throws IOException{
+    public static void start (String fileName) throws IOException{
         if(AudioRecorder.isRecording())
             stop();
+        currentFileName = fileName;
 
         mediaRecorder = new MediaRecorder();
         mediaRecorder.setAudioSource(MediaRecorder.AudioSource.MIC);
@@ -32,7 +34,7 @@ public class AudioRecorder {
         String absPath = Environment.getExternalStorageDirectory().getAbsolutePath();
         File file = new File(absPath + "/" + DIRECTORY);
         file.mkdirs();
-        mediaRecorder.setOutputFile(absPath + "/" + DIRECTORY + FILE_NAME);
+        mediaRecorder.setOutputFile(absPath + "/" + DIRECTORY + fileName);
 
         mediaRecorder.prepare();
         mediaRecorder.start();
@@ -55,6 +57,6 @@ public class AudioRecorder {
     }
 
     public static  String getAbsoluteFilePath () {
-        return Environment.getExternalStorageDirectory().getAbsolutePath()  + "/" + DIRECTORY + FILE_NAME;
+        return Environment.getExternalStorageDirectory().getAbsolutePath()  + "/" + DIRECTORY + currentFileName;
     }
 }
