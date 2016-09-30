@@ -15,6 +15,7 @@ import android.net.wifi.WifiManager;
 import android.os.Environment;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -56,7 +57,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             public void onClick(View v) {
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 try {
-                    AudioRecorder.start( Calendar.getInstance().getTimeInMillis() + ".3gp");
+                    AudioRecorder.start( Calendar.getInstance().getTime() + ".3gp");
                 }catch (Exception e){
                     //Handle exception
                 }
@@ -65,8 +66,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             }
         });
     }
-
-
 
     private LocationManager locationManager;
 
@@ -283,7 +282,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 getGps = location.getLatitude() + " " + location.getLongitude();
             }
             //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
-
+        if(locationManager != null && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+            locationManager.removeUpdates(this);
         }
 
     @Override

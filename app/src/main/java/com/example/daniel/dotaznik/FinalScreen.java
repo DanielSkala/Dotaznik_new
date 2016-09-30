@@ -41,6 +41,7 @@ public class FinalScreen extends AppCompatActivity {
                 AudioRecorder.stop();
 
                 Intent ready = getIntent();
+
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
                 int iCounter = 0;
 
