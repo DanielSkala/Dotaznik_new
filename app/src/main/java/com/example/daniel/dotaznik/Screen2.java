@@ -14,6 +14,9 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import java.io.File;
+import java.util.Calendar;
+
 import static android.content.Context.MODE_PRIVATE;
 
 public class Screen2 extends AppCompatActivity {
@@ -90,7 +93,8 @@ public class Screen2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent ready = new Intent(Screen2.this, MainActivity.class);
-                AudioRecorder.stop();
+                AudioRecorder.stop(); //toto toto toto toto toto---------------------------------------------------------------------------------------------------------------------
+
                 startActivity(sendIsChecked(ready));
 
                 finish();
@@ -146,7 +150,7 @@ public class Screen2 extends AppCompatActivity {
         boolean isChecked;
 
 
-            ready.putExtra("isChecked", "true");
+            ready.putExtra("isChecked", "true"); //TOTO NECH JE FALSE----------------------------------------------------------------------------------------------------------------
 
        // toy.getStringExtra("sc2") == null || !toy.getStringExtra("sc2").equals(Q1)
             if(Q1 != null)
