@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     public String address;
     int i;
     String getGps;
+    String gTime;
     //Chronometer chrono;
     //long time = 0;
 
@@ -58,6 +59,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 try {
                     AudioRecorder.start( Calendar.getInstance().getTime() + ".3gp");
+                    gTime = Calendar.getInstance().getTime().toString();
                 }catch (Exception e){
                     //Handle exception
                 }
@@ -93,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         if(isChecked)
         {
             ready.putExtra("sc27",getGps);
-            ready.putExtra("sc28", sDate);
+            ready.putExtra("sc28", gTime);
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc2","false");
             ready.putExtra("ksc3","false");

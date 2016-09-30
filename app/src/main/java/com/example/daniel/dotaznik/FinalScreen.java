@@ -53,7 +53,7 @@ public class FinalScreen extends AppCompatActivity {
                         + ":" + c.get(Calendar.MINUTE);
 
                 map.put(iCounter,new Dotaznik_info(
-                        ready.getStringExtra("macAddress"),
+                        ready.getStringExtra("macAddress") + "__" + ready.getStringExtra("sc28"),
                         ready.getStringExtra("sc2"),
                         ready.getStringExtra("sc3"),
                         ready.getStringExtra("sc4"),
