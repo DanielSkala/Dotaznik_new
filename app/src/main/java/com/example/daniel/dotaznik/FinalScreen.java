@@ -45,12 +45,7 @@ public class FinalScreen extends AppCompatActivity {
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
                 int iCounter = 0;
 
-                Calendar c = Calendar.getInstance();
-                String sDate = c.get(Calendar.YEAR) + "-"
-                        + c.get(Calendar.MONTH)
-                        + "-" + c.get(Calendar.DAY_OF_MONTH)
-                        + " at " + c.get(Calendar.HOUR_OF_DAY)
-                        + ":" + c.get(Calendar.MINUTE);
+
 
                 map.put(iCounter,new Dotaznik_info(
                         ready.getStringExtra("macAddress") + "__" + ready.getStringExtra("sc28"),
@@ -95,7 +90,7 @@ public class FinalScreen extends AppCompatActivity {
                         ready.getStringExtra("sc25"),
                         ready.getStringExtra("sc26"),
                         ready.getStringExtra("sc27"),//gps
-                        ready.getStringExtra("sc28"),sDate)); // time
+                        ready.getStringExtra("sc28"),Calendar.getInstance().getTime().toString())); // time
                 iCounter++;
 
                 File root1 = android.os.Environment.getExternalStorageDirectory();
