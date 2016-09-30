@@ -24,19 +24,14 @@ public class Screen12 extends AppCompatActivity {
             public void onClick(View v) {
                 final Intent toy = new Intent(Screen12.this, Screen13.class);
 
-                SharedPreferences.Editor editor = getSharedPreferences("Q11",MODE_PRIVATE).edit() ;
-
-
                 EditText editText = (EditText) findViewById(R.id.editText17);
                 Q11 = editText.getText().toString();
                 Intent info = new Intent (Screen12.this, MainActivity.class);
                 info.putExtra("sc12", Q11);
 
-
-
+                SharedPreferences.Editor editor = getSharedPreferences("Q11",MODE_PRIVATE).edit() ;
                 editor.putString("Q11",Q11);
                 editor.commit();
-
 
                 if(!Q11.equals(""))
                 {

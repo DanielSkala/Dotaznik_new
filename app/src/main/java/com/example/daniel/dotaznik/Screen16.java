@@ -825,7 +825,7 @@ public class    Screen16 extends AppCompatActivity {
         ready.putExtra("sc12", toy.getStringExtra("sc12"));
         ready.putExtra("sc13", toy.getStringExtra("sc13"));
         ready.putExtra("sc14", toy.getStringExtra("sc14"));
-        ready.putExtra("sc12", toy.getStringExtra("sc15"));
+        ready.putExtra("sc15", toy.getStringExtra("sc15"));
         ready.putExtra("sc17", toy.getStringExtra("sc17"));
         ready.putExtra("sc18", toy.getStringExtra("sc18"));
         ready.putExtra("sc18-1", toy.getStringExtra("sc18-1"));
