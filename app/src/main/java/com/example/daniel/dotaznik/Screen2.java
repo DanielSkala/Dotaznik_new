@@ -145,7 +145,7 @@ public class Screen2 extends AppCompatActivity {
         boolean isChecked;
 
 
-            ready.putExtra("isChecked", "false");
+            ready.putExtra("isChecked", "true");
 
        // toy.getStringExtra("sc2") == null || !toy.getStringExtra("sc2").equals(Q1)
             if(Q1 != null)
