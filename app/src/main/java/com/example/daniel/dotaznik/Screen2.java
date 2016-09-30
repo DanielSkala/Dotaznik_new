@@ -93,7 +93,7 @@ public class Screen2 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent ready = new Intent(Screen2.this, MainActivity.class);
-                AudioRecorder.stop(); //toto toto toto toto toto---------------------------------------------------------------------------------------------------------------------
+                AudioRecorder.stop(); //toto toto toto toto toto vykomentovat---------------------------------------------------------------------------------------------------------------------
 
                 startActivity(sendIsChecked(ready));
 
