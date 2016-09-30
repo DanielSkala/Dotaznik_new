@@ -30,7 +30,6 @@ public class FinalScreen extends AppCompatActivity {
     /*
     public EditText editText4,editText5,editText6;
 
-
     */
 
     public void init() {
