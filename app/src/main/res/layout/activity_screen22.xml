@@ -42,7 +42,7 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
+        android:inputType="textPersonName"
         android:ems="10"
         android:hint="Priestor pre dlhú odpoveď"
         android:id="@+id/editText53"
