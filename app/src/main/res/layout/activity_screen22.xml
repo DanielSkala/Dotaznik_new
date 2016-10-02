@@ -42,8 +42,9 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
+        android:inputType="textMultiLine"
         android:ems="10"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;"
         android:hint="Priestor pre dlhú odpoveď"
         android:id="@+id/editText53"
         android:layout_marginTop="216dp"
@@ -52,7 +53,8 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:maxLines="1" />
+        android:maxLines="10"
+        android:textSize="24sp" />
 
     <TextView
         android:text="Otázka: Môžete mi prosím povedať, čo Vám ako obyvateľovi Bratislavského  samosprávneho kraja (BSK) najviac chýba?"
