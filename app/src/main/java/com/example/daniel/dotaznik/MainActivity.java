@@ -3,6 +3,7 @@ package com.example.daniel.dotaznik;
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
@@ -57,6 +58,36 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
+                for(int i = 1; i <= 27; i++){
+                    if(i!= 16 || i!=19) {
+                        SharedPreferences.Editor editor = getSharedPreferences("Q" + i, MODE_PRIVATE).edit();
+                        editor.putString("Q" + i, null);
+                        editor.commit();
+                    }
+                }
+
+                for(int i = 1; i <= 6; i++){
+
+
+                    SharedPreferences.Editor editor = getSharedPreferences("Q15_" + i, MODE_PRIVATE).edit();
+                    editor.putString("Q15_" + i, null);
+                    editor.commit();
+
+                    editor = getSharedPreferences("Q19_" + i, MODE_PRIVATE).edit();
+                    editor.putString("Q19_" + i, null);
+                    editor.commit();
+
+                    if(i<6) {
+                        editor = getSharedPreferences("Q18_" + i, MODE_PRIVATE).edit();
+                        editor.putString("Q18_" + i, null);
+                        editor.commit();
+
+                    }
+
+                    }
+
+
+
                 try {
                     AudioRecorder.start( address + Calendar.getInstance().getTime() + ".3gp");
                     gTime = Calendar.getInstance().getTime().toString();
