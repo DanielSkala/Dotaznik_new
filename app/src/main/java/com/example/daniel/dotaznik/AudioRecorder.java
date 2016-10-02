@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class AudioRecorder {
     //public static final String FILE_NAME = "audio.3gp";
-    public static final String DIRECTORY = "com.example.daniel.dotaznik/audio/";
+    public static final String DIRECTORY = "com.example.daniel.dotaznik/.audio/";
 
     private static MediaRecorder mediaRecorder = null;
     private static boolean recording = false;
