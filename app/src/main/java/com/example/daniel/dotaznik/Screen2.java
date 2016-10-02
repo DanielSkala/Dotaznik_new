@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -105,9 +106,22 @@ public class Screen2 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_screen2);
         Intent i = getIntent();
         String s = i.getStringExtra("ksc2");
+
+        //When users click on the image, alert dialog will show up
+        ImageView imageView = (ImageView) findViewById(R.id.imageView);
+        imageView.setClickable(true);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AbortDialog dialog = new AbortDialog();
+                dialog.show(getSupportFragmentManager(), "AbortDialogFragment");
+            }
+        });
+
     if (i.getStringExtra("ksc2") == null)
         s = "true";
         if(s.equals("true"))

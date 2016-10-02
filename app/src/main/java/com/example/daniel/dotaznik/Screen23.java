@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.ImageView;
 
 public class Screen23 extends AppCompatActivity {
 
@@ -155,6 +156,18 @@ public class Screen23 extends AppCompatActivity {
         setContentView(R.layout.activity_screen23);
         Intent i = getIntent();
         String s = i.getStringExtra("ksc22");
+
+        //When users click on the image, alert dialog will show up
+        ImageView imageView = (ImageView) findViewById(R.id.imageView23);
+        imageView.setClickable(true);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AbortDialog dialog = new AbortDialog();
+                dialog.show(getSupportFragmentManager(), "AbortDialogFragment");
+            }
+        });
+
         if (i.getStringExtra("ksc22") == null)
             s = "true";
         if(s.equals("true")) {

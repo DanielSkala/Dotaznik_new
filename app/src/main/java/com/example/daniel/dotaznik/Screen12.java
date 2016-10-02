@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 public class Screen12 extends AppCompatActivity {
 
@@ -70,6 +71,18 @@ public class Screen12 extends AppCompatActivity {
         setContentView(R.layout.activity_screen12);
         Intent i = getIntent();
         String s = i.getStringExtra("ksc12");
+
+        //When users click on the image, alert dialog will show up
+        ImageView imageView = (ImageView) findViewById(R.id.imageView12);
+        imageView.setClickable(true);
+        imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AbortDialog dialog = new AbortDialog();
+                dialog.show(getSupportFragmentManager(), "AbortDialogFragment");
+            }
+        });
+
         if (i.getStringExtra("ksc12") == null)
             s = "true";
         if(s.equals("true")) {
