@@ -25,6 +25,7 @@ import android.widget.Button;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -39,34 +40,30 @@ import java.util.TreeMap;
 
 import static android.R.attr.x;
 
-public class MainActivity extends AppCompatActivity implements LocationListener{
+public class MainActivity extends AppCompatActivity implements LocationListener {
 
     public Button button;
     public String address;
     int i;
     String getGps;
     String gTime;
-    //Chronometer chrono;
-    //long time = 0;
 
-    //NOVE
-
-    public void init(){
-        button = (Button)findViewById(R.id.button);
+    public void init() {
+        button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
-                for(int i = 1; i <= 27; i++){
-                    if(i!= 16 || i!=19) {
+                for (int i = 1; i <= 27; i++) {
+                    if (i != 16 || i != 19) {
                         SharedPreferences.Editor editor = getSharedPreferences("Q" + i, MODE_PRIVATE).edit();
                         editor.putString("Q" + i, null);
                         editor.commit();
                     }
                 }
 
-                for(int i = 1; i <= 6; i++){
+                for (int i = 1; i <= 6; i++) {
 
 
                     SharedPreferences.Editor editor = getSharedPreferences("Q15_" + i, MODE_PRIVATE).edit();
@@ -77,21 +74,23 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
                     editor.putString("Q19_" + i, null);
                     editor.commit();
 
-                    if(i<6) {
+                    if (i < 6) {
                         editor = getSharedPreferences("Q18_" + i, MODE_PRIVATE).edit();
                         editor.putString("Q18_" + i, null);
                         editor.commit();
 
                     }
 
-                    }
+                }
 
-
+                SharedPreferences.Editor editor = getSharedPreferences("telNum" , MODE_PRIVATE).edit();
+                editor.putString("telNum", null);
+                editor.commit();
 
                 try {
-                    AudioRecorder.start( address + Calendar.getInstance().getTime() + ".3gp");
+                    AudioRecorder.start(address + Calendar.getInstance().getTime() + ".3gp");
                     gTime = Calendar.getInstance().getTime().toString();
-                }catch (Exception e){
+                } catch (Exception e) {
                     //Handle exception
                 }
                 startActivity(sendIsChecked(toy));
@@ -102,8 +101,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     private LocationManager locationManager;
 
-    public Intent sendIsChecked(Intent ready)
-    {
+    public Intent sendIsChecked(Intent ready) {
         Calendar c = Calendar.getInstance();
         String sDate = c.get(Calendar.YEAR) + "-"
                 + c.get(Calendar.MONTH)
@@ -113,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
         boolean isChecked;
         Intent get = getIntent();
-        if(get.getStringExtra("isChecked") == null)
+        if (get.getStringExtra("isChecked") == null)
             isChecked = true;
         else {
             if (get.getStringExtra("isChecked").equals("true"))
@@ -123,54 +121,53 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
         }
 
 
-        if(isChecked)
-        {
-            ready.putExtra("sc27",getGps);
+        if (isChecked) {
+            ready.putExtra("sc27", getGps);
             ready.putExtra("sc28", gTime);
-            ready.putExtra("ksc2","false");
-            ready.putExtra("ksc2","false");
-            ready.putExtra("ksc3","false");
-            ready.putExtra("ksc4","false");
-            ready.putExtra("ksc5","false");
-            ready.putExtra("ksc6","false");
-            ready.putExtra("ksc7","false");
-            ready.putExtra("ksc8","false");
-            ready.putExtra("ksc9","false");
-            ready.putExtra("ksc10","false");
-            ready.putExtra("ksc11","false");
-            ready.putExtra("ksc12","false");
-            ready.putExtra("ksc13","false");
-            ready.putExtra("ksc14","false");
-            ready.putExtra("ksc15","false");
-            ready.putExtra("ksc16-1","false");
-            ready.putExtra("ksc16-2","false");
-            ready.putExtra("ksc16-3","false");
-            ready.putExtra("ksc16-4","false");
-            ready.putExtra("ksc16-5","false");
-            ready.putExtra("ksc16-6","false");
-            ready.putExtra("ksc17","false");
-            ready.putExtra("ksc18","false");
-            ready.putExtra("ksc18-1","false");
-            ready.putExtra("ksc18-2","false");
-            ready.putExtra("ksc18-3","false");
-            ready.putExtra("ksc18-4","false");
-            ready.putExtra("ksc18-5","false");
-            ready.putExtra("ksc19-1","false");
-            ready.putExtra("ksc19-2","false");
-            ready.putExtra("ksc19-3","false");
-            ready.putExtra("ksc19-4","false");
-            ready.putExtra("ksc19-5","false");
-            ready.putExtra("ksc19-6","false");
-            ready.putExtra("ksc20","false");
-            ready.putExtra("ksc21","false");
-            ready.putExtra("ksc22","false");
-            ready.putExtra("ksc23","false");
-            ready.putExtra("ksc24","false");
-            ready.putExtra("ksc25","false");
-            ready.putExtra("ksc26","false");
-            ready.putExtra("ksc27","false");
-            ready.putExtra("macAddress",address);
-    }
+            ready.putExtra("ksc2", "false");
+            ready.putExtra("ksc2", "false");
+            ready.putExtra("ksc3", "false");
+            ready.putExtra("ksc4", "false");
+            ready.putExtra("ksc5", "false");
+            ready.putExtra("ksc6", "false");
+            ready.putExtra("ksc7", "false");
+            ready.putExtra("ksc8", "false");
+            ready.putExtra("ksc9", "false");
+            ready.putExtra("ksc10", "false");
+            ready.putExtra("ksc11", "false");
+            ready.putExtra("ksc12", "false");
+            ready.putExtra("ksc13", "false");
+            ready.putExtra("ksc14", "false");
+            ready.putExtra("ksc15", "false");
+            ready.putExtra("ksc16-1", "false");
+            ready.putExtra("ksc16-2", "false");
+            ready.putExtra("ksc16-3", "false");
+            ready.putExtra("ksc16-4", "false");
+            ready.putExtra("ksc16-5", "false");
+            ready.putExtra("ksc16-6", "false");
+            ready.putExtra("ksc17", "false");
+            ready.putExtra("ksc18", "false");
+            ready.putExtra("ksc18-1", "false");
+            ready.putExtra("ksc18-2", "false");
+            ready.putExtra("ksc18-3", "false");
+            ready.putExtra("ksc18-4", "false");
+            ready.putExtra("ksc18-5", "false");
+            ready.putExtra("ksc19-1", "false");
+            ready.putExtra("ksc19-2", "false");
+            ready.putExtra("ksc19-3", "false");
+            ready.putExtra("ksc19-4", "false");
+            ready.putExtra("ksc19-5", "false");
+            ready.putExtra("ksc19-6", "false");
+            ready.putExtra("ksc20", "false");
+            ready.putExtra("ksc21", "false");
+            ready.putExtra("ksc22", "false");
+            ready.putExtra("ksc23", "false");
+            ready.putExtra("ksc24", "false");
+            ready.putExtra("ksc25", "false");
+            ready.putExtra("ksc26", "false");
+            ready.putExtra("ksc27", "false");
+            ready.putExtra("macAddress", address);
+        }
         return ready;
     }
 
@@ -178,119 +175,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView QNum = (TextView) findViewById(R.id.textView129);
+        QNum.setText("Počet ukončených dotazníkov: " + getQNum());
 
-        //TODO uz vieme ziskavat mac adress uz to len treba posielat!!
         WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
         address = info.getMacAddress();
+        init();
 
-
-
-/*
-        final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
-        int iCounter = 0;
-
-        if(ready.getStringExtra("end") == null)
-            ready.putExtra("end", "0");
-
-      if(ready.getStringExtra("end").equals("1"))
-        {
-            map.put(iCounter,new Dotaznik_info(ready.getStringExtra("sc2"),
-                    ready.getStringExtra("sc2"),
-                    ready.getStringExtra("sc3"),
-                    ready.getStringExtra("sc4"),
-                    ready.getStringExtra("sc5"),
-                    ready.getStringExtra("sc6"),
-                    ready.getStringExtra("sc7"),
-                    ready.getStringExtra("sc8"),
-                    ready.getStringExtra("sc9"),
-                    ready.getStringExtra("sc10"),
-                    ready.getStringExtra("sc11"),
-                    ready.getStringExtra("sc12"),
-                    ready.getStringExtra("sc13"),
-                    ready.getStringExtra("sc14"),
-                    ready.getStringExtra("sc15"),
-                    ready.getStringExtra("sc16-1"),
-                    ready.getStringExtra("sc16-2"),
-                    ready.getStringExtra("sc16-3"),
-                    ready.getStringExtra("sc16-4"),
-                    ready.getStringExtra("sc16-5"),
-                    ready.getStringExtra("sc16-6"),
-                    ready.getStringExtra("sc17"),
-                    ready.getStringExtra("sc18-1"),
-                    ready.getStringExtra("sc18-2"),
-                    ready.getStringExtra("sc18-3"),
-                    ready.getStringExtra("sc18-4"),
-                    ready.getStringExtra("sc18-5"),
-                    ready.getStringExtra("sc19-1"),
-                    ready.getStringExtra("sc19-2"),
-                    ready.getStringExtra("sc19-3"),
-                    ready.getStringExtra("sc19-4"),
-                    ready.getStringExtra("sc19-5"),
-                    ready.getStringExtra("sc19-6"),
-                    ready.getStringExtra("sc20"),
-                    ready.getStringExtra("sc21"),
-                    ready.getStringExtra("sc22"),
-                    ready.getStringExtra("sc23"),
-                    ready.getStringExtra("sc24"),
-                    ready.getStringExtra("sc25"),
-                    ready.getStringExtra("sc26"),
-                    ready.getStringExtra("sc27")));
-
-            iCounter++;
-                String s = null;
-                ready.putExtra("end", "z");
-        }
-        */
-/*
-        if (fileExistance("data1.txt"))//----------------------------------------------------////////////////
-        {
-            try {
-                FileInputStream fis1 = openFileInput("data1.txt"); //opens file
-             1\                 String data;
-
-                while ((data = bufferedReader1.readLine()) != null)
-                {
-                    String get[]= data.split("\t");
-                    map.put(iCounter,new Dotaznik_info( get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
-                                                                get[11],get[12],get[13],get[14],get[15],get[16],get[17],get[18],get[19],get[20],
-                                                                get[21],get[22],get[23],get[24],get[25],get[26],get[27],get[28],get[29],get[30],
-                                                                get[31],get[32],get[33],get[34],get[35],get[36],get[37],get[38],get[39],get[40]));
-                    iCounter++;
-
-                }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-
-        //-------------------------------------------------------------------------------------------------------------------------------
-        // !Writing into File!
-        //-------------------------------------------------------------------------------------------------------------------------------
-
-
-
-            try {
-                FileOutputStream fos = openFileOutput("data1.txt", MODE_PRIVATE);
-
-                for (int i = 0; i < iCounter; i++) {
-                    if (map.get(i) != null)
-                        fos.write(map.get(i).toString().getBytes());
-                }
-                fos.close();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        //-------------------------------------------------------------------------------------------------------------------------------
-        //
-        //-------------------------------------------------------------------------------------------------------------------------------
-
-*/
-
-
-        //chrono = (Chronometer) findViewById(R.id.chronometer);
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -303,21 +195,21 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     }
 
-    //TODO hodit do podmienky funkciu onLocationChanged
+
 
     @Override
-        public void onLocationChanged(Location location) {
+    public void onLocationChanged(Location location) {
 
-            while (i == 0) {
-                String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
-                        + "\nLongitude: " + location.getLongitude();
-                i++;
-                getGps = location.getLatitude() + " " + location.getLongitude();
-            }
-            //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
-        if(locationManager != null && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
-            locationManager.removeUpdates(this);
+        while (i == 0) {
+            String myLocation = "Location changed...\n\nYou are located at: " + "\nLatitude: " + location.getLatitude()
+                    + "\nLongitude: " + location.getLongitude();
+            i++;
+            getGps = location.getLatitude() + " " + location.getLongitude();
         }
+        //Toast.makeText(getApplicationContext(), myLocation, Toast.LENGTH_LONG).show();
+        if (locationManager != null && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED && ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+            locationManager.removeUpdates(this);
+    }
 
     @Override
     public void onProviderDisabled(String provider) {
@@ -340,9 +232,41 @@ public class MainActivity extends AppCompatActivity implements LocationListener{
 
     }
 
-    public boolean fileExistance(String fname){
+    public boolean fileExistance(String fname) {
         File file = getBaseContext().getFileStreamPath(fname);
         return file.exists();
+    }
+
+    public int getQNum() {
+
+        final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
+        int iCounter = 0;
+
+        File root1 = android.os.Environment.getExternalStorageDirectory();
+        File dir1 = new File(root1.getAbsolutePath() + "/download");
+        File file1 = new File(dir1, "myData1.txt");
+
+
+            try {
+
+                BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1), "UTF-8"), 8192);
+                String data;
+                while ((data = bufferedReader1.readLine()) != null) {
+                    String get[] = data.split("\t");
+                    map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
+                            get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
+                            get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
+                            get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40], get[41], get[42], get[43], get[44]));
+                    iCounter++;
+
+                }
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        return map.size();
     }
 }
 
