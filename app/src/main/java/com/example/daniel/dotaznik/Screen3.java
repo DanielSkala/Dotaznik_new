@@ -39,7 +39,7 @@ String Q2,sChecked;
 
                 editor.putString("Q2",Q2);
                 editor.commit();
-
+//
                 if(!Q2.equals(""))
                 {
                     startActivity(sendIsChecked(toy));
