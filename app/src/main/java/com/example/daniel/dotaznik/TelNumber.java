@@ -54,11 +54,14 @@ public class TelNumber extends AppCompatActivity {
                 editor.putString("telNum",QTelNum);
                 editor.commit();
 
-                if(!QTelNum.equals(""))
+                if(QTelNum.equals(""))
                 {
-                    startActivity(sendIsChecked(toy));
-                    finish();
+                    QTelNum = "none";
                 }
+
+                startActivity(sendIsChecked(toy));
+                finish();
+
             }
 
         });
@@ -83,7 +86,6 @@ public class TelNumber extends AppCompatActivity {
             }
         });*/
 
-
             SharedPreferences settings = this.getSharedPreferences("telNum", MODE_PRIVATE);
 
             String restoredText = settings.getString("telNum", null);
@@ -92,6 +94,7 @@ public class TelNumber extends AppCompatActivity {
                 editText.setText(restoredText);
 
             }
+
         init();
         BackPressed();
     }
@@ -99,10 +102,6 @@ public class TelNumber extends AppCompatActivity {
     {
         Intent toy = getIntent();
         boolean isChecked;
-
-
-
-
 
         ready.putExtra("sc2", toy.getStringExtra("sc2"));
         ready.putExtra("sc4", toy.getStringExtra("sc4"));

@@ -36,16 +36,18 @@ String Q2,sChecked,vek;
                 Intent info = new Intent (Screen3.this, MainActivity.class);
                 info.putExtra("sc3", Q2);
 
-
+                SharedPreferences.Editor editor3 = getSharedPreferences("vek",MODE_PRIVATE).edit() ;
                 editor.putString("Q2",Q2);
                 editor.commit();
 //
                 vek= ((EditText) findViewById(R.id.editText9)).getText().toString();
-                SharedPreferences.Editor editor3 = getSharedPreferences("vek",MODE_PRIVATE).edit() ;
+
+
                 if(vek!= null || !vek.equals("")) {
                     editor.putString("vek", vek);
                     editor.commit();
                 }
+
 
                 if(!Q2.equals(""))
                 {
@@ -109,13 +111,11 @@ String Q2,sChecked,vek;
         init();
         BackPressed();
     }
+
     public Intent sendIsChecked(Intent ready)
     {
         Intent toy = getIntent();
         boolean isChecked;
-
-
-
 
         //if(toy.getStringExtra("sc3") == null ||  !toy.getStringExtra("sc3").equals(Q2))
         if(Q2 != null)

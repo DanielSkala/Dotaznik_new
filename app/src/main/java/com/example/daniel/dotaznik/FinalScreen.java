@@ -44,12 +44,10 @@ String getName,getVek;
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
                 int iCounter = 0;
 
-
-
-
                 map.put(iCounter,new Dotaznik_info(
                         ready.getStringExtra("macAddress") + "__" + ready.getStringExtra("sc28"),
                         ready.getStringExtra("sc2"),
+                        //ready.getStringExtra("sc3"),
                         getVek,
                         ready.getStringExtra("sc4"),
                         ready.getStringExtra("sc5"),
