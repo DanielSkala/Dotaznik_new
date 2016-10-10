@@ -249,7 +249,7 @@ public class Screen11 extends AppCompatActivity {
         ready.putExtra("sc8", toy.getStringExtra("sc8"));
         ready.putExtra("sc9", toy.getStringExtra("sc9"));
         ready.putExtra("sc10", toy.getStringExtra("sc10"));
-        ready.putExtra("sc11", toy.getStringExtra("sc11"));
+
         ready.putExtra("sc12", toy.getStringExtra("sc12"));
         ready.putExtra("sc13", toy.getStringExtra("sc13"));
         ready.putExtra("sc14", toy.getStringExtra("sc14"));
@@ -283,7 +283,7 @@ public class Screen11 extends AppCompatActivity {
         ready.putExtra("sc27", toy.getStringExtra("sc27"));
         ready.putExtra("sc28", toy.getStringExtra("sc28"));
         ready.putExtra("macAddress", toy.getStringExtra("macAddress"));
-        ready.putExtra("name", toy.getStringExtra("name"));
+
 
 
         ready.putExtra("ksc2",toy.getStringExtra("ksc2"));
