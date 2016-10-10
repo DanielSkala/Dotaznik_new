@@ -31,7 +31,7 @@ public class FinalScreen extends AppCompatActivity {
     public EditText editText4,editText5,editText6;
 
     */
-
+String getName;
     public void init() {
         button54 = (Button) findViewById(R.id.button54);
         button54.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +43,7 @@ public class FinalScreen extends AppCompatActivity {
 
                 final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
                 int iCounter = 0;
+
 
 
 
@@ -92,7 +93,8 @@ public class FinalScreen extends AppCompatActivity {
                         ready.getStringExtra("sc28"), //start time
                         Calendar.getInstance().getTime().toString(),//end time
                         ready.getStringExtra("sTelNum"), //telNum
-                        ready.getStringExtra("name")));
+                        getName
+                       ));
                 iCounter++;
 
                 File root1 = android.os.Environment.getExternalStorageDirectory();
@@ -221,7 +223,9 @@ public class FinalScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_final_screen);
+        SharedPreferences settings = this.getSharedPreferences("name", MODE_PRIVATE);
 
+        getName = settings.getString("name", null);
         init();
     }
     public boolean fileExistance(String fname){

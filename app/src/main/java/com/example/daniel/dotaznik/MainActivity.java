@@ -95,6 +95,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     //Handle exception
                 }
                 name = ((EditText) findViewById(R.id.editText2)).getText().toString();
+                SharedPreferences.Editor editor3 = getSharedPreferences("name",MODE_PRIVATE).edit() ;
+                if(name!= null || !name.equals("")) {
+                    editor.putString("name", name);
+                    editor.commit();
+                }
                 startActivity(sendIsChecked(toy));
                 finish();
             }
