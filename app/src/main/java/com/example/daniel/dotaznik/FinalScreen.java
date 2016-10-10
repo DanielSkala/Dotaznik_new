@@ -31,7 +31,7 @@ public class FinalScreen extends AppCompatActivity {
     public EditText editText4,editText5,editText6;
 
     */
-String getName;
+String getName,getVek;
     public void init() {
         button54 = (Button) findViewById(R.id.button54);
         button54.setOnClickListener(new View.OnClickListener() {
@@ -50,7 +50,7 @@ String getName;
                 map.put(iCounter,new Dotaznik_info(
                         ready.getStringExtra("macAddress") + "__" + ready.getStringExtra("sc28"),
                         ready.getStringExtra("sc2"),
-                        ready.getStringExtra("sc3"),
+                        getVek,
                         ready.getStringExtra("sc4"),
                         ready.getStringExtra("sc5"),
                         ready.getStringExtra("sc6"),
@@ -226,6 +226,8 @@ String getName;
         SharedPreferences settings = this.getSharedPreferences("name", MODE_PRIVATE);
 
         getName = settings.getString("name", null);
+        settings = this.getSharedPreferences("vek", MODE_PRIVATE);
+        getVek = settings.getString("vek", null);
         init();
     }
     public boolean fileExistance(String fname){

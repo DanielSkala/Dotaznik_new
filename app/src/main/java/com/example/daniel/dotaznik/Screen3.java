@@ -18,7 +18,7 @@ public class Screen3 extends AppCompatActivity {
     public Button button5;
 
 
-String Q2,sChecked;
+String Q2,sChecked,vek;
 
 
     public void init(){
@@ -40,6 +40,13 @@ String Q2,sChecked;
                 editor.putString("Q2",Q2);
                 editor.commit();
 //
+                vek= ((EditText) findViewById(R.id.editText9)).getText().toString();
+                SharedPreferences.Editor editor3 = getSharedPreferences("vek",MODE_PRIVATE).edit() ;
+                if(vek!= null || !vek.equals("")) {
+                    editor.putString("vek", vek);
+                    editor.commit();
+                }
+
                 if(!Q2.equals(""))
                 {
                     startActivity(sendIsChecked(toy));
