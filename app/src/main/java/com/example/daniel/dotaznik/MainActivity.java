@@ -94,6 +94,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 } catch (Exception e) {
                     //Handle exception
                 }
+                name = ((EditText) findViewById(R.id.editText2)).getText().toString();
                 startActivity(sendIsChecked(toy));
                 finish();
             }
@@ -121,7 +122,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 isChecked = false;
         }
 
-        name = ((EditText) findViewById(R.id.editText2)).getText().toString();
+
 
         if (isChecked) {
             ready.putExtra("sc27", getGps);

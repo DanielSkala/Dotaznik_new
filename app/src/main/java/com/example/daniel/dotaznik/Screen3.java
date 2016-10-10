@@ -110,7 +110,8 @@ String Q2,sChecked;
 
 
 
-        if(toy.getStringExtra("sc3") == null ||  !toy.getStringExtra("sc3").equals(Q2))
+        //if(toy.getStringExtra("sc3") == null ||  !toy.getStringExtra("sc3").equals(Q2))
+        if(Q2 != null)
             ready.putExtra("sc3", Q2);
         else
             ready.putExtra("sc3", toy.getStringExtra("sc3"));
