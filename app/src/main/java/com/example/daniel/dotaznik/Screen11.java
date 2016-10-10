@@ -121,7 +121,7 @@ public class Screen11 extends AppCompatActivity {
                 break;
         }
         Intent i = new Intent(Screen11.this, MainActivity.class);
-        i.putExtra("Sc11", Q10);
+        i.putExtra("sc11", Q10);
     }
 
 
@@ -249,6 +249,7 @@ public class Screen11 extends AppCompatActivity {
         ready.putExtra("sc8", toy.getStringExtra("sc8"));
         ready.putExtra("sc9", toy.getStringExtra("sc9"));
         ready.putExtra("sc10", toy.getStringExtra("sc10"));
+        ready.putExtra("sc11", toy.getStringExtra("sc11"));
         ready.putExtra("sc12", toy.getStringExtra("sc12"));
         ready.putExtra("sc13", toy.getStringExtra("sc13"));
         ready.putExtra("sc14", toy.getStringExtra("sc14"));

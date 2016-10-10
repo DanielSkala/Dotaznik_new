@@ -109,7 +109,7 @@ public class Screen4 extends AppCompatActivity {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox4);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("Žena")) {
+                else if (restoredText.equals("Žena")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox5);
                     checkBox.setChecked(true);
                 }

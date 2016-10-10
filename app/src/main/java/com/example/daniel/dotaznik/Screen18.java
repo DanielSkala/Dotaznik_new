@@ -156,6 +156,7 @@ String Q17,sChecked;
         ready.putExtra("sc27", toy.getStringExtra("sc27"));
         ready.putExtra("sc28", toy.getStringExtra("sc28"));
         ready.putExtra("macAddress", toy.getStringExtra("macAddress"));
+        ready.putExtra("name", toy.getStringExtra("name"));
 
         ready.putExtra("ksc2",toy.getStringExtra("ksc2"));
         ready.putExtra("ksc3",toy.getStringExtra("ksc3"));
