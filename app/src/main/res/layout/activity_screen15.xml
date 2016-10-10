@@ -65,7 +65,7 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
         android:hint="Priestor pre dlhú odpoveď"
         android:id="@+id/editText26"
         android:layout_marginTop="106dp"

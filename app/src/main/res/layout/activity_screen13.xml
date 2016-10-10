@@ -77,7 +77,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:hint="Priestor pre dlhú odpoveď"
-        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
         android:id="@+id/editText20"
         android:layout_below="@+id/button25"
         android:layout_alignParentLeft="true"

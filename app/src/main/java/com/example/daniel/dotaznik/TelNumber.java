@@ -23,7 +23,7 @@ public class TelNumber extends AppCompatActivity {
                 final Intent toy = new Intent(TelNumber.this, Screen27.class);
 
                 EditText editText = (EditText) findViewById(R.id.editText);
-                QTelNum = editText.getText().toString();;
+                QTelNum = editText.getText().toString();
                 toy.putExtra("sTelNum", QTelNum);
 
                 SharedPreferences.Editor editor = getSharedPreferences("telNum",MODE_PRIVATE).edit() ;
@@ -47,7 +47,7 @@ public class TelNumber extends AppCompatActivity {
                 SharedPreferences.Editor editor = getSharedPreferences("telNum",MODE_PRIVATE).edit() ;
 
                 EditText editText = (EditText) findViewById(R.id.editText);
-                QTelNum = editText.getText().toString();;
+                QTelNum = editText.getText().toString();
                 toy.putExtra("sTelNum", QTelNum);
 
 
