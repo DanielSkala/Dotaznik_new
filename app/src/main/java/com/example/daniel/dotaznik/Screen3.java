@@ -35,6 +35,7 @@ String Q2,sChecked,vek;
                 Q2 = editText.getText().toString();
                 Intent info = new Intent (Screen3.this, MainActivity.class);
                 info.putExtra("sc3", Q2);
+                toy.putExtra("sc3", Q2);
 
                 SharedPreferences.Editor editor3 = getSharedPreferences("vek",MODE_PRIVATE).edit() ;
                 editor.putString("Q2",Q2);

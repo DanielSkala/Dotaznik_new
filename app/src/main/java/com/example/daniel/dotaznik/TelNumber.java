@@ -104,6 +104,7 @@ public class TelNumber extends AppCompatActivity {
         boolean isChecked;
 
         ready.putExtra("sc2", toy.getStringExtra("sc2"));
+        ready.putExtra("sc3", toy.getStringExtra("sc3"));
         ready.putExtra("sc4", toy.getStringExtra("sc4"));
         ready.putExtra("sc5", toy.getStringExtra("sc5"));
         ready.putExtra("sc6", toy.getStringExtra("sc6"));
