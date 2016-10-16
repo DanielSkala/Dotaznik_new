@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         EditText nameOfAnketer = (EditText) findViewById(R.id.editText2);
 
         nameOfAnketer.setText(getName());
-
+        init();
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
