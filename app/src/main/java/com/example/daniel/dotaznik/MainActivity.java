@@ -106,6 +106,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     editor.putString("name", name);
                     editor.commit();
                 }
+
+                if (name.equals("")){
+                    name = "noName";
+                }
+
                 startActivity(sendIsChecked(toy));
                 finish();
             }
