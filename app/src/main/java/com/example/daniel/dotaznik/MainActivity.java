@@ -320,7 +320,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             e.printStackTrace();
         }
 
-        if(map.get(iCounter).getData45().equals("null") || map.get(iCounter).getData45() ==  null)
+        if(map.get(iCounter).getData45().equals("null") || map.get(iCounter).getData45() ==  null || iCounter == 0)
             return "null";
         else
             return map.get(iCounter).getData45();
