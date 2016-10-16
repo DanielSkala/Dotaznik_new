@@ -77,8 +77,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     editor.commit();
 
 
-                    EditText nameOfAnketer = (EditText) findViewById(R.id.editText2);
-                    nameOfAnketer.setText(getName());
+
                     name = getName();
                     editor = getSharedPreferences("name", MODE_PRIVATE).edit();
                     editor.putString("name", getName());
@@ -204,7 +203,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         WifiManager manager = (WifiManager) getSystemService(Context.WIFI_SERVICE);
         WifiInfo info = manager.getConnectionInfo();
         address = info.getMacAddress();
-        init();
+
+        EditText nameOfAnketer = (EditText) findViewById(R.id.editText2);
+
+        nameOfAnketer.setText(getName());
+
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
 
