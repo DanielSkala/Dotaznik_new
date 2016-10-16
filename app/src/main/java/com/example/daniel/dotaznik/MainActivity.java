@@ -219,6 +219,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 3000, 10, this);
 
+
         init();
 
 
