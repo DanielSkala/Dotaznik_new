@@ -92,8 +92,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 SharedPreferences.Editor editor = getSharedPreferences("telNum" , MODE_PRIVATE).edit();
                 editor.putString("telNum", null);
                 editor.commit();
-
-                name = getName();
+                if(((EditText) findViewById(R.id.editText2)).getText().toString().equals(getName()))
+                    name = getName();
+                else
+                    name = ((EditText) findViewById(R.id.editText2)).getText().toString();
                 editor = getSharedPreferences("name", MODE_PRIVATE).edit();
                 editor.putString("name", name);
                 editor.commit();
