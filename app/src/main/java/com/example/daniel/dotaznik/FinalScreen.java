@@ -93,7 +93,7 @@ String getName,getVek;
                         ready.getStringExtra("sc28"), //start time
                         Calendar.getInstance().getTime().toString(),//end time
                         ready.getStringExtra("sTelNum"), //telNum
-                        ready.getStringExtra("name")                       //name
+                        getName                      //name
                        ));
                 iCounter++;
 

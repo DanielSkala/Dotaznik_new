@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
             @Override
             public void onClick(View v) {
-                name = ((EditText) findViewById(R.id.editText2)).getText().toString();
+
                 Intent toy = new Intent(MainActivity.this, Screen2.class);
                 for (int i = 1; i <= 27; i++) {
                     if (i != 16 || i != 19) {
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
                 name = getName();
                 editor = getSharedPreferences("name", MODE_PRIVATE).edit();
-                editor.putString("name", getName());
+                editor.putString("name", name);
                 editor.commit();
 
                 try {
@@ -335,8 +335,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         else
             getRet= map.get(iCounter).getData45();
 
-        if(iCounter == 0)
-            getRet="null";
 
 
             return getRet;
