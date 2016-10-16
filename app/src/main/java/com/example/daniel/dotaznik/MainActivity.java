@@ -78,10 +78,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
 
 
-                    name = getName();
-                    editor = getSharedPreferences("name", MODE_PRIVATE).edit();
-                    editor.putString("name", getName());
-                    editor.commit();
+
 
                     if (i < 6) {
                         editor = getSharedPreferences("Q18_" + i, MODE_PRIVATE).edit();
@@ -96,23 +93,29 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 editor.putString("telNum", null);
                 editor.commit();
 
+                name = getName();
+                editor = getSharedPreferences("name", MODE_PRIVATE).edit();
+                editor.putString("name", getName());
+                editor.commit();
+
                 try {
                     AudioRecorder.start(address + Calendar.getInstance().getTime() + ".3gp");
                     gTime = Calendar.getInstance().getTime().toString();
                 } catch (Exception e) {
                     //Handle exception
                 }
-                name = ((EditText) findViewById(R.id.editText2)).getText().toString();
+
+              /*
                 SharedPreferences.Editor editor3 = getSharedPreferences("name",MODE_PRIVATE).edit() ;
                 if(name!= null || !name.equals("")) {
                     editor.putString("name", name);
                     editor.commit();
-                }
-
+                }*/
+                /*
                 if (name.equals("")){
                     name = "noName";
                 }
-
+*/
                 startActivity(sendIsChecked(toy));
                 finish();
             }
@@ -324,10 +327,14 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             e.printStackTrace();
         }
 
+        String getRet;
+        getRet= map.get(iCounter).getData45();
+
         if(iCounter == 0)
-            return "null";
-        else
-            return map.get(iCounter).getData45();
+            getRet="null";
+
+
+            return getRet;
     }
 }
 
