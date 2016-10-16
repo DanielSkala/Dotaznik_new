@@ -328,7 +328,11 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         }
 
         String getRet;
-        getRet= map.get(iCounter).getData45();
+
+        if(map.isEmpty())
+            getRet = "null";
+        else
+            getRet= map.get(iCounter).getData45();
 
         if(iCounter == 0)
             getRet="null";
