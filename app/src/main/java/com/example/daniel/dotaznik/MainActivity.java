@@ -210,8 +210,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         address = info.getMacAddress();
 
         EditText nameOfAnketer = (EditText) findViewById(R.id.editText2);
+        SharedPreferences settings = this.getSharedPreferences("name", MODE_PRIVATE);
+        String restoredText = settings.getString("name", "null");
+        nameOfAnketer.setText(restoredText);
 
-        nameOfAnketer.setText(getName());
         init();
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
