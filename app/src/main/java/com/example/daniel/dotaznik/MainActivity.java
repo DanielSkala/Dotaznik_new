@@ -326,8 +326,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
         if(iCounter == 0)
             return "null";
-        else if(map.get(iCounter).getData45().equals("null") || map.get(iCounter).getData45() ==  null)
-            return "null";
         else
             return map.get(iCounter).getData45();
     }
