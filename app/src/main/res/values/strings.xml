@@ -25,19 +25,19 @@
     <string name="q6">Otázka: Boli ste voliť predsedu (župana) a poslancov Prešovského samosprávneho kraja (PSK) v posledných voľbách v roku 2013?</string>
 
     <string name="i7">Pokyn: Prečítajte otázku a jednu z možností zakrúžkujte.</string>
-    <string name="q7">Otázka: Prečítam Vám niekoľko mien a vy mi prosím povedzte, kto je podľa Vás predsedom  (županom) Prešovského samosprávneho kraja (PSK)?</string>
+    <string name="q7">Prečítam Vám niekoľko mien a vy mi prosím povedzte, kto je podľa Vás predsedom (županom) Prešovského samosprávneho kraja (PSK)?</string>
 
     <string name="i8">Pokyn: Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť  podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná</string>
-    <string name="q8">Otázka: Môžete mi prosím povedať, ktorého kandidáta na post predsedu (župana) Prešovského samosprávneho kraja (PSK) ste volili v roku 2013?</string>
+    <string name="q8">Môžete mi prosím povedať, ktorého kandidáta na post predsedu (župana) Prešovského samosprávneho kraja (PSK) ste volili v roku 2013?</string>
 
-    <string name="i9">Pokyn: Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť  podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná</string>
-    <string name="q9">Otázka: Ak by sa konali parlamentné voľby tento víkend, ktorú politickú stranu alebo hnutie zo  zoznamu by ste volili?</string>
+    <string name="i9">Dajte respondentovi do ruky zoznam politických strán a zapíšte len jednu možnosť podľa odpovede respondenta. Pri odpovedi č. 14 = zapíšte o akú politickú stranu sa jedná</string>
+    <string name="q9">Ak by sa konali parlamentné voľby tento víkend, ktorú politickú stranu alebo hnutie zo zoznamu by ste volili?</string>
 
-    <string name="i10">Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK  a zakrúžkujte možnosti podľa odpovede respondenta.</string>
-    <string name="q10">Otázka: Môžete mi povedať, ktorého kandidáta na predsedu (župana) Prešovského  samosprávneho kraja (PSK) zo zoznamu poznáte?</string>
+    <string name="i10">Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK a zakrúžkujte možnosti podľa odpovede respondenta.</string>
+    <string name="q10">Môžete mi povedať, ktorého kandidáta na predsedu (župana) Prešovského samosprávneho kraja (PSK) zo zoznamu poznáte?</string>
 
     <string name="i11">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
-    <string name="q11">Otázka: Komu zo zoznamu kandidátov na predsedu (župana) PSK dôverujete najviac?</string>
+    <string name="q11">Komu zo zoznamu kandidátov na predsedu (župana) PSK dôverujete najviac?</string>
 
     <string name="i12">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
     <string name="q12">Otázka: Prečo?</string>
@@ -48,39 +48,34 @@
     <string name="i14">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
     <string name="q14">Otázka: Prečo?</string>
 
-    <string name="i15">Pokyn: Zakrúžkujte len jednu možnosť zo zoznamu  kandidátov na predsedu (župana) PSK podľa  odpovede respondenta pre každý výrok.</string>
-    <string name="q15">Otázka: Prečítam Vám výroky. Ku každému jednému výroku  priraďte len jedného kandidáta zo zoznamu  kandidátov na predsedu PSK, ktorého daný výrok  najlepšie charakterizuje:</string>
+    <string name="i15">Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosž podľa odpovede respondenta.</string>
+    <string name="q15">S pôsobením súčasného predsedu (župana) Prešovského samosprávneho kraja (PSK) Petra Chudíka ste:</string>
 
-    <string name="i16">Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu  možnosť podľa odpovede respondenta.</string>
-    <string name="q16">Otázka: S pôsobením súčasného predsedu (župana) Prešovského samosprávneho kraja (PSK) Pavla Freša ste:</string>
+    <string name="i16">Prečítajte otázku a zapíšte doslovnú odpoveď respondenta (najviac 1 meno).</string>
+    <string name="q16">Môžete mi prosím povedať, ktorý z poslancov Národnej Rady SR podľa Vás najviac bojuje za Východniarov? (uveďte najviac 1 meno)</string>
 
     <string name="i17">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
-    <string name="q17">Otázka: Môžete mi prosím povedať, čo Vám ako obyvateľovi Prešovského samosprávneho kraja (PSK) najviac vadí?</string>
+    <string name="q17">Môžete mi prosím povedať, na čo ste ako obyvateľ Prešovského samosprávneho kraja (PSK) najviac hrdý?</string>
 
-    <string name="i18">Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede  respondenta pre každú osobnostnú charakteristiku.</string>
-    <string name="q18">Otázka: Prečítam Vám niekoľko osobnostných charakteristík. Ku každej z nich priraďte  len jedného kandidáta zo zoznamu kandidátov, ktorého to najviac  charakterizuje:</string>
+    <string name="i18">Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
+    <string name="q18">Môžete mi prosím povedať, čo považujete za najväčší problém Vášho kraja?</string>
 
-    <string name="i19">Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu  (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede  respondenta pre každú osobnostnú charakteristiku.</string>
-    <string name="q19">Otázka: Prečítam Vám niekoľko osobnostných charakteristík. Ku každej z nich  priraďte  len jedného kandidáta zo zoznamu kandidátov, ktorého to najviac  charakterizuje:</string>
+    <string name="i19">Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
+    <string name="q19">Ak by sa tento víkend konali voľby na predsedu (župana) Prešovského samosprávneho kraja (PSK), ktorého kandidáta zo zoznamu by ste volili za predsedu PSK?</string>
 
-    <string name="i20">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
-    <string name="q20">Otázka: Môžete mi prosím povedať, na čo ste ako obyvateľ Prešovského samosprávneho kraja (PSK) najviac hrdý?</string>
+    <string name="i20">Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
+    <string name="q20">Prečo by ste ho volili??</string>
 
-    <string name="i21">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
-    <string name="q21">Otázka: Môžete mi prosím povedať, čo Vám ako obyvateľovi Prešovského samosprávneho kraja (PSK) najviac chýba?</string>
+    <string name="i21">Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
+    <string name="q21">Vaše volebné rozhodnutie je:</string>
 
-    <string name="i22">Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana)  PSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
-    <string name="q22">Otázka: Ak by sa tento víkend konali voľby na predsedu (župana) Prešovského samosprávneho kraja (BSK), ktorého kandidáta zo zoznamu by ste volili za  predsedu PSK?</string>
+    <string name="i22">Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
+    <string name="q22">Ak by Váš kandidát na predsedu (župana) Prešovského samosprávneho kraja (PSK) odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu PSK?</string>
 
-    <string name="i23">Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
-    <string name="q23">Otázka: Prečo by ste ho volili?</string>
+    <string name="i23">Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
+    <string name="q23">Ak by sa tento víkend konali voľby na predsedu (župana) Prešovského samosprávneho kraja (PSK), ktorého kandidáta zo zoznamu by ste URČITE NEVOLILI za predsedu PSK?</string>
 
-    <string name="i24">Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa odpovede respondenta.</string>
-    <string name="q24">Otázka: Vaše volebné rozhodnutie je:</string>
+    <string name="i24">Prečítajte otázku a zapíšte doslovnú odpoveď respondenta.</string>
+    <string name="q24">Prečo by ste ho určite nevolili?</string>
 
-    <string name="i25">Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta.</string>
-    <string name="q25">Otázka: Ak by Váš kandidát na predsedu (župana) Prešovského samosprávneho kraja (PSK) odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu  PSK?</string>
-
-    <string name="i26">Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta.</string>
-    <string name="q26">Otázka: Ak by sa tento víkend konali voľby na predsedu (župana) Prešovského samosprávneho  kraja (PSK), ktorého zo zoznamu by ste URČITE NEVOLILI za predsedu PSK?</string>
 </resources>

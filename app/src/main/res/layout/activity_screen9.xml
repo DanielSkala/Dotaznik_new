@@ -86,7 +86,8 @@
         android:layout_alignLeft="@+id/checkBox26"
         android:layout_alignStart="@+id/checkBox26"
         android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
+        android:onClick="onCheckboxClicked"
+        android:visibility="invisible" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -98,7 +99,8 @@
         android:layout_alignLeft="@+id/checkBox27"
         android:layout_alignStart="@+id/checkBox27"
         android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
+        android:onClick="onCheckboxClicked"
+        android:visibility="invisible" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -116,7 +118,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Rastislav Blaško  (Nezávislý)"
+        android:text="Ľubomír Vasilišin (7 STATOČNÝCH)"
         android:id="@+id/checkBox25"
         android:checked="false"
         android:textSize="16sp"
@@ -155,7 +157,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Zdenka Beňová  (ĽS-NS – M. Kotleba)"
+        android:text="Štefan Straka  (KSS)"
         android:id="@+id/checkBox24"
         android:checked="false"
         android:textSize="16sp"
@@ -174,7 +176,8 @@
         android:layout_below="@+id/checkBox25"
         android:layout_alignLeft="@+id/checkBox25"
         android:layout_alignStart="@+id/checkBox25"
-        android:onClick="onCheckboxClicked" />
+        android:onClick="onCheckboxClicked"
+        android:visibility="invisible" />
 
     <Button
         android:layout_width="50dp"
@@ -189,7 +192,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pavol Frešo (SDKÚ-DS)"
+        android:text="Ján Bajus (Zmena  zdola, DÚ Slovenska)"
         android:id="@+id/checkBox17"
         android:checked="false"
         android:textSize="16sp"
@@ -201,7 +204,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Daniel Krajcer  (NOVA – D. Lipšic)"
+        android:text="Ján Hudacký (KDH,  SDKÚ-DS, MOST-HÍD)"
         android:id="@+id/checkBox19"
         android:checked="false"
         android:textSize="16sp"
@@ -213,7 +216,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jaroslav Paška  (SNS)"
+        android:text="Peter Chudík (SMER- SD, NÁŠ KRAJ, SMS)"
         android:id="@+id/checkBox20"
         android:checked="false"
         android:textSize="16sp"
@@ -225,7 +228,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Karol Ondriáš  (KSS)"
+        android:text="Vladimír Klein  (ĽSNS)"
         android:id="@+id/checkBox21"
         android:checked="false"
         android:textSize="16sp"
@@ -237,7 +240,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Peter Marček  (SOSKA)"
+        android:text="Anton Korba  (Nezávislý)"
         android:id="@+id/checkBox22"
         android:checked="false"
         android:textSize="16sp"
@@ -249,7 +252,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Roman Ruhig (NOVÝ  PARLAMENT)"
+        android:text="Jozef Mihalčin  (SĽS)"
         android:id="@+id/checkBox23"
         android:checked="false"
         android:textSize="16sp"
@@ -272,7 +275,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Monika Flašíková Beňová (SMER-SD)"
+        android:text="Dorota Bujňáková  (NOVÝ PARLAMENT)"
         android:id="@+id/checkBox18"
         android:checked="false"
         android:textSize="16sp"
