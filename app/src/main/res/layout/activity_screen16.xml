@@ -582,7 +582,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Pokyn: Zakrúžkujte len jednu možnosť zo zoznamu  kandidátov na predsedu (župana) BSK podľa  odpovede respondenta pre každý výrok."
+        android:text="@string/i15"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView90"
@@ -594,7 +594,7 @@
         android:layout_toEndOf="@+id/imageView16" />
 
     <TextView
-        android:text="Otázka: Prečítam Vám výroky. Ku každému jednému výroku  priraďte len jedného kandidáta zo zoznamu  kandidátov na predsedu BSK, ktorého daný výrok  najlepšie charakterizuje:"
+        android:text="@string/q15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView91"

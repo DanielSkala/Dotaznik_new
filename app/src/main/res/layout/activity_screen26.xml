@@ -113,7 +113,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Otázka: Ak by Váš kandidát na predsedu (župana) Bratislavského samosprávneho  kraja (BSK) odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu  BSK?"
+        android:text="@string/q25"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView122"
@@ -164,7 +164,7 @@
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
+        android:text="@string/i25"
         android:id="@+id/textView121"
         android:textColor="#f44336"
         android:textStyle="italic"

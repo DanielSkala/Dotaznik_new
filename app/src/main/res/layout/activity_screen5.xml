@@ -125,7 +125,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Otázka: Aké je Vaše najvyššie dosiahnuté vzdelanie?"
+        android:text="@string/q4"
         android:id="@+id/textView54"
         android:layout_marginBottom="69dp"
         android:textStyle="bold"

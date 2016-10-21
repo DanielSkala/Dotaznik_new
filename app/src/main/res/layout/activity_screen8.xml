@@ -40,7 +40,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Pokyn: Prečítajte otázku a jednu z možností zakrúžkujte."
+        android:text="@string/i7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -51,7 +51,7 @@
         android:textSize="18dp" />
 
     <TextView
-        android:text="Otázka: Prečítam Vám niekoľko mien a vy mi prosím povedzte, kto je podľa Vás predsedom  (županom) Bratislavského samosprávneho kraja (BSK)?"
+        android:text="@string/q7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView8"

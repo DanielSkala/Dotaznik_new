@@ -109,19 +109,6 @@
         android:layout_alignParentEnd="true"
         android:textSize="36sp" />
 
-    <TextView
-        android:text="Otázka: Ak by sa tento víkend konali voľby na predsedu (župana) Bratislavského  samosprávneho kraja (BSK), ktorého kandidáta zo zoznamu by ste volili za  predsedu BSK?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView113"
-        android:textStyle="normal|bold"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        android:layout_marginTop="61dp"
-        android:layout_below="@+id/textView110"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -166,7 +153,7 @@
         android:onClick="onCheckboxClicked" />
 
     <TextView
-        android:text="Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana)  BSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta."
+        android:text="@string/i22"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView110"
@@ -176,4 +163,17 @@
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/button45"
         android:layout_toStartOf="@+id/button45" />
+
+    <TextView
+        android:text="@string/q22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView113"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_marginTop="61dp"
+        android:layout_below="@+id/textView110"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>

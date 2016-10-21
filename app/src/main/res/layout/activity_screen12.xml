@@ -60,7 +60,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:text="@string/i11"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView31"
@@ -72,7 +72,7 @@
         android:layout_toEndOf="@+id/imageView12" />
 
     <TextView
-        android:text="Otázka: Komu zo zoznamu kandidátov na predsedu (župana) BSK dôverujete najviac?"
+        android:text="@string/q11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView80"

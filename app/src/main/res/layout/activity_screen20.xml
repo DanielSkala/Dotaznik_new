@@ -583,7 +583,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Otázka: Prečítam Vám niekoľko osobnostných charakteristík. Ku každej z nich  priraďte  len jedného kandidáta zo zoznamu kandidátov, ktorého to najviac  charakterizuje:"
+        android:text="@string/q19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView105"
@@ -595,7 +595,7 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="Pokyn: Dajte respondentovi do ruky zoznam kandidátov na predsedu  (župana) BSK a zakrúžkujte len jednu možnosť podľa odpovede  respondenta pre každú osobnostnú charakteristiku."
+        android:text="@string/i19"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView104"

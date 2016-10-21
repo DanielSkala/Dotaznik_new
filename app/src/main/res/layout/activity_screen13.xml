@@ -50,7 +50,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="Otázka: Prečo?"
+        android:text="@string/q12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView82"
@@ -89,7 +89,7 @@
         android:textSize="24sp" />
 
     <TextView
-        android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:text="@string/i12"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView83"

@@ -61,7 +61,7 @@
         android:textSize="36sp" />
 
     <TextView
-        android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:text="@string/i13"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView84"
@@ -92,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Otázka: Komu zo zoznamu kandidátov na predsedu (župana) BSK dôverujete najmenej?"
+        android:text="@string/q13"
         android:id="@+id/textView32"
         android:textAlignment="center"
         android:textColor="#000000"

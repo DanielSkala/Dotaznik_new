@@ -56,19 +56,6 @@
         android:maxLines="10"
         android:textSize="24sp" />
 
-    <TextView
-        android:text="Otázka: Môžete mi prosím povedať, čo Vám ako obyvateľovi Bratislavského  samosprávneho kraja (BSK) najviac chýba?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView111"
-        android:layout_marginTop="117dp"
-        android:textStyle="normal|bold"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        android:layout_below="@+id/imageView22"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -91,7 +78,7 @@
         android:textSize="36sp" />
 
     <TextView
-        android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:text="@string/i21"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView109"
@@ -101,5 +88,18 @@
         android:layout_above="@+id/textView111"
         android:layout_toRightOf="@+id/imageView22"
         android:layout_toEndOf="@+id/imageView22" />
+
+    <TextView
+        android:text="@string/q21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView111"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_above="@+id/button42"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="104dp" />
 
 </RelativeLayout>

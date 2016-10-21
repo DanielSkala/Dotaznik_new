@@ -66,21 +66,10 @@
         android:layout_alignEnd="@+id/button11" />
 
     <TextView
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Pokyn: Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
-        android:id="@+id/textView62"
-        android:textColor="#f44336"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/textView6"
-        android:layout_toStartOf="@+id/textView6" />
-
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Otázka: V ktorej obci, meste, resp. bratislavskej mestskej časti bývate?"
+        android:text="@string/q5"
         android:id="@+id/textView63"
         android:textStyle="bold"
         android:textSize="30dp"
@@ -99,5 +88,16 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/i5"
+        android:id="@+id/textView62"
+        android:textColor="#f44336"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button11"
+        android:layout_toStartOf="@+id/button11" />
 
 </RelativeLayout>
