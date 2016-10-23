@@ -87,7 +87,7 @@ public class Screen25 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen25.this, Screen26.class);
+                Intent toy = new Intent(Screen25.this, TelNumber.class);
                 CheckBox c2 = (CheckBox)findViewById(R.id.checkBox168);
                 CheckBox c3 = (CheckBox)findViewById(R.id.checkBox169);
                 CheckBox c4 = (CheckBox)findViewById(R.id.checkBox170);
