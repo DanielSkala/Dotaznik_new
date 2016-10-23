@@ -19,6 +19,8 @@ public class Screen11 extends AppCompatActivity {
     String Q10_2 = "null";
     String Q10_3 = "null";
     String Q10_4 = "null";
+    String Q10_5 = "null";
+    String Q10_6 = "null";
 
     public void onCheckboxClicked(View view) {
         // Is the view now checked?
@@ -29,66 +31,109 @@ public class Screen11 extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.checkBox48:
                 if (checked){
-                    Q10_1 = "Juraj Droba (SaS,  OľaNO-NOVA, KDH)";
-                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Juraj Droba (SaS,  OľaNO-NOVA, KDH)");
+                    Q10_1 = "Jozef Mihalčin (ĽS Naše Slovensko strana" +
+                            "Mariana Kotlebu";
+                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_1);
                 editor.commit();
 
                 check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
                 }
                 else Q10_1 = "null";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Juraj Droba (SaS,  OľaNO-NOVA, KDH)");
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_1);
                 editor.commit();
                 break;
             case R.id.checkBox49:
                 if (checked){
-                    Q10_2 = "Pavol Frešo  (Nezávislý)";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Pavol Frešo  (Nezávislý)");
+                    Q10_2 = "Peter Chudík" +
+                            "(SMER-SD)";
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_2);
                 editor.commit();
 
                 check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
                 }
                 else Q10_2 = "null";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Pavol Frešo  (Nezávislý)");
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_2);
                 editor.commit();
                 break;
             case R.id.checkBox50:
                 if (checked){
-                    Q10_3 = "Milan Ftáčnik (SMER-  SD, SNS, MOST-HÍD)";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Milan Ftáčnik (SMER-  SD, SNS, MOST-HÍD)");
+                    Q10_3 = "Jozef Lukáč (OĽaNO –" +
+                            "NOVA, SaS)";
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_3);
                 editor.commit();
 
                 check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
                 }
                 else Q10_3 = "null";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Milan Ftáčnik (SMER-  SD, SNS, MOST-HÍD)");
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_3);
                 editor.commit();
                 break;
 
             case R.id.checkBox51:
                 if (checked){
-                    Q10_4 = "Boris Kollár (SME  RODINA – Boris Kollár)";
-                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Boris Kollár (SME  RODINA – Boris Kollár)");
+                    Q10_4 = "Jaroslav Regec" +
+                            "(SNS) ";
+                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_4);
                 editor.commit();
 
                 check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
                 }
                 else Q10_4 = "null";
-                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4;
-                editor.putString("Q10","Boris Kollár (SME  RODINA – Boris Kollár)");
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_4);
                 editor.commit();
 
                 break;
+
+
+            case R.id.checkBox177:
+                if (checked){
+                    Q10_5 = "Peter Pčolinský (SME" +
+                            "RODINA – Boris Kollár) ";
+                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                    editor.putString("Q10",Q10_5);
+                    editor.commit();
+
+                    check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
+                    check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
+                }
+                else Q10_5 = "null";
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_5);
+                editor.commit();
+
+                break;
+
+            case R.id.checkBox178:
+                if (checked){
+                    Q10_6 = "Andrea Turčanová" +
+                            "(KDH)";
+                    Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                    editor.putString("Q10",Q10_6);
+                    editor.commit();
+
+                    check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
+                    check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
+                }
+                else Q10_6 = "null";
+                Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
+                editor.putString("Q10",Q10_6);
+                editor.commit();
+
+                break;
+
+
             case R.id.checkBox52:
                 if (checked)
                     Q10 = "Nikoho";
@@ -98,11 +143,15 @@ public class Screen11 extends AppCompatActivity {
                 Q10_1 = "null";
                 Q10_3 = "null";
                 Q10_4 = "null";
+                Q10_5 = "null";
+                Q10_6 = "null";
                 check1 = (CheckBox) findViewById(R.id.checkBox49);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox50);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox51);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox48);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox53);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox178);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox177);check1.setChecked(false);
                 break;
             case R.id.checkBox53:
                 if (checked)
@@ -113,11 +162,15 @@ public class Screen11 extends AppCompatActivity {
                 Q10_1 = "null";
                 Q10_3 = "null";
                 Q10_4 = "null";
+                Q10_5 = "null";
+                Q10_6 = "null";
                 check1 = (CheckBox) findViewById(R.id.checkBox49);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox50);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox51);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox52);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox48);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox178);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox177);check1.setChecked(false);
                 break;
         }
         Intent i = new Intent(Screen11.this, MainActivity.class);
@@ -138,8 +191,10 @@ public class Screen11 extends AppCompatActivity {
                 CheckBox c1 = (CheckBox)findViewById(R.id.checkBox51);
                 CheckBox c5 = (CheckBox)findViewById(R.id.checkBox52);
                 CheckBox c6 = (CheckBox)findViewById(R.id.checkBox53);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox177);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox178);
 
-                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked()) {
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked() || c8.isChecked()) {
                     startActivity(sendIsChecked(toy));
                     finish();
                 }
@@ -194,20 +249,34 @@ public class Screen11 extends AppCompatActivity {
                 if (isMultiplied) {
                     qw = restoredText.split("_");
 
-                    if (qw[0].equals("Juraj Droba (SaS,  OľaNO-NOVA, KDH)")) {
-                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox48);
-                        checkBox.setChecked(true);
-                    }
-                    if (qw[1].equals("Pavol Frešo  (Nezávislý)")) {
+                    if (qw[0].equals("Peter Chudík" +
+                            "(SMER-SD)")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox49);
                         checkBox.setChecked(true);
                     }
-                    if (qw[2].equals("Milan Ftáčnik (SMER-  SD, SNS, MOST-HÍD)")) {
+                    if (qw[1].equals("PJozef Lukáč (OĽaNO –" +
+                            "NOVA, SaS)")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox50);
                         checkBox.setChecked(true);
                     }
-                    if (qw[3].equals("Boris Kollár (SME  RODINA – Boris Kollár)")) {
+                    if (qw[2].equals("Jozef Mihalčin (ĽS Naše Slovensko strana" +
+                            "Mariana Kotlebu")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox48);
+                        checkBox.setChecked(true);
+                    }
+                    if (qw[3].equals("Peter Pčolinský (SME" +
+                            "RODINA – Boris Kollár)")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox177);
+                        checkBox.setChecked(true);
+                    }
+                    if (qw[4].equals("Jaroslav Regec" +
+                            "(SNS)")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox51);
+                        checkBox.setChecked(true);
+                    }
+                    if (qw[5].equals("Andrea Turčanová" +
+                            "(KDH)")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox178);
                         checkBox.setChecked(true);
                     }
                 }

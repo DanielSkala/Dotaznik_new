@@ -79,9 +79,6 @@
             android:name=".Screen19"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".Screen20"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
             android:name=".Screen21"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
