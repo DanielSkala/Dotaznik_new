@@ -243,17 +243,6 @@ public class Screen21 extends AppCompatActivity {
                 }
             }
         }
-
-
-
-
-
-
-
-
-
-
-
         init();
         BackPressed();
     }
