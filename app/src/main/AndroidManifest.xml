@@ -99,7 +99,8 @@
         <activity android:name=".FinalScreen" />
         <activity android:name=".DotaznikReset" />
         <activity android:name=".AudioRecorder" />
-        <activity android:name=".TelNumber"></activity>
+        <activity android:name=".TelNumber" />
+        <activity android:name=".Screen26"></activity>
     </application>
 
 </manifest>

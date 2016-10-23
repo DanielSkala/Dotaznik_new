@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 /*
                 if (name.equals("")){
                     name = "noName";
-                }
+                }   
 */
                 startActivity(sendIsChecked(toy));
                 finish();

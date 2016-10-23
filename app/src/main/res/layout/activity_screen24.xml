@@ -60,37 +60,92 @@
         android:layout_alignParentStart="true"
         android:textSize="36sp" />
 
-    <EditText
+    <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
-        android:hint="Priestor pre dlhú odpoveď"
-        android:id="@+id/editText59"
-        android:layout_marginTop="102dp"
-        android:layout_below="@+id/button46"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
+        android:text="Jozef Mihalčin (ĽS Naše Slovensko strana  Mariana Kotlebu"
+        android:id="@+id/checkBox59"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox60"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:maxLines="10"
-        android:textSize="24sp" />
+        android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jaroslav Regec  (SNS)"
+        android:id="@+id/checkBox62"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox59"
+        android:layout_alignLeft="@+id/checkBox59"
+        android:layout_alignStart="@+id/checkBox59" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andrea Turčanová  (KDH)"
+        android:id="@+id/checkBox63"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/button46"
+        android:layout_alignLeft="@+id/checkBox59"
+        android:layout_alignStart="@+id/checkBox59" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Pčolinský (SME  RODINA – Boris Kollár)"
+        android:id="@+id/checkBox61"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox63"
+        android:layout_alignLeft="@+id/checkBox63"
+        android:layout_alignStart="@+id/checkBox63" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jozef Lukáč (OĽaNO –  NOVA, SaS)"
+        android:id="@+id/checkBox58"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox61"
+        android:layout_alignLeft="@+id/checkBox61"
+        android:layout_alignStart="@+id/checkBox61" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Chudík  (SMER-SD)"
+        android:id="@+id/checkBox60"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox58"
+        android:layout_alignLeft="@+id/checkBox58"
+        android:layout_alignStart="@+id/checkBox58" />
 
     <TextView
-        android:text="@string/i23"
+        android:text="Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK  a zakrúžkujte len jednu možnosť podľa odpovede respondenta."
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView115"
         android:textColor="#f44336"
         android:textStyle="normal|italic"
         android:textSize="18sp"
-        android:layout_alignBottom="@+id/imageView24"
+        android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView24"
         android:layout_toEndOf="@+id/imageView24" />
 
     <TextView
-        android:text="@string/q23"
+        android:text="Ak by Váš kandidát na predsedu (župana) Prešovského samosprávneho kraja (PSK)  odstúpil, koho ďalšieho zo zoznamu by ste volili za predsedu PSK?"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView116"
@@ -100,5 +155,33 @@
         android:layout_above="@+id/button47"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="39dp" />
+        android:layout_marginBottom="67dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikoho"
+        android:id="@+id/checkBox65"
+        android:checked="false"
+        android:textColor="#878787"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox62"
+        android:layout_alignLeft="@+id/checkBox62"
+        android:layout_alignStart="@+id/checkBox62"
+        android:layout_marginTop="24dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox64"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_marginRight="26dp"
+        android:layout_marginEnd="26dp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBaseline="@+id/checkBox65"
+        android:layout_alignBottom="@+id/checkBox65"
+        android:layout_alignRight="@+id/checkBox58"
+        android:layout_alignEnd="@+id/checkBox58" />
 </RelativeLayout>

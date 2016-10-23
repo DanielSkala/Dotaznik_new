@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_screen26"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.daniel.dotaznik.Screen19">
+    tools:context="com.example.daniel.dotaznik.Screen26">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Pozor! Anketár nikdy neponúkne možnosť neviem!!!"
-        android:id="@+id/textView102"
+        android:id="@+id/textView29"
         android:textColor="#f44336"
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
@@ -23,7 +24,7 @@
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:id="@+id/imageView19"
+        android:id="@+id/imageView2"
         android:src="@drawable/obr"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -33,66 +34,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="18/25"
-        android:id="@+id/textView20"
+        android:text="24/25"
+        android:id="@+id/textView30"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="58dp"
-        android:id="@+id/textView99"
-        android:textColor="#000000"
-        android:textSize="30sp"
-        android:textStyle="normal|bold"
-        android:layout_below="@+id/imageView19"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
-    <TextView
-        android:text="@string/i18"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView100"
-        android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView19"
-        android:layout_toEndOf="@+id/imageView19" />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
         android:text="&lt;"
-        android:id="@+id/button36"
+        android:id="@+id/button51"
         android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/textView99"
-        android:layout_toEndOf="@+id/textView99"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:textSize="36sp" />
 
     <TextView
-        android:text="@string/q18"
-        android:layout_width="wrap_content"
+        android:text="Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:layout_width="470dp"
         android:layout_height="wrap_content"
-        android:id="@+id/textView101"
-        android:textStyle="normal|bold"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        android:layout_marginTop="16dp"
-        android:layout_alignTop="@+id/textView99"
-        android:layout_toRightOf="@+id/textView99"
-        android:layout_toEndOf="@+id/textView99" />
+        android:id="@+id/textView37"
+        android:textColor="#f44336"
+        android:textStyle="normal|italic"
+        android:textSize="18sp"
+        android:layout_alignBottom="@+id/textView24"
+        android:layout_toLeftOf="@+id/button43"
+        android:layout_toStartOf="@+id/button43" />
 
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
         android:text=">"
-        android:id="@+id/button37"
+        android:id="@+id/button50"
         android:textSize="36sp"
-        android:layout_alignBaseline="@+id/button36"
-        android:layout_alignBottom="@+id/button36"
+        android:layout_alignBaseline="@+id/button51"
+        android:layout_alignBottom="@+id/button51"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
@@ -101,14 +78,25 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
         android:hint="Priestor pre dlhú odpoveď"
-        android:layout_below="@+id/button37"
+        android:id="@+id/editText5"
+        android:layout_marginTop="122dp"
+        android:maxLines="10"
+        android:textSize="24sp"
+        android:layout_below="@+id/button50"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="76dp"
-        android:id="@+id/editText4"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="24sp" />
+        android:layout_alignParentStart="true" />
 
+    <TextView
+        android:text="Prečo by ste ho určite nevolili?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView38"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/imageView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="125dp" />
 </RelativeLayout>
