@@ -27,7 +27,7 @@ public class Screen19 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen19.this, Screen20.class);
+                Intent toy = new Intent(Screen19.this, Screen21.class);
 
                 EditText answer = (EditText) findViewById(R.id.q18o1);
                 Q18 = answer.getText().toString();
