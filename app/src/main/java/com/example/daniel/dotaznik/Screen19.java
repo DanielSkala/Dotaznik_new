@@ -114,12 +114,7 @@ public class Screen19 extends AppCompatActivity {
         ready.putExtra("sc15", toy.getStringExtra("sc15"));
         ready.putExtra("sc17", toy.getStringExtra("sc17"));
         ready.putExtra("sc18", toy.getStringExtra("sc18"));
-        ready.putExtra("sc16-1", toy.getStringExtra("sc16-1"));
-        ready.putExtra("sc16-2", toy.getStringExtra("sc16-2"));
-        ready.putExtra("sc16-3", toy.getStringExtra("sc16-3"));
-        ready.putExtra("sc16-4", toy.getStringExtra("sc16-4"));
-        ready.putExtra("sc16-5", toy.getStringExtra("sc16-5"));
-        ready.putExtra("sc16-6", toy.getStringExtra("sc16-6"));
+        ready.putExtra("sc16", toy.getStringExtra("sc16"));
         ready.putExtra("sc19-1", toy.getStringExtra("sc19-1"));
         ready.putExtra("sc19-2", toy.getStringExtra("sc19-2"));
         ready.putExtra("sc19-3", toy.getStringExtra("sc19-3"));
@@ -156,11 +151,7 @@ public class Screen19 extends AppCompatActivity {
         ready.putExtra("ksc16-6",toy.getStringExtra("ksc16-6"));
         ready.putExtra("ksc17",toy.getStringExtra("ksc17"));
         ready.putExtra("ksc18",toy.getStringExtra("ksc18"));
-        ready.putExtra("ksc16-1",toy.getStringExtra("ksc16-1"));
-        ready.putExtra("ksc16-2",toy.getStringExtra("ksc16-2"));
-        ready.putExtra("ksc16-3",toy.getStringExtra("ksc16-3"));
-        ready.putExtra("ksc16-4",toy.getStringExtra("ksc16-4"));
-        ready.putExtra("ksc16-5",toy.getStringExtra("ksc16-5"));
+        ready.putExtra("ksc16",toy.getStringExtra("ksc16"));
         ready.putExtra("ksc19-1",toy.getStringExtra("ksc19-1"));
         ready.putExtra("ksc19-2",toy.getStringExtra("ksc19-2"));
         ready.putExtra("ksc19-3",toy.getStringExtra("ksc19-3"));

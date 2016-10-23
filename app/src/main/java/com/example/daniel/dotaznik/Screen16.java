@@ -79,7 +79,7 @@ public class    Screen16 extends AppCompatActivity {
                 break;
         }
         Intent i = new Intent(Screen16.this, MainActivity.class);
-        i.putExtra("Sc16-1", Q15);
+        i.putExtra("Sc16", Q15);
 
     }
 
@@ -129,7 +129,7 @@ public class    Screen16 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen16);
         Intent i = getIntent();
-        String s = i.getStringExtra("ksc16-1");
+        String s = i.getStringExtra("ksc16");
 
         //When users click on the image, alert dialog will show up
         ImageView imageView = (ImageView) findViewById(R.id.imageView16);
@@ -142,7 +142,7 @@ public class    Screen16 extends AppCompatActivity {
             }
         });
 
-        if (i.getStringExtra("ksc16-1") == null)
+        if (i.getStringExtra("ksc16") == null)
             s = "true";
         if(s.equals("true")) {
             SharedPreferences settings = getSharedPreferences("Q15", MODE_PRIVATE);
@@ -185,9 +185,9 @@ public class    Screen16 extends AppCompatActivity {
 //toy.getStringExtra("sc16-1") == null ||  !toy.getStringExtra("sc16-1").equals(Q15_1)
         if(Q15!=null)
 
-            ready.putExtra("sc16-1", Q15);
+            ready.putExtra("sc16", Q15);
         else
-            ready.putExtra("sc16-1", toy.getStringExtra("sc16-1"));
+            ready.putExtra("sc16", toy.getStringExtra("sc16"));
 
 
 
@@ -244,7 +244,7 @@ public class    Screen16 extends AppCompatActivity {
         ready.putExtra("ksc13",toy.getStringExtra("ksc13"));
         ready.putExtra("ksc14",toy.getStringExtra("ksc14"));
         ready.putExtra("ksc15",toy.getStringExtra("ksc15"));
-        ready.putExtra("ksc16-1",sChecked);
+        ready.putExtra("ksc16",sChecked);
         ready.putExtra("ksc17",toy.getStringExtra("ksc17"));
         ready.putExtra("ksc18",toy.getStringExtra("ksc18"));
         ready.putExtra("ksc18-1",toy.getStringExtra("ksc18-1"));
