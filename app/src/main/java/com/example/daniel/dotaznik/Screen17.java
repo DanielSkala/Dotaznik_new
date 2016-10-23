@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Screen17 extends AppCompatActivity {
@@ -16,67 +17,7 @@ public class Screen17 extends AppCompatActivity {
 
     String Q16,sChecked;
 
-    public void onCheckboxClicked(View view) {
-        // Is the view now checked?
-        boolean checked = ((CheckBox) view).isChecked();
-        SharedPreferences.Editor editor = getSharedPreferences("Q16",MODE_PRIVATE).edit() ;
-        CheckBox check1;
-        // Check which checkbox was clicked
-        switch (view.getId()) {
-            case R.id.checkBox90:
-                if (checked)
-                    Q16 = "Spokojný";
-                editor.putString("Q16","1");
-                editor.commit();
-                check1 = (CheckBox) findViewById(R.id.checkBox91);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox92);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox93);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox94);check1.setChecked(false);
-                break;
-            case R.id.checkBox91:
-                if (checked)
-                    Q16 = "Skôr spokojný";
-                editor.putString("Q16","2");
-                editor.commit();
-                check1 = (CheckBox) findViewById(R.id.checkBox90);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox92);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox93);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox94);check1.setChecked(false);
-                break;
-            case R.id.checkBox92:
-                if (checked)
-                    Q16 = "Skôr nespokojný";
-                editor.putString("Q16","3");
-                editor.commit();
-                check1 = (CheckBox) findViewById(R.id.checkBox91);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox90);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox93);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox94);check1.setChecked(false);
-                break;
-            case R.id.checkBox93:
-                if (checked)
-                    Q16 = "Nespokojný";
-                editor.putString("Q16","4");
-                editor.commit();
-                check1 = (CheckBox) findViewById(R.id.checkBox91);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox92);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox90);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox94);check1.setChecked(false);
-                break;
-            case R.id.checkBox94:
-                if (checked)
-                    Q16 = "Neviem";
-                editor.putString("Q16","5");
-                editor.commit();
-                check1 = (CheckBox) findViewById(R.id.checkBox91);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox92);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox93);check1.setChecked(false);
-                check1 = (CheckBox) findViewById(R.id.checkBox90);check1.setChecked(false);
-                break;
-        }
-        Intent i = new Intent(Screen17.this, AllData.class);
-        i.putExtra("Sc17", Q16);
-    }
+
 
 
     public void init(){
@@ -85,19 +26,22 @@ public class Screen17 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen17.this, Screen18.class);
-                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox90);
-                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox91);
-                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox92);
-                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox93);
-                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox94);
+                final Intent toy = new Intent(Screen17.this, Screen18.class);
 
-                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked()) {
+                EditText editText = (EditText) findViewById(R.id.editText3);
+                Q16 = editText.getText().toString();
+                Intent info = new Intent (Screen17.this, MainActivity.class);
+                info.putExtra("sc17", Q16);
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q16",MODE_PRIVATE).edit() ;
+                editor.putString("Q16",Q16);
+                editor.commit();
+
+                if(!Q16.equals(""))
+                {
                     startActivity(sendIsChecked(toy));
                     finish();
                 }
-
-
 
             }
         });
@@ -110,6 +54,14 @@ public class Screen17 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen17.this, Screen16.class);
+
+
+                EditText editText = (EditText) findViewById(R.id.editText3);
+                Q16 = editText.getText().toString();
+
+                SharedPreferences.Editor editor = getSharedPreferences("Q16",MODE_PRIVATE).edit() ;
+                editor.putString("Q16",Q16);
+                editor.commit();
                 startActivity(sendIsChecked(toy));
                 finish();
             }
@@ -124,7 +76,7 @@ public class Screen17 extends AppCompatActivity {
         String s = i.getStringExtra("ksc17");
 
         //When users click on the image, alert dialog will show up
-        ImageView imageView = (ImageView) findViewById(R.id.imageView17);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView12);
         imageView.setClickable(true);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -137,31 +89,11 @@ public class Screen17 extends AppCompatActivity {
         if (i.getStringExtra("ksc17") == null)
             s = "true";
         if(s.equals("true")) {
-            SharedPreferences settings = this.getSharedPreferences("Q16", MODE_PRIVATE);
-
+            SharedPreferences settings = this.getSharedPreferences("Q11", MODE_PRIVATE);
             String restoredText = settings.getString("Q16", null);
             if (restoredText != null) {
-                if (restoredText.equals("1")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox90);
-                    checkBox.setChecked(true);
-                }
-                if (restoredText.equals("2")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox91);
-                    checkBox.setChecked(true);
-                }
-                if (restoredText.equals("3")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox92);
-                    checkBox.setChecked(true);
-                }
-
-                if (restoredText.equals("4")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox93);
-                    checkBox.setChecked(true);
-                }
-                if (restoredText.equals("5")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox94);
-                    checkBox.setChecked(true);
-                }
+                EditText editText = (EditText) findViewById(R.id.editText3);
+                editText.setText(restoredText);
             }
         }
         init();
