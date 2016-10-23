@@ -9,16 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.daniel.dotaznik.Screen21">
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="100dp"
-        android:text=">"
-        android:id="@+id/button41"
-        android:layout_alignTop="@+id/button40"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="36sp" />
-
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -184,4 +174,14 @@
         android:layout_alignBottom="@+id/checkBox74"
         android:layout_alignLeft="@+id/checkBox69"
         android:layout_alignStart="@+id/checkBox69" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button41"
+        android:textSize="36sp"
+        android:layout_below="@+id/textView107"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 
@@ -13,9 +14,134 @@ public class Screen21 extends AppCompatActivity {
 
     public Button button40;
     public Button button41;
-
-
     String Q20,sChecked;
+
+    public void onCheckboxClicked(View view) {
+        // Is the view now checked?
+        boolean checked = ((CheckBox) view).isChecked();
+        SharedPreferences.Editor editor = getSharedPreferences("Q20",MODE_PRIVATE).edit() ;
+        CheckBox check1;
+        sChecked = "true";
+        // Check which checkbox was clicked
+        switch (view.getId()) {
+            case R.id.checkBox66:
+                if (checked)
+                    Q20 = "Jozef Lukáč (OĽaNO –" +
+                            "NOVA, SaS)";
+                editor.putString("Q20","1");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+
+                break;
+            case R.id.checkBox67:
+                if (checked)
+                    Q20 = "Jozef Mihalčin (ĽS Naše Slovensko strana" +
+                            "Mariana Kotlebu";
+                editor.putString("Q20","2");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+
+                break;
+            case R.id.checkBox69:
+                if (checked)
+                    Q20 = "Peter Chudík" +
+                            "(SMER-SD)";
+                editor.putString("Q20","3");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+                break;
+            case R.id.checkBox70:
+                if (checked)
+                    Q20 = "Peter Pčolinský (SME" +
+                            "RODINA – Boris Kollár)";
+                editor.putString("Q20","4");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+                break;
+            case R.id.checkBox71:
+                if (checked)
+                    Q20 = "Jaroslav Regec" +
+                            "(SNS)";
+                editor.putString("Q20","5");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+                break;
+            case R.id.checkBox72:
+                if (checked)
+                    Q20 = "Andrea Turčanová" +
+                            "(KDH)";
+                editor.putString("Q20","6");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+                break;
+            case R.id.checkBox74:
+                if (checked)
+                    Q20 = "Neviem";
+                editor.putString("Q20","7");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox75);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                break;
+            case R.id.checkBox75:
+                if (checked)
+                    Q20 = "Nikoho";
+                editor.putString("Q20","8");
+                editor.commit();
+                check1 = (CheckBox) findViewById(R.id.checkBox67);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox69);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox70);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox71);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox72);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox66);check1.setChecked(false);
+                check1 = (CheckBox) findViewById(R.id.checkBox74);check1.setChecked(false);
+                break;
+        }
+        Intent i = new Intent(Screen21.this, MainActivity.class);
+        i.putExtra("Sc20", Q20);
+    }
+
+
     public void init(){
         button41 = (Button)findViewById(R.id.button41);
         button41.setOnClickListener(new View.OnClickListener() {
@@ -23,18 +149,16 @@ public class Screen21 extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent toy = new Intent(Screen21.this, Screen22.class);
-
-                EditText editText = (EditText) findViewById(R.id.editText51);
-                Q20 = editText.getText().toString();
-                Intent info = new Intent (Screen21.this, MainActivity.class);
-                info.putExtra("sc20", Q20);
-
-                SharedPreferences.Editor editor = getSharedPreferences("Q20",MODE_PRIVATE).edit() ;
-                editor.putString("Q20",Q20);
-                editor.commit();
-
-                if(!Q20.equals(""))
-                {
+                CheckBox c2 = (CheckBox)findViewById(R.id.checkBox33);
+                CheckBox c3 = (CheckBox)findViewById(R.id.checkBox34);
+                CheckBox c4 = (CheckBox)findViewById(R.id.checkBox35);
+                CheckBox c1 = (CheckBox)findViewById(R.id.checkBox36);
+                CheckBox c5 = (CheckBox)findViewById(R.id.checkBox37);
+                CheckBox c6 = (CheckBox)findViewById(R.id.checkBox38);
+                CheckBox c7 = (CheckBox)findViewById(R.id.checkBox39);
+                CheckBox c8 = (CheckBox)findViewById(R.id.checkBox40);
+                if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked()
+                        || c8.isChecked() ) {
                     startActivity(sendIsChecked(toy));
                     finish();
                 }
@@ -48,14 +172,7 @@ public class Screen21 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen21.this, Screen20.class);
-
-                EditText editText = (EditText) findViewById(R.id.editText51);
-                Q20 = editText.getText().toString();
-
-                SharedPreferences.Editor editor = getSharedPreferences("Q20",MODE_PRIVATE).edit() ;
-                editor.putString("Q20",Q20);
-                editor.commit();
+                Intent toy = new Intent(Screen21.this, Screen19.class);
                 startActivity(sendIsChecked(toy));
                 finish();
             }
@@ -78,19 +195,64 @@ public class Screen21 extends AppCompatActivity {
             public void onClick(View view) {
                 AbortDialog dialog = new AbortDialog();
                 dialog.show(getSupportFragmentManager(), "AbortDialogFragment");
+
+
+
             }
         });
 
         if (i.getStringExtra("ksc20") == null)
             s = "true";
         if(s.equals("true")) {
+
             SharedPreferences settings = this.getSharedPreferences("Q20", MODE_PRIVATE);
+
             String restoredText = settings.getString("Q20", null);
             if (restoredText != null) {
-                EditText editText = (EditText) findViewById(R.id.editText51);
-                editText.setText(restoredText);
+                if (restoredText.equals("1")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox66);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("2")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox67);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("3")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox69);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("4")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox70);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("5")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox71);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("6")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox72);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("7")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox74);
+                    checkBox.setChecked(true);
+                }
+                if (restoredText.equals("8")) {
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox75);
+                    checkBox.setChecked(true);
+                }
             }
         }
+
+
+
+
+
+
+
+
+
+
 
         init();
         BackPressed();
