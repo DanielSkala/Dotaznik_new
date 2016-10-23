@@ -150,19 +150,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Neviem"
-        android:id="@+id/checkBox47"
-        android:checked="false"
-        android:textColor="#666666"
-        android:layout_above="@+id/checkBox38"
-        android:layout_alignLeft="@+id/checkBox41"
-        android:layout_alignStart="@+id/checkBox41"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Nešiel by som voliť"
         android:id="@+id/checkBox48"
         android:checked="false"
@@ -170,20 +157,6 @@
         android:layout_below="@+id/checkBox47"
         android:layout_alignLeft="@+id/checkBox47"
         android:layout_alignStart="@+id/checkBox47"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Žiadnu"
-        android:id="@+id/checkBox46"
-        android:checked="false"
-        android:textColor="#878787"
-        android:textAllCaps="false"
-        android:layout_below="@+id/checkBox48"
-        android:layout_alignLeft="@+id/checkBox48"
-        android:layout_alignStart="@+id/checkBox48"
         android:textSize="16sp"
         android:onClick="onCheckboxClicked" />
 
@@ -292,5 +265,41 @@
         android:layout_alignBottom="@+id/button18"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Žiadnu"
+        android:id="@+id/checkBox46"
+        android:checked="false"
+        android:textColor="#878787"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox48"
+        android:layout_alignLeft="@+id/checkBox48"
+        android:layout_alignStart="@+id/checkBox48" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox47"
+        android:checked="false"
+        android:textColor="#666666"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox37"
+        android:layout_alignLeft="@+id/checkBox41"
+        android:layout_alignStart="@+id/checkBox41" />
+
+    <CheckBox
+        android:text="Iná politická strana "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox45"
+        android:layout_below="@+id/checkBox46"
+        android:layout_alignLeft="@+id/checkBox46"
+        android:layout_alignStart="@+id/checkBox46" />
 
 </RelativeLayout>

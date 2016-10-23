@@ -118,32 +118,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ľubomír Vasilišin (7 STATOČNÝCH)"
-        android:id="@+id/checkBox25"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_alignBaseline="@+id/checkBox18"
-        android:layout_alignBottom="@+id/checkBox18"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="NIKOHO"
-        android:id="@+id/checkBox29"
-        android:checked="false"
-        android:textColor="#878787"
-        android:textSize="16sp"
-        android:layout_below="@+id/checkBox28"
-        android:layout_alignLeft="@+id/checkBox28"
-        android:layout_alignStart="@+id/checkBox28"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="NEVOLIL SOM"
         android:id="@+id/checkBox31"
         android:checked="false"
@@ -153,31 +127,6 @@
         android:layout_alignLeft="@+id/checkBox30"
         android:layout_alignStart="@+id/checkBox30"
         android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Štefan Straka  (KSS)"
-        android:id="@+id/checkBox24"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_above="@+id/checkBox25"
-        android:layout_alignLeft="@+id/checkBox25"
-        android:layout_alignStart="@+id/checkBox25"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Anton Čulen  (Magnificant Slovakia)"
-        android:id="@+id/checkBox26"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_below="@+id/checkBox25"
-        android:layout_alignLeft="@+id/checkBox25"
-        android:layout_alignStart="@+id/checkBox25"
-        android:onClick="onCheckboxClicked"
-        android:visibility="invisible" />
 
     <Button
         android:layout_width="50dp"
@@ -283,5 +232,44 @@
         android:layout_below="@+id/checkBox17"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ľubomír Vasilišin (7 STATOČNÝCH)"
+        android:id="@+id/checkBox25"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox24"
+        android:layout_toRightOf="@+id/checkBox19"
+        android:layout_toEndOf="@+id/checkBox19" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Štefan Straka  (KSS)"
+        android:id="@+id/checkBox24"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBaseline="@+id/checkBox17"
+        android:layout_alignBottom="@+id/checkBox17"
+        android:layout_alignLeft="@+id/checkBox25"
+        android:layout_alignStart="@+id/checkBox25" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIKOHO"
+        android:id="@+id/checkBox29"
+        android:checked="false"
+        android:textColor="#878787"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBottom="@+id/checkBox22"
+        android:layout_toRightOf="@+id/checkBox19"
+        android:layout_toEndOf="@+id/checkBox19"
+        android:layout_marginBottom="14dp" />
 
 </RelativeLayout>

@@ -65,7 +65,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Milan Ftáčnik (SMER-  SD, SNS, MOST-HÍD)"
+        android:text="Jozef Lukáč (OĽaNO –  NOVA, SaS)"
         android:id="@+id/checkBox50"
         android:checked="false"
         android:textSize="16sp"
@@ -77,38 +77,13 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Boris Kollár (SME  RODINA – Boris Kollár)"
-        android:id="@+id/checkBox51"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_below="@+id/checkBox48"
-        android:layout_alignLeft="@+id/checkBox48"
-        android:layout_alignStart="@+id/checkBox48"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Juraj Droba (SaS,  OľaNO-NOVA, KDH)"
+        android:text="Jozef Mihalčin (ĽS Naše Slovensko strana  Mariana Kotlebu"
         android:id="@+id/checkBox48"
         android:checked="false"
         android:textSize="16sp"
         android:layout_below="@+id/checkBox50"
         android:layout_alignLeft="@+id/checkBox50"
         android:layout_alignStart="@+id/checkBox50"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nikoho"
-        android:id="@+id/checkBox52"
-        android:checked="false"
-        android:textColor="#878787"
-        android:layout_below="@+id/checkBox51"
-        android:layout_alignLeft="@+id/checkBox51"
-        android:layout_alignStart="@+id/checkBox51"
-        android:layout_marginTop="29dp"
         android:onClick="onCheckboxClicked" />
 
     <CheckBox
@@ -126,40 +101,6 @@
         android:layout_marginEnd="71dp"
         android:onClick="onCheckboxClicked" />
 
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="100dp"
-        android:text="&lt;"
-        android:id="@+id/button20"
-        android:textSize="36sp"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/textView23"
-        android:layout_toEndOf="@+id/textView23" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pavol Frešo  (Nezávislý)"
-        android:id="@+id/checkBox49"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_marginLeft="69dp"
-        android:layout_marginStart="69dp"
-        android:layout_alignBottom="@+id/button20"
-        android:layout_toRightOf="@+id/button20"
-        android:layout_toEndOf="@+id/button20"
-        android:onClick="onCheckboxClicked" />
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="100dp"
-        android:text=">"
-        android:id="@+id/button21"
-        android:textSize="36sp"
-        android:layout_above="@+id/checkBox50"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:text="@string/i10"
         android:layout_width="470dp"
@@ -171,5 +112,90 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView11"
         android:layout_toEndOf="@+id/imageView11" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Chudík  (SMER-SD)"
+        android:id="@+id/checkBox49"
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:onClick="onCheckboxClicked"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button20"
+        android:layout_toEndOf="@+id/button20" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button21"
+        android:textSize="36sp"
+        android:layout_alignBaseline="@+id/checkBox50"
+        android:layout_alignBottom="@+id/checkBox50"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text="&lt;"
+        android:id="@+id/button20"
+        android:textSize="36sp"
+        android:layout_alignBaseline="@+id/checkBox50"
+        android:layout_alignBottom="@+id/checkBox50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Pčolinský (SME  RODINA – Boris Kollár)"
+        android:id="@+id/checkBox177"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox48"
+        android:layout_alignLeft="@+id/checkBox48"
+        android:layout_alignStart="@+id/checkBox48" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jaroslav Regec  (SNS)"
+        android:id="@+id/checkBox51"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox177"
+        android:layout_alignLeft="@+id/checkBox177"
+        android:layout_alignStart="@+id/checkBox177" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Andrea Turčanová  (KDH)"
+        android:id="@+id/checkBox178"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox51"
+        android:layout_alignLeft="@+id/checkBox51"
+        android:layout_alignStart="@+id/checkBox51" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nikoho"
+        android:id="@+id/checkBox52"
+        android:checked="false"
+        android:textColor="#878787"
+        android:layout_marginTop="27dp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox178"
+        android:layout_alignLeft="@+id/checkBox178"
+        android:layout_alignStart="@+id/checkBox178" />
 
 </RelativeLayout>

@@ -29,55 +29,6 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Pavol  Frešo  (Nezávislý  )"
-        android:id="@+id/checkBox162"
-        android:checked="false"
-        android:layout_below="@+id/checkBox161"
-        android:layout_alignLeft="@+id/checkBox161"
-        android:layout_alignStart="@+id/checkBox161"
-        android:textSize="18sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Milan  Ftáčnik (SMER-  SD, SNS,  MOST-HÍD)"
-        android:id="@+id/checkBox163"
-        android:checked="false"
-        android:layout_below="@+id/checkBox162"
-        android:layout_alignLeft="@+id/checkBox162"
-        android:layout_alignStart="@+id/checkBox162"
-        android:textSize="18sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Boris Kollár (SME  RODINA – Boris Kollár)"
-        android:id="@+id/checkBox164"
-        android:checked="false"
-        android:layout_below="@+id/checkBox163"
-        android:layout_toRightOf="@+id/button44"
-        android:layout_toEndOf="@+id/button44"
-        android:textSize="18sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nešiel by som voliť"
-        android:id="@+id/checkBox165"
-        android:checked="false"
-        android:layout_marginTop="20dp"
-        android:textColor="#878787"
-        android:layout_below="@+id/checkBox164"
-        android:layout_toRightOf="@+id/button44"
-        android:layout_toEndOf="@+id/button44"
-        android:onClick="onCheckboxClicked" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,33 +60,83 @@
         android:layout_alignParentEnd="true"
         android:textSize="36sp" />
 
-    <CheckBox
+    <TextView
+        android:text="Vaše volebné rozhodnutie je:"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Juraj Droba (SaS, OľaNO-NOVA,  KDH)"
-        android:id="@+id/checkBox161"
-        android:checked="false"
-        android:layout_marginTop="60dp"
-        android:layout_below="@+id/button44"
-        android:layout_alignLeft="@+id/checkBox164"
-        android:layout_alignStart="@+id/checkBox164"
+        android:id="@+id/textView113"
+        android:textStyle="normal|bold"
+        android:textSize="30sp"
+        android:textColor="#000000"
+        android:layout_above="@+id/button44"
+        android:layout_alignRight="@+id/checkBox166"
+        android:layout_alignEnd="@+id/checkBox166"
+        android:layout_marginBottom="127dp" />
+
+    <TextView
+        android:text="Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView110"
+        android:textStyle="normal|italic"
         android:textSize="18sp"
-        android:onClick="onCheckboxClicked" />
+        android:textColor="#f44336"
+        android:layout_alignBaseline="@+id/textView25"
+        android:layout_alignBottom="@+id/textView25"
+        android:layout_toLeftOf="@+id/button45"
+        android:layout_toStartOf="@+id/button45" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nikoho"
-        android:id="@+id/checkBox166"
+        android:text="Definitívne"
+        android:id="@+id/checkBox161"
         android:checked="false"
-        android:textColor="#878787"
-        android:layout_alignBaseline="@+id/checkBox167"
-        android:layout_alignBottom="@+id/checkBox167"
-        android:layout_toRightOf="@+id/checkBox167"
-        android:layout_toEndOf="@+id/checkBox167"
-        android:layout_marginLeft="14dp"
-        android:layout_marginStart="14dp"
-        android:onClick="onCheckboxClicked" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBottom="@+id/button44"
+        android:layout_alignRight="@+id/textView113"
+        android:layout_alignEnd="@+id/textView113"
+        android:layout_marginRight="69dp"
+        android:layout_marginEnd="69dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skôr definitívne"
+        android:id="@+id/checkBox162"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/button45"
+        android:layout_alignLeft="@+id/checkBox161"
+        android:layout_alignStart="@+id/checkBox161" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skôr nie je definitívne"
+        android:id="@+id/checkBox163"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginTop="17dp"
+        android:layout_below="@+id/checkBox162"
+        android:layout_alignLeft="@+id/checkBox162"
+        android:layout_alignStart="@+id/checkBox162" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nie je definitívne"
+        android:id="@+id/checkBox164"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_marginTop="23dp"
+        android:layout_below="@+id/checkBox163"
+        android:layout_alignLeft="@+id/checkBox163"
+        android:layout_alignStart="@+id/checkBox163" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -144,36 +145,10 @@
         android:id="@+id/checkBox167"
         android:checked="false"
         android:textColor="#878787"
-        android:layout_alignBaseline="@+id/checkBox165"
-        android:layout_alignBottom="@+id/checkBox165"
-        android:layout_alignRight="@+id/checkBox161"
-        android:layout_alignEnd="@+id/checkBox161"
-        android:layout_marginRight="15dp"
-        android:layout_marginEnd="15dp"
-        android:onClick="onCheckboxClicked" />
+        android:onClick="onCheckboxClicked"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/checkBox164"
+        android:layout_alignLeft="@+id/checkBox164"
+        android:layout_alignStart="@+id/checkBox164" />
 
-    <TextView
-        android:text="@string/i22"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView110"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:textColor="#f44336"
-        android:layout_alignParentTop="true"
-        android:layout_toLeftOf="@+id/button45"
-        android:layout_toStartOf="@+id/button45" />
-
-    <TextView
-        android:text="@string/q22"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView113"
-        android:textStyle="normal|bold"
-        android:textSize="30sp"
-        android:textColor="#000000"
-        android:layout_marginTop="61dp"
-        android:layout_below="@+id/textView110"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
 </RelativeLayout>

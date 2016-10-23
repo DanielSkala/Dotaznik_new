@@ -48,57 +48,6 @@
         android:layout_width="50dp"
         android:textSize="30sp" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nespokojný"
-        android:id="@+id/checkBox93"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_below="@+id/button32"
-        android:layout_alignLeft="@+id/checkBox90"
-        android:layout_alignStart="@+id/checkBox90"
-        android:layout_marginTop="87dp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Spokojný"
-        android:id="@+id/checkBox90"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_marginTop="23dp"
-        android:layout_below="@+id/checkBox92"
-        android:layout_alignLeft="@+id/textView93"
-        android:layout_alignStart="@+id/textView93"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skôr nespokojný"
-        android:id="@+id/checkBox92"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/checkBox93"
-        android:layout_alignBottom="@+id/checkBox93"
-        android:layout_toLeftOf="@+id/button33"
-        android:layout_toStartOf="@+id/button33"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Skôr spokojný"
-        android:id="@+id/checkBox91"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_above="@+id/checkBox94"
-        android:layout_alignLeft="@+id/checkBox92"
-        android:layout_alignStart="@+id/checkBox92"
-        android:onClick="onCheckboxClicked" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -109,21 +58,6 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Neviem"
-        android:id="@+id/checkBox94"
-        android:checked="false"
-        android:textColor="#878787"
-        android:layout_marginLeft="44dp"
-        android:layout_marginStart="44dp"
-        android:layout_below="@+id/checkBox90"
-        android:layout_toRightOf="@+id/checkBox93"
-        android:layout_toEndOf="@+id/checkBox93"
-        android:layout_marginTop="26dp"
-        android:onClick="onCheckboxClicked" />
 
     <TextView
         android:text="@string/i16"
@@ -152,4 +86,19 @@
         android:layout_alignParentEnd="true"
         android:layout_marginRight="19dp"
         android:layout_marginEnd="19dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:hint="Priestor pre dlhú odpoveď"
+        android:layout_below="@+id/button32"
+        android:layout_marginTop="104dp"
+        android:id="@+id/editText3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp" />
 </RelativeLayout>

@@ -79,9 +79,6 @@
             android:name=".Screen19"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
-            android:name=".Screen20"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
             android:name=".Screen21"
             android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
@@ -96,16 +93,11 @@
         <activity
             android:name=".Screen25"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name=".Screen26"
-            android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity
-            android:name=".Screen27"
-            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".FinalScreen" />
         <activity android:name=".DotaznikReset" />
         <activity android:name=".AudioRecorder" />
-        <activity android:name=".TelNumber"></activity>
+        <activity android:name=".TelNumber" />
+        <activity android:name=".Screen26"></activity>
     </application>
 
 </manifest>
