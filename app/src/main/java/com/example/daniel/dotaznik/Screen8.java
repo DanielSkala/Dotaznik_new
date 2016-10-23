@@ -25,7 +25,7 @@ public class Screen8 extends AppCompatActivity {
         switch(view.getId()) {
             case R.id.checkBox13:
                 if (checked)
-                    Q7 = "Milan Vtáčnik";
+                    Q7 = "Pavel Hagyari";
                 editor.putString("Q7",Q7);
                 editor.commit();
                 CheckBox check = (CheckBox) findViewById(R.id.checkBox14);check.setChecked(false);
@@ -34,7 +34,7 @@ public class Screen8 extends AppCompatActivity {
                 break;
             case R.id.checkBox14:
                 if (checked)
-                    Q7 = "Ivo Nesrovnal";
+                    Q7 = "Peter Chudík";
                 editor.putString("Q7",Q7);
                 editor.commit();
                 CheckBox check4 = (CheckBox) findViewById(R.id.checkBox13);check4.setChecked(false);
@@ -43,7 +43,7 @@ public class Screen8 extends AppCompatActivity {
                 break;
             case R.id.checkBox15:
                 if (checked)
-                    Q7 = "Pavol Frešo";
+                    Q7 = "Andrea Turčanová";
                 editor.putString("Q7",Q7);
                 editor.commit();
                 CheckBox check7 = (CheckBox) findViewById(R.id.checkBox14);check7.setChecked(false);
