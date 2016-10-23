@@ -29,6 +29,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,7 +66,7 @@
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Dajte respondentovi do ruky zoznam kandidátov na predsedu (župana) PSK  a zakrúžkujte len jednu možnosť podľa odpovede respondenta."
+        android:text="@string/i24"
         android:id="@+id/textView118"
         android:textColor="#f44336"
         android:textStyle="italic"
@@ -72,116 +74,34 @@
         android:layout_toRightOf="@+id/imageView25"
         android:layout_toEndOf="@+id/imageView25" />
 
+
     <TextView
-        android:text="Ak by sa tento víkend konali voľby na predsedu (župana) Prešovského samosprávneho  kraja (PSK), ktorého kandidáta zo zoznamu by ste URČITE NEVOLILI za predsedu PSK?"
+        android:text="@string/q24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textView119"
+        android:layout_marginTop="110dp"
+        android:id="@+id/q24"
         android:textStyle="normal|bold"
         android:textSize="30sp"
         android:textColor="#000000"
         android:layout_below="@+id/textView118"
+        android:layout_alignLeft="@+id/q24o1"
+        android:layout_alignStart="@+id/q24o1" />
+
+    <EditText
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
+        android:layout_marginTop="128dp"
+        android:hint="Priestor pre dlhú odpoveď"
+        android:textSize="24sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/q24o1"
+        android:layout_below="@+id/q24"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="43dp" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Andrea Turčanová  (KDH)"
-        android:id="@+id/checkBox76"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_above="@+id/checkBox68"
-        android:layout_alignLeft="@+id/checkBox68"
-        android:layout_alignStart="@+id/checkBox68" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jozef Mihalčin (ĽS Naše Slovensko strana  Mariana Kotlebu"
-        android:id="@+id/checkBox68"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/button49"
-        android:layout_alignLeft="@+id/checkBox78"
-        android:layout_alignStart="@+id/checkBox78" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jozef Lukáč (OĽaNO –  NOVA, SaS)"
-        android:id="@+id/checkBox78"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/checkBox68"
-        android:layout_alignLeft="@+id/checkBox77"
-        android:layout_alignStart="@+id/checkBox77" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Peter Pčolinský (SME  RODINA – Boris Kollár)"
-        android:id="@+id/checkBox77"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/checkBox78"
-        android:layout_alignLeft="@+id/checkBox79"
-        android:layout_alignStart="@+id/checkBox79" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Peter Chudík  (SMER-SD)"
-        android:id="@+id/checkBox79"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_marginLeft="42dp"
-        android:layout_marginStart="42dp"
-        android:layout_below="@+id/checkBox77"
-        android:layout_toRightOf="@+id/button48"
-        android:layout_toEndOf="@+id/button48" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Jaroslav Regec  (SNS)"
-        android:id="@+id/checkBox73"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/checkBox79"
-        android:layout_alignLeft="@+id/checkBox79"
-        android:layout_alignStart="@+id/checkBox79" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Neviem"
-        android:id="@+id/checkBox81"
-        android:checked="false"
-        android:textColor="#878787"
-        android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/checkBox73"
-        android:layout_alignLeft="@+id/checkBox73"
-        android:layout_alignStart="@+id/checkBox73"
-        android:layout_marginTop="41dp" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nikoho"
-        android:id="@+id/checkBox80"
-        android:checked="false"
-        android:textColor="#878787"
-        android:onClick="onCheckboxClicked"
-        android:layout_alignBaseline="@+id/checkBox81"
-        android:layout_alignBottom="@+id/checkBox81"
-        android:layout_toRightOf="@+id/checkBox73"
-        android:layout_toEndOf="@+id/checkBox73" />
 </RelativeLayout>
