@@ -67,7 +67,7 @@ public class    Screen16 extends AppCompatActivity {
                 check1 = (CheckBox) findViewById(R.id.checkBox55);check1.setChecked(false);
                 check1 = (CheckBox) findViewById(R.id.checkBox57);check1.setChecked(false);
                 break;
-            case R.id.checkBox57
+            case R.id.checkBox57:
                 if (checked)
                     Q15= "Neviem";
                 editor.putString("Q15","5");
