@@ -142,7 +142,7 @@ public class    Screen16 extends AppCompatActivity {
             }
         });
 
-        if (i.getStringExtra("ksc16-1") == null)
+        if (i.getStringExtra("ksc16") == null)
             s = "true";
         if(s.equals("true")) {
             SharedPreferences settings = getSharedPreferences("Q15", MODE_PRIVATE);

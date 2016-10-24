@@ -165,25 +165,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             ready.putExtra("ksc13", "false");
             ready.putExtra("ksc14", "false");
             ready.putExtra("ksc15", "false");
-            ready.putExtra("ksc16-1", "false");
-            ready.putExtra("ksc16-2", "false");
-            ready.putExtra("ksc16-3", "false");
-            ready.putExtra("ksc16-4", "false");
-            ready.putExtra("ksc16-5", "false");
-            ready.putExtra("ksc16-6", "false");
+            ready.putExtra("ksc16", "false");
             ready.putExtra("ksc17", "false");
             ready.putExtra("ksc18", "false");
             ready.putExtra("ksc18-1", "false");
-            ready.putExtra("ksc18-2", "false");
-            ready.putExtra("ksc18-3", "false");
-            ready.putExtra("ksc18-4", "false");
-            ready.putExtra("ksc18-5", "false");
-            ready.putExtra("ksc19-1", "false");
-            ready.putExtra("ksc19-2", "false");
-            ready.putExtra("ksc19-3", "false");
-            ready.putExtra("ksc19-4", "false");
-            ready.putExtra("ksc19-5", "false");
-            ready.putExtra("ksc19-6", "false");
             ready.putExtra("ksc20", "false");
             ready.putExtra("ksc21", "false");
             ready.putExtra("ksc22", "false");
@@ -290,7 +275,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
                             get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
                             get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
-                            get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40], get[41], get[42], get[43], get[44], get[45]));
+                            get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40],
+                            get[41], get[42], get[43], get[44], get[45]));
                     iCounter++;
 
                 }
@@ -322,7 +308,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
                         get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
                         get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
-                        get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40], get[41], get[42], get[43], get[44], get[45]));
+                        get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40],
+                        get[41], get[42], get[43], get[44], get[45]));
 
 
             }

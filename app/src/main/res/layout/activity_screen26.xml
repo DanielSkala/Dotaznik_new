@@ -73,21 +73,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
-        android:hint="Priestor pre dlhú odpoveď"
-        android:id="@+id/editText5"
-        android:layout_marginTop="122dp"
-        android:maxLines="10"
-        android:textSize="24sp"
-        android:layout_below="@+id/button50"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-
     <TextView
         android:text="Prečo by ste ho určite nevolili?"
         android:layout_width="wrap_content"
@@ -99,4 +84,21 @@
         android:layout_below="@+id/imageView2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="125dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
+        android:hint="Priestor pre dlhú odpoveď"
+        android:id="@+id/editText5"
+        android:layout_marginTop="91dp"
+        android:maxLines="10"
+        android:textSize="24sp"
+        android:layout_below="@+id/button50"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

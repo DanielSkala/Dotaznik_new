@@ -4,7 +4,9 @@ package com.example.daniel.dotaznik;
  * Created by Jakub on 22.09.2016.
  */
 public class Dotaznik_info {
-    private String data;
+    /*TODO: prisposobit tieto veci poctu odosielanych udajov!! skontrolovat co vsetko vlastne odosielame*/
+    //nemazat veci len komentovat
+    private String data; //get0
     private String data1;
     private String data2;
     private String data3;
@@ -54,7 +56,7 @@ public class Dotaznik_info {
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     //constructors
     //-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+    /*TODO: upravit toto vseko podla tych predoslych data*/
     public Dotaznik_info()
     {
         data = "";data1 = "";data2 = "";data3 = "";data4 = "";data5 = "";data6 = "";data7 = "";data8 = "";data9 = "";data10 = "";
