@@ -77,9 +77,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                     editor.commit();
 
 
-
-
-
                     if (i < 6) {
                         editor = getSharedPreferences("Q18_" + i, MODE_PRIVATE).edit();
                         editor.putString("Q18_" + i, null);
@@ -89,10 +86,10 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
 
                 }
 
-                SharedPreferences.Editor editor = getSharedPreferences("telNum" , MODE_PRIVATE).edit();
+                SharedPreferences.Editor editor = getSharedPreferences("telNum", MODE_PRIVATE).edit();
                 editor.putString("telNum", null);
                 editor.commit();
-                if(((EditText) findViewById(R.id.editText2)).getText().toString().equals(getName()))
+                if (((EditText) findViewById(R.id.editText2)).getText().toString().equals(getName()))
                     name = getName();
                 else
                     name = ((EditText) findViewById(R.id.editText2)).getText().toString();
@@ -144,7 +141,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
             else
                 isChecked = false;
         }
-
 
 
         if (isChecked) {
@@ -215,7 +211,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
     }
 
 
-
     @Override
     public void onLocationChanged(Location location) {
 
@@ -266,28 +261,29 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         File file1 = new File(dir1, "myData1.txt");
 
 
-            try {
+        try {
 
-                BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1), "UTF-8"), 8192);
-                String data;
-                while ((data = bufferedReader1.readLine()) != null) {
-                    String get[] = data.split("\t");
-                    map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
-                            get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
-                            get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
+            BufferedReader bufferedReader1 = new BufferedReader(new InputStreamReader(new FileInputStream(file1), "UTF-8"), 8192);
+            String data;
+            while ((data = bufferedReader1.readLine()) != null) {
+                String get[] = data.split("\t");
+                map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
+                        get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
+                        get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29]/*, get[30],
                             get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40],
-                            get[41], get[42], get[43], get[44], get[45]));
-                    iCounter++;
+                            get[41], get[42], get[43], get[44], get[45]*/));
+                iCounter++;
 
-                }
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();
-            } catch (IOException e) {
-                e.printStackTrace();
             }
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
         return map.size();
     }
+
     public String getName() {
 
         final TreeMap<Integer, Dotaznik_info> map = new TreeMap<Integer, Dotaznik_info>();
@@ -307,9 +303,9 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
                 String get[] = data.split("\t");
                 map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
                         get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
-                        get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
+                        get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29]/*, get[30],
                         get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40],
-                        get[41], get[42], get[43], get[44], get[45]));
+                        get[41], get[42], get[43], get[44], get[45]*/));
 
 
             }
@@ -318,18 +314,19 @@ public class MainActivity extends AppCompatActivity implements LocationListener 
         } catch (IOException e) {
             e.printStackTrace();
         }
+        /*TODO: toto som zakomentoval*/
 
         String getRet;
 
         if(map.isEmpty())
             getRet = "null";
         else
-            getRet= map.get(iCounter).getData45();
-
-
-
+            getRet= map.get(iCounter).getData29();
             return getRet;
+
     }
 }
+
+
 
 

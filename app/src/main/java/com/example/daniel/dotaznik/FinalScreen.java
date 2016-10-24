@@ -61,33 +61,18 @@ String getName,getVek;
                         ready.getStringExtra("sc14"),
                         ready.getStringExtra("sc15"),
                         /*TODO: vymazat sc16-1 az sc16-6 a zamenit len za sc16*/
-                        ready.getStringExtra("sc16-1"),
-                        ready.getStringExtra("sc16-2"),
-                        ready.getStringExtra("sc16-3"),
-                        ready.getStringExtra("sc16-4"),
-                        ready.getStringExtra("sc16-5"),
-                        ready.getStringExtra("sc16-6"),
+                        ready.getStringExtra("sc16"),
                         ready.getStringExtra("sc17"),
                         ready.getStringExtra("sc18"),
                         /*TODO: to iste s tymito*/
                         ready.getStringExtra("sc18-1"),
-                        ready.getStringExtra("sc18-2"),
-                        ready.getStringExtra("sc18-3"),
-                        ready.getStringExtra("sc18-4"),
-                        ready.getStringExtra("sc18-5"),
-                        ready.getStringExtra("sc19-1"),
-                        ready.getStringExtra("sc19-2"),
-                        ready.getStringExtra("sc19-3"),
-                        ready.getStringExtra("sc19-4"),
-                        ready.getStringExtra("sc19-5"),
-                        ready.getStringExtra("sc19-6"),
                         ready.getStringExtra("sc20"),
                         ready.getStringExtra("sc21"),
                         ready.getStringExtra("sc22"),
                         ready.getStringExtra("sc23"),
                         ready.getStringExtra("sc24"),
                         ready.getStringExtra("sc25"),
-                        ready.getStringExtra("sc26"),//vymazat
+                        //ready.getStringExtra("sc26"),//vymazat
                         ready.getStringExtra("sc27"),//gps
                         ready.getStringExtra("sc28"), //start time
                         Calendar.getInstance().getTime().toString(),//end time
@@ -110,9 +95,9 @@ String getName,getVek;
                             /*TODO: upravit podla dat v dotaznik_info*/
                             map.put(iCounter, new Dotaznik_info(get[0], get[1], get[2], get[3], get[4], get[5], get[6], get[7], get[8], get[9], get[10],
                                     get[11], get[12], get[13], get[14], get[15], get[16], get[17], get[18], get[19], get[20],
-                                    get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29], get[30],
+                                    get[21], get[22], get[23], get[24], get[25], get[26], get[27], get[28], get[29] /*get[30]
                                     get[31], get[32], get[33], get[34], get[35], get[36], get[37], get[38], get[39], get[40],
-                                    get[41], get[42], get[43], get[44], get[45]));
+                                    get[41], get[42], get[43], get[44], get[45]*/));
                             iCounter++;
 
                         }
