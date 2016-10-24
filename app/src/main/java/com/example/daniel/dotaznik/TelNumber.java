@@ -20,7 +20,7 @@ public class TelNumber extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                final Intent toy = new Intent(TelNumber.this, Screen25.class);
+                final Intent toy = new Intent(TelNumber.this, Screen26.class);
 
                 EditText editText = (EditText) findViewById(R.id.editText);
                 QTelNum = editText.getText().toString();

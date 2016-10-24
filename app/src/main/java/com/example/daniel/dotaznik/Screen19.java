@@ -75,7 +75,7 @@ public class Screen19 extends AppCompatActivity {
             }
         });
 
-        if (i.getStringExtra("ksc18") == null)
+        if (i.getStringExtra("ksc18-1") == null)
             s = "true";
         if(s.equals("true")) {
             SharedPreferences settings = getSharedPreferences("Q18", MODE_PRIVATE);
@@ -94,9 +94,9 @@ public class Screen19 extends AppCompatActivity {
         boolean isChecked;
 
         if(Q18!=null)
-            ready.putExtra("sc18", Q18);
+            ready.putExtra("sc18-1", Q18);
         else
-            ready.putExtra("sc18", toy.getStringExtra("sc18"));
+            ready.putExtra("sc18-1", toy.getStringExtra("sc18-1"));
 
         ready.putExtra("sc2", toy.getStringExtra("sc2"));
         ready.putExtra("sc3", toy.getStringExtra("sc3"));

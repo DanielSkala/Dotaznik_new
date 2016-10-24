@@ -22,7 +22,7 @@ public class Screen26 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen26.this, FinalScreen.class);
+                Intent toy = new Intent(Screen26.this, TelNumber.class);
                 EditText answer = (EditText) findViewById(R.id.editText5);
                 Q25 = answer.getText().toString();
 
