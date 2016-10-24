@@ -180,7 +180,7 @@ public class Screen21 extends AppCompatActivity {
         String s = i.getStringExtra("ksc20");
 
         //When users click on the image, alert dialog will show up
-        ImageView imageView = (ImageView) findViewById(R.id.imageView24);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView21);
         imageView.setClickable(true);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override

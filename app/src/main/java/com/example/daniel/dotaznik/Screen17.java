@@ -76,7 +76,7 @@ public class Screen17 extends AppCompatActivity {
         String s = i.getStringExtra("ksc17");
 
         //When users click on the image, alert dialog will show up
-        ImageView imageView = (ImageView) findViewById(R.id.imageView12);
+        ImageView imageView = (ImageView) findViewById(R.id.imageView17);
         imageView.setClickable(true);
         imageView.setOnClickListener(new View.OnClickListener() {
             @Override
