@@ -95,7 +95,8 @@
         android:layout_marginStart="72dp"
         android:layout_marginTop="48dp"
         android:id="@+id/checkBox54"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:text="Skôr nespokojný"
@@ -106,7 +107,8 @@
         android:layout_alignLeft="@+id/checkBox54"
         android:layout_alignStart="@+id/checkBox54"
         android:layout_marginTop="20dp"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:text="Neviem"
@@ -118,7 +120,8 @@
         android:layout_toStartOf="@+id/checkBox56"
         android:layout_marginTop="38dp"
         android:textSize="18sp"
-        android:textColor="#878787" />
+        android:textColor="#878787"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:text="Skôr spokojný"
@@ -131,7 +134,8 @@
         android:layout_toRightOf="@+id/checkBox55"
         android:layout_toEndOf="@+id/checkBox55"
         android:layout_marginLeft="17dp"
-        android:layout_marginStart="17dp" />
+        android:layout_marginStart="17dp"
+        android:onClick="onCheckboxClicked" />
 
     <CheckBox
         android:text="Nespokojný"
@@ -142,6 +146,7 @@
         android:layout_alignBaseline="@+id/checkBox55"
         android:layout_alignBottom="@+id/checkBox55"
         android:layout_alignLeft="@+id/checkBox45"
-        android:layout_alignStart="@+id/checkBox45" />
+        android:layout_alignStart="@+id/checkBox45"
+        android:onClick="onCheckboxClicked" />
 
 </RelativeLayout>

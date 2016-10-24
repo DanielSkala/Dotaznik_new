@@ -164,7 +164,7 @@ public class Screen21 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                Intent toy = new Intent(Screen21.this, Screen21.class);
+                Intent toy = new Intent(Screen21.this, Screen19.class);
                 startActivity(sendIsChecked(toy));
                 finish();
             }
