@@ -26,7 +26,7 @@ public class Screen8 extends AppCompatActivity {
             case R.id.checkBox13:
                 if (checked)
                     Q7 = "Pavel Hagyari";
-                editor.putString("Q7",Q7);
+                editor.putString("Q7","1");
                 editor.commit();
                 CheckBox check = (CheckBox) findViewById(R.id.checkBox14);check.setChecked(false);
                 CheckBox check2 = (CheckBox) findViewById(R.id.checkBox15);check2.setChecked(false);
@@ -35,7 +35,7 @@ public class Screen8 extends AppCompatActivity {
             case R.id.checkBox14:
                 if (checked)
                     Q7 = "Peter Chudík";
-                editor.putString("Q7",Q7);
+                editor.putString("Q7","2");
                 editor.commit();
                 CheckBox check4 = (CheckBox) findViewById(R.id.checkBox13);check4.setChecked(false);
                 CheckBox check5 = (CheckBox) findViewById(R.id.checkBox15);check5.setChecked(false);
@@ -44,7 +44,7 @@ public class Screen8 extends AppCompatActivity {
             case R.id.checkBox15:
                 if (checked)
                     Q7 = "Andrea Turčanová";
-                editor.putString("Q7",Q7);
+                editor.putString("Q7","3");
                 editor.commit();
                 CheckBox check7 = (CheckBox) findViewById(R.id.checkBox14);check7.setChecked(false);
                 CheckBox check8 = (CheckBox) findViewById(R.id.checkBox13);check8.setChecked(false);
@@ -53,7 +53,7 @@ public class Screen8 extends AppCompatActivity {
             case R.id.checkBox16:
                 if (checked)
                     Q7 = "Neviem";
-                editor.putString("Q7",Q7);
+                editor.putString("Q7","4");
                 editor.commit();
                 CheckBox check10 = (CheckBox) findViewById(R.id.checkBox14);check10.setChecked(false);
                 CheckBox check11 = (CheckBox) findViewById(R.id.checkBox15);check11.setChecked(false);
@@ -124,19 +124,19 @@ public class Screen8 extends AppCompatActivity {
 
             String restoredText = settings.getString("Q7", null);
             if (restoredText != null) {
-                if (restoredText.equals("Milan Vtáčnik")) {
+                if (restoredText.equals("1")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox13);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("Ivo Nesrovnal")) {
+                if (restoredText.equals("2")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox14);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("Pavol Frešo")) {
+                if (restoredText.equals("3")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox15);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("Neviem")) {
+                if (restoredText.equals("4")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox16);
                     checkBox.setChecked(true);
                 }

@@ -300,6 +300,7 @@
         android:id="@+id/checkBox45"
         android:layout_below="@+id/checkBox46"
         android:layout_alignLeft="@+id/checkBox46"
-        android:layout_alignStart="@+id/checkBox46" />
+        android:layout_alignStart="@+id/checkBox46"
+        android:onClick="onCheckboxClicked" />
 
 </RelativeLayout>
