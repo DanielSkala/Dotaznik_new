@@ -105,8 +105,6 @@ public class    Screen16 extends AppCompatActivity {
 
 
 
-
-
             }
         });
     }

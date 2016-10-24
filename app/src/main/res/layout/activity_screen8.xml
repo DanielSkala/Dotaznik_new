@@ -77,7 +77,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Milan Ftáčnik"
+        android:text="Pavel Hagyari"
         android:id="@+id/checkBox13"
         android:checked="false"
         android:textSize="18sp"
@@ -90,7 +90,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Pavol Frešo"
+        android:text="Andrea Turčanová"
         android:id="@+id/checkBox15"
         android:checked="false"
         android:layout_marginTop="132dp"
@@ -103,7 +103,7 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ivo Nesrovnal"
+        android:text="Peter Chudík"
         android:id="@+id/checkBox14"
         android:checked="false"
         android:textSize="18sp"
