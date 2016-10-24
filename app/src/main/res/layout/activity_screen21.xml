@@ -126,18 +126,6 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jaroslav Regec  (SNS)"
-        android:id="@+id/checkBox71"
-        android:checked="false"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:layout_above="@+id/checkBox66"
-        android:layout_alignLeft="@+id/checkBox66"
-        android:layout_alignStart="@+id/checkBox66" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:text="Jozef Lukáč (OĽaNO –  NOVA, SaS)"
         android:id="@+id/checkBox66"
         android:checked="false"
@@ -184,4 +172,16 @@
         android:layout_below="@+id/textView107"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jaroslav Regec  (SNS)"
+        android:id="@+id/checkBox71"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_above="@+id/checkBox66"
+        android:layout_alignLeft="@+id/checkBox66"
+        android:layout_alignStart="@+id/checkBox66" />
 </RelativeLayout>
