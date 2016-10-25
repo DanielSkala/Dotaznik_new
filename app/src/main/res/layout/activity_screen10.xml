@@ -294,7 +294,6 @@
         android:layout_alignStart="@+id/checkBox41" />
 
     <CheckBox
-        android:text="Iná politická strana "
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/checkBox45"
@@ -302,5 +301,14 @@
         android:layout_alignLeft="@+id/checkBox46"
         android:layout_alignStart="@+id/checkBox46"
         android:onClick="onCheckboxClicked" />
+    <EditText
+        android:hint="Iná politická strana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:id="@+id/q9o1"
+        android:layout_below="@+id/checkBox46"
+        android:layout_alignLeft="@+id/checkBox45"
+        android:layout_alignStart="@+id/checkBox45" />
 
 </RelativeLayout>

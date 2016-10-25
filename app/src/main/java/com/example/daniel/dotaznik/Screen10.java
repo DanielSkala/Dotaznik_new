@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.ImageView;
 
 public class Screen10 extends AppCompatActivity {
@@ -378,7 +379,7 @@ public class Screen10 extends AppCompatActivity {
                 break;
             case R.id.checkBox45:
                 if (checked)
-                    Q9 = "Iná politická strana";
+                    Q9 = ((EditText) findViewById(R.id.q9o1)).getText().toString();
                 editor.putString("Q9","17");
                 editor.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox33);check1.setChecked(false);
@@ -545,6 +546,8 @@ public class Screen10 extends AppCompatActivity {
                 if (restoredText.equals("17")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox45);
                     checkBox.setChecked(true);
+                    EditText editText = (EditText) findViewById(R.id.q9o1);
+                    editText.setText(i.getStringExtra("Sc10"));
                 }
             }
         }
