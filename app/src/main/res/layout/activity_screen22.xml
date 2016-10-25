@@ -83,11 +83,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView109"
         android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:layout_alignBottom="@+id/textView24"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
         android:layout_toLeftOf="@+id/button43"
-        android:layout_toStartOf="@+id/button43" />
+        android:layout_toStartOf="@+id/button43"
+        android:layout_above="@+id/textView111"
+        android:layout_alignParentTop="true" />
 
     <TextView
         android:text="Prečo by ste ho volili?"

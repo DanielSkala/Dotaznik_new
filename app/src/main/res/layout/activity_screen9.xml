@@ -56,8 +56,8 @@
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView69"
-        android:textStyle="italic"
-        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
         android:textColor="#f44336"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView9"
@@ -85,19 +85,6 @@
         android:layout_below="@+id/checkBox26"
         android:layout_alignLeft="@+id/checkBox26"
         android:layout_alignStart="@+id/checkBox26"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked"
-        android:visibility="invisible" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Gabriel Karácsony  (PRIAMA DEMOKRACIA)"
-        android:id="@+id/checkBox28"
-        android:checked="false"
-        android:layout_below="@+id/checkBox27"
-        android:layout_alignLeft="@+id/checkBox27"
-        android:layout_alignStart="@+id/checkBox27"
         android:textSize="16sp"
         android:onClick="onCheckboxClicked"
         android:visibility="invisible" />
@@ -271,5 +258,19 @@
         android:layout_toRightOf="@+id/checkBox19"
         android:layout_toEndOf="@+id/checkBox19"
         android:layout_marginBottom="14dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gabriel Karácsony  (PRIAMA DEMOKRACIA)"
+        android:id="@+id/checkBox28"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:visibility="invisible"
+        android:layout_alignBaseline="@+id/checkBox31"
+        android:layout_alignBottom="@+id/checkBox31"
+        android:layout_toRightOf="@+id/textView16"
+        android:layout_toEndOf="@+id/textView16" />
 
 </RelativeLayout>

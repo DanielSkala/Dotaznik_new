@@ -86,46 +86,17 @@
         android:layout_alignStart="@+id/checkBox50"
         android:onClick="onCheckboxClicked" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Neviem"
-        android:id="@+id/checkBox53"
-        android:checked="false"
-        android:textColor="#878787"
-        android:layout_alignBaseline="@+id/checkBox52"
-        android:layout_alignBottom="@+id/checkBox52"
-        android:layout_alignRight="@+id/checkBox48"
-        android:layout_alignEnd="@+id/checkBox48"
-        android:layout_marginRight="71dp"
-        android:layout_marginEnd="71dp"
-        android:onClick="onCheckboxClicked" />
-
     <TextView
         android:text="@string/i10"
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView75"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
         android:textColor="#f44336"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView11"
         android:layout_toEndOf="@+id/imageView11" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Peter Chudík  (SMER-SD)"
-        android:id="@+id/checkBox49"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_marginLeft="67dp"
-        android:layout_marginStart="67dp"
-        android:onClick="onCheckboxClicked"
-        android:layout_centerVertical="true"
-        android:layout_toRightOf="@+id/button20"
-        android:layout_toEndOf="@+id/button20" />
 
     <Button
         android:layout_width="50dp"
@@ -197,5 +168,32 @@
         android:layout_below="@+id/checkBox178"
         android:layout_alignLeft="@+id/checkBox178"
         android:layout_alignStart="@+id/checkBox178" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Neviem"
+        android:id="@+id/checkBox53"
+        android:checked="false"
+        android:textColor="#878787"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBaseline="@+id/checkBox52"
+        android:layout_alignBottom="@+id/checkBox52"
+        android:layout_alignRight="@+id/checkBox50"
+        android:layout_alignEnd="@+id/checkBox50" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Chudík  (SMER-SD)"
+        android:id="@+id/checkBox49"
+        android:checked="false"
+        android:textSize="16sp"
+        android:layout_marginLeft="49dp"
+        android:layout_marginStart="49dp"
+        android:onClick="onCheckboxClicked"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/button20"
+        android:layout_toEndOf="@+id/button20" />
 
 </RelativeLayout>

@@ -73,8 +73,8 @@
         android:layout_centerHorizontal="true"
         android:id="@+id/textView74"
         android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp" />
+        android:textStyle="bold|italic"
+        android:textSize="22sp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -160,42 +160,6 @@
         android:textSize="16sp"
         android:onClick="onCheckboxClicked" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SMER-SD"
-        android:id="@+id/checkBox41"
-        android:checked="false"
-        android:layout_above="@+id/checkBox47"
-        android:layout_alignLeft="@+id/checkBox33"
-        android:layout_alignStart="@+id/checkBox33"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KSS"
-        android:id="@+id/checkBox33"
-        android:checked="false"
-        android:layout_above="@+id/checkBox41"
-        android:layout_alignLeft="@+id/checkBox34"
-        android:layout_alignStart="@+id/checkBox34"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SKOK"
-        android:id="@+id/checkBox40"
-        android:checked="false"
-        android:layout_above="@+id/checkBox33"
-        android:layout_alignLeft="@+id/checkBox33"
-        android:layout_alignStart="@+id/checkBox33"
-        android:textSize="16sp"
-        android:onClick="onCheckboxClicked" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -207,30 +171,6 @@
         android:layout_toStartOf="@+id/checkBox43"
         android:visibility="visible" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SIEŤ"
-        android:id="@+id/checkBox39"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_above="@+id/checkBox34"
-        android:layout_toRightOf="@+id/checkBox43"
-        android:layout_toEndOf="@+id/checkBox43"
-        android:onClick="onCheckboxClicked" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ĽS Naše Slovensko strana Mariana Kotlebu"
-        android:id="@+id/checkBox34"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_above="@+id/checkBox40"
-        android:layout_alignLeft="@+id/checkBox39"
-        android:layout_alignStart="@+id/checkBox39"
-        android:onClick="onCheckboxClicked" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -241,30 +181,6 @@
         android:textStyle="bold"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
-
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="KDH"
-        android:id="@+id/checkBox32"
-        android:checked="false"
-        android:textSize="16sp"
-        android:layout_below="@+id/button19"
-        android:layout_toRightOf="@+id/imageView10"
-        android:layout_toEndOf="@+id/imageView10"
-        android:layout_marginTop="18dp"
-        android:onClick="onCheckboxClicked" />
-
-    <Button
-        android:layout_width="50dp"
-        android:layout_height="100dp"
-        android:text=">"
-        android:id="@+id/button19"
-        android:textSize="36sp"
-        android:layout_alignBaseline="@+id/button18"
-        android:layout_alignBottom="@+id/button18"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
 
     <CheckBox
         android:layout_width="wrap_content"
@@ -283,24 +199,109 @@
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/checkBox45"
+        android:layout_below="@+id/checkBox46"
+        android:layout_alignLeft="@+id/checkBox46"
+        android:layout_alignStart="@+id/checkBox46"
+        android:onClick="onCheckboxClicked" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ĽS Naše Slovensko strana Mariana Kotlebu"
+        android:id="@+id/checkBox34"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox39"
+        android:layout_alignLeft="@+id/checkBox39"
+        android:layout_alignStart="@+id/checkBox39" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SKOK"
+        android:id="@+id/checkBox40"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox34"
+        android:layout_alignLeft="@+id/checkBox34"
+        android:layout_alignStart="@+id/checkBox34" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KSS"
+        android:id="@+id/checkBox33"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox40"
+        android:layout_toRightOf="@+id/checkBox43"
+        android:layout_toEndOf="@+id/checkBox43" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMER-SD"
+        android:id="@+id/checkBox41"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/checkBox33"
+        android:layout_toRightOf="@+id/checkBox43"
+        android:layout_toEndOf="@+id/checkBox43" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Neviem"
         android:id="@+id/checkBox47"
         android:checked="false"
         android:textColor="#666666"
         android:textSize="16sp"
         android:onClick="onCheckboxClicked"
-        android:layout_below="@+id/checkBox37"
+        android:layout_below="@+id/checkBox41"
         android:layout_alignLeft="@+id/checkBox41"
         android:layout_alignStart="@+id/checkBox41" />
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="100dp"
+        android:text=">"
+        android:id="@+id/button19"
+        android:textSize="36sp"
+        android:layout_alignBaseline="@+id/button18"
+        android:layout_alignBottom="@+id/button18"
+        android:layout_alignRight="@+id/checkBox35"
+        android:layout_alignEnd="@+id/checkBox35" />
 
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox45"
-        android:layout_below="@+id/checkBox46"
-        android:layout_alignLeft="@+id/checkBox46"
-        android:layout_alignStart="@+id/checkBox46"
-        android:onClick="onCheckboxClicked" />
+        android:text="KDH"
+        android:id="@+id/checkBox32"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBaseline="@+id/checkBox39"
+        android:layout_alignBottom="@+id/checkBox39"
+        android:layout_alignRight="@+id/checkBox44"
+        android:layout_alignEnd="@+id/checkBox44" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SIEŤ"
+        android:id="@+id/checkBox39"
+        android:checked="false"
+        android:textSize="16sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_below="@+id/button18"
+        android:layout_toRightOf="@+id/checkBox43"
+        android:layout_toEndOf="@+id/checkBox43" />
+
     <EditText
         android:hint="Iná politická strana"
         android:layout_width="wrap_content"
@@ -308,7 +309,7 @@
         android:maxLines="1"
         android:id="@+id/q9o1"
         android:layout_below="@+id/checkBox46"
-        android:layout_alignLeft="@+id/checkBox45"
-        android:layout_alignStart="@+id/checkBox45" />
+        android:layout_toRightOf="@+id/checkBox45"
+        android:layout_toEndOf="@+id/checkBox45" />
 
 </RelativeLayout>

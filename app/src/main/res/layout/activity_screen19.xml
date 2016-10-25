@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView100"
         android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
+        android:textStyle="normal|bold|italic"
+        android:textSize="22sp"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/imageView19"
         android:layout_toEndOf="@+id/imageView19" />
@@ -98,7 +98,7 @@
 
     <EditText
         android:digits="abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ,.:-;ľščťžýáíéúäôĽŠČŤŽ"
-        android:layout_marginTop="128dp"
+        android:layout_marginTop="80dp"
         android:hint="Priestor pre dlhú odpoveď"
         android:textSize="24sp"
         android:layout_width="wrap_content"
@@ -106,7 +106,7 @@
         android:inputType="textMultiLine"
         android:ems="10"
         android:id="@+id/q18o1"
-        android:layout_below="@+id/q18"
+        android:layout_below="@+id/button37"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"

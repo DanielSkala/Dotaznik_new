@@ -104,5 +104,6 @@
         android:textColor="#f44336"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/button7"
-        android:layout_toStartOf="@+id/button7" />
+        android:layout_toStartOf="@+id/button7"
+        android:textStyle="bold|italic" />
 </RelativeLayout>

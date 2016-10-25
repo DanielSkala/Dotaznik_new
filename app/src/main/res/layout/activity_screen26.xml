@@ -50,18 +50,6 @@
         android:layout_alignParentStart="true"
         android:textSize="36sp" />
 
-    <TextView
-        android:text="Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView37"
-        android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:layout_alignBottom="@+id/textView24"
-        android:layout_toLeftOf="@+id/button43"
-        android:layout_toStartOf="@+id/button43" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -101,4 +89,16 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Prečítajte otázku a zapíšte doslovnú odpoveď respondenta."
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView37"
+        android:textColor="#f44336"
+        android:textStyle="normal|bold|italic"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
 </RelativeLayout>

@@ -17,6 +17,7 @@ public class Screen25 extends AppCompatActivity {
 
     String Q24,sChecked;
 
+    /*TODO: spravit podla initu v Screen22, nezda sa mi to*/
     public void init(){
         button49 = (Button)findViewById(R.id.button49);
         button49.setOnClickListener(new View.OnClickListener() {
@@ -28,7 +29,7 @@ public class Screen25 extends AppCompatActivity {
                 Q24 = answer.getText().toString();
 
                 SharedPreferences.Editor editor = getSharedPreferences("Q24",MODE_PRIVATE).edit() ;
-                editor.putString("Q24",Q24);
+                editor.putString("Q24", Q24);
                 editor.commit();
 
                 if(Q24 != null) {

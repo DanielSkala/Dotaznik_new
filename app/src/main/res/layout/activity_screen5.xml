@@ -105,7 +105,7 @@
         android:text="Pokyn: Prečítajte otázku aj predtlačené možnosti a zakrúžkujte len jednu možnosť podľa  odpovede respondenta."
         android:id="@+id/textView48"
         android:textColor="#f44336"
-        android:textStyle="italic"
+        android:textStyle="bold|italic"
         android:layout_alignParentTop="true"
         android:layout_toLeftOf="@+id/textView5"
         android:layout_toStartOf="@+id/textView5" />

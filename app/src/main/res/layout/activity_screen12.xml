@@ -60,18 +60,6 @@
         android:layout_alignParentStart="true" />
 
     <TextView
-        android:text="@string/i11"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView31"
-        android:textColor="#f44336"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:layout_below="@+id/textView26"
-        android:layout_toRightOf="@+id/imageView12"
-        android:layout_toEndOf="@+id/imageView12" />
-
-    <TextView
         android:text="@string/q11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,4 +100,17 @@
         android:layout_alignParentEnd="true"
         android:maxLines="10"
         android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/i11"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView31"
+        android:textColor="#f44336"
+        android:textStyle="bold|italic"
+        android:textSize="21sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView12"
+        android:layout_toEndOf="@+id/imageView12"
+        android:layout_above="@+id/textView80" />
 </RelativeLayout>

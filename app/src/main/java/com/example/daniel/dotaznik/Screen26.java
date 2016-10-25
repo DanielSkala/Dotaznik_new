@@ -26,7 +26,7 @@ public class Screen26 extends AppCompatActivity {
                 EditText answer = (EditText) findViewById(R.id.editText5);
                 Q25 = answer.getText().toString();
 
-                SharedPreferences.Editor editor = getSharedPreferences("Q25",MODE_PRIVATE).edit() ;
+                SharedPreferences.Editor editor = getSharedPreferences("Q25",MODE_PRIVATE).edit();
                 editor.putString("Q25",Q25);
                 editor.commit();
 

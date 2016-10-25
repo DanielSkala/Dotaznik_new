@@ -60,19 +60,6 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:text="@string/i16"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView93"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:textColor="#f44336"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@+id/imageView17"
-        android:layout_toEndOf="@+id/imageView17"
-        android:layout_marginTop="14dp" />
-
-    <TextView
         android:text="@string/q16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,4 +88,16 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textSize="24sp" />
+
+    <TextView
+        android:text="@string/i16"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView93"
+        android:textStyle="bold|italic"
+        android:textSize="22sp"
+        android:textColor="#f44336"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView17"
+        android:layout_toEndOf="@+id/imageView17" />
 </RelativeLayout>

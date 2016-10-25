@@ -44,11 +44,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
         android:id="@+id/textView68"
-        android:textStyle="normal|italic"
+        android:textStyle="bold|italic"
         android:textColor="#f44336"
-        android:textSize="18dp" />
+        android:textSize="22sp"
+        android:layout_toRightOf="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8" />
 
     <TextView
         android:text="@string/q7"
@@ -100,19 +101,6 @@
         android:layout_alignStart="@+id/checkBox13"
         android:onClick="onCheckboxClicked" />
 
-    <CheckBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Peter Chudík"
-        android:id="@+id/checkBox14"
-        android:checked="false"
-        android:textSize="18sp"
-        android:layout_alignBaseline="@+id/checkBox13"
-        android:layout_alignBottom="@+id/checkBox13"
-        android:layout_alignRight="@+id/textView68"
-        android:layout_alignEnd="@+id/textView68"
-        android:onClick="onCheckboxClicked" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -133,5 +121,20 @@
         android:layout_alignBottom="@+id/button14"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Peter Chudík"
+        android:id="@+id/checkBox14"
+        android:checked="false"
+        android:textSize="18sp"
+        android:onClick="onCheckboxClicked"
+        android:layout_alignBaseline="@+id/checkBox13"
+        android:layout_alignBottom="@+id/checkBox13"
+        android:layout_toLeftOf="@+id/button15"
+        android:layout_toStartOf="@+id/button15"
+        android:layout_marginRight="57dp"
+        android:layout_marginEnd="57dp" />
 
 </RelativeLayout>

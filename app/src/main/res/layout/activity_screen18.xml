@@ -39,18 +39,6 @@
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
 
-    <TextView
-        android:text="@string/i17"
-        android:layout_width="470dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView96"
-        android:textStyle="normal|italic"
-        android:textSize="18sp"
-        android:textColor="#f44336"
-        android:layout_alignBottom="@+id/imageView18"
-        android:layout_toRightOf="@+id/imageView18"
-        android:layout_toEndOf="@+id/imageView18" />
-
     <Button
         android:layout_width="50dp"
         android:layout_height="100dp"
@@ -101,5 +89,17 @@
         android:layout_below="@+id/imageView18"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="@string/i17"
+        android:layout_width="470dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView96"
+        android:textStyle="normal|bold|italic"
+        android:textSize="21sp"
+        android:textColor="#f44336"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button35"
+        android:layout_toStartOf="@+id/button35" />
 
 </RelativeLayout>
