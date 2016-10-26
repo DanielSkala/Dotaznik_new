@@ -156,7 +156,7 @@ public class Screen23 extends AppCompatActivity {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox164);
                     checkBox.setChecked(true);
                 }
-                if (restoredText.equals("7")) {
+                if (restoredText.equals("5")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox167);
                     checkBox.setChecked(true);
                 }

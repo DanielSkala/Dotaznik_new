@@ -379,7 +379,7 @@ public class Screen10 extends AppCompatActivity {
                 break;
             case R.id.checkBox45:
                 if (checked)
-                    Q9 = ((EditText) findViewById(R.id.q9o1)).getText().toString();
+
                 editor.putString("Q9","17");
                 editor.commit();
                 check1 = (CheckBox) findViewById(R.id.checkBox33);check1.setChecked(false);
@@ -431,7 +431,13 @@ public class Screen10 extends AppCompatActivity {
                 CheckBox c17 = (CheckBox)findViewById(R.id.checkBox45);
                 if(c1.isChecked() || c2.isChecked() || c3.isChecked() || c4.isChecked() || c5.isChecked() || c6.isChecked() || c7.isChecked()
                         || c8.isChecked() || c9.isChecked() || c10.isChecked() || c11.isChecked() || c12.isChecked() || c13.isChecked()
-                        || c14.isChecked() || c15.isChecked() || c16.isChecked()|| c17.isChecked()) {
+                        || c14.isChecked() || c15.isChecked() || c16.isChecked()) {
+                    startActivity(sendIsChecked(ready));
+                    finish();
+                }
+                else if( c17.isChecked())
+                {
+                    Q9 = ((EditText) findViewById(R.id.q9o1)).getText().toString();
                     startActivity(sendIsChecked(ready));
                     finish();
                 }
@@ -547,7 +553,8 @@ public class Screen10 extends AppCompatActivity {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox45);
                     checkBox.setChecked(true);
                     EditText editText = (EditText) findViewById(R.id.q9o1);
-                    editText.setText(i.getStringExtra("Sc10"));
+
+                    editText.setText(i.getStringExtra("sc10"));
                 }
             }
         }

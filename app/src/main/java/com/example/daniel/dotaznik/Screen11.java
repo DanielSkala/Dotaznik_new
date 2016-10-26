@@ -81,7 +81,7 @@ public class Screen11 extends AppCompatActivity {
             case R.id.checkBox51:
                 if (checked){
                     Q10_4 = "Jaroslav Regec" +
-                            "(SNS) ";
+                            "(SNS)";
                     Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
                 editor.putString("Q10",Q10_4);
                 editor.commit();
@@ -100,7 +100,7 @@ public class Screen11 extends AppCompatActivity {
             case R.id.checkBox177:
                 if (checked){
                     Q10_5 = "Peter Pčolinský (SME" +
-                            "RODINA – Boris Kollár) ";
+                            "RODINA – Boris Kollár)";
                     Q10 = Q10_1 + "_" + Q10_2 + "_" + Q10_3 + "_" + Q10_4 + "_" + Q10_5 + "_" + Q10_6;
                     editor.putString("Q10",Q10_5);
                     editor.commit();
@@ -224,6 +224,8 @@ public class Screen11 extends AppCompatActivity {
         Intent i = getIntent();
         String s = i.getStringExtra("ksc11");
 
+
+
         //When users click on the image, alert dialog will show up
         ImageView imageView = (ImageView) findViewById(R.id.imageView11);
         imageView.setClickable(true);
@@ -249,29 +251,29 @@ public class Screen11 extends AppCompatActivity {
                 if (isMultiplied) {
                     qw = restoredText.split("_");
 
-                    if (qw[0].equals("Peter Chudík" +
-                            "(SMER-SD)")) {
-                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox49);
-                        checkBox.setChecked(true);
-                    }
-                    if (qw[1].equals("PJozef Lukáč (OĽaNO –" +
-                            "NOVA, SaS)")) {
-                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox50);
-                        checkBox.setChecked(true);
-                    }
-                    if (qw[2].equals("Jozef Mihalčin (ĽS Naše Slovensko strana" +
+                    if (qw[0].equals("Jozef Mihalčin (ĽS Naše Slovensko strana" +
                             "Mariana Kotlebu")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox48);
                         checkBox.setChecked(true);
                     }
-                    if (qw[3].equals("Peter Pčolinský (SME" +
-                            "RODINA – Boris Kollár)")) {
-                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox177);
+                    if (qw[1].equals("Peter Chudík" +
+                            "(SMER-SD)")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox49);
                         checkBox.setChecked(true);
                     }
-                    if (qw[4].equals("Jaroslav Regec" +
+                    if (qw[2].equals("Jozef Lukáč (OĽaNO –" +
+                            "NOVA, SaS)")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox50);
+                        checkBox.setChecked(true);
+                    }
+                    if (qw[3].equals("Jaroslav Regec" +
                             "(SNS)")) {
                         CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox51);
+                        checkBox.setChecked(true);
+                    }
+                    if (qw[4].equals("Peter Pčolinský (SME" +
+                            "RODINA – Boris Kollár)")) {
+                        CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox177);
                         checkBox.setChecked(true);
                     }
                     if (qw[5].equals("Andrea Turčanová" +
@@ -297,6 +299,18 @@ public class Screen11 extends AppCompatActivity {
 
 
         }
+
+/*
+        CheckBox c2 = (CheckBox)findViewById(R.id.checkBox48);
+        CheckBox c3 = (CheckBox)findViewById(R.id.checkBox49);
+        CheckBox c4 = (CheckBox)findViewById(R.id.checkBox50);
+        CheckBox c1 = (CheckBox)findViewById(R.id.checkBox51);
+        CheckBox c5 = (CheckBox)findViewById(R.id.checkBox52);
+        CheckBox c6 = (CheckBox)findViewById(R.id.checkBox53);
+        CheckBox c7 = (CheckBox)findViewById(R.id.checkBox177);
+        CheckBox c8 = (CheckBox)findViewById(R.id.checkBox178);
+     */
+
         init();
         BackPressed();
     }

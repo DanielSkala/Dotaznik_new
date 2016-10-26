@@ -80,8 +80,17 @@ public class Screen2 extends AppCompatActivity {
                     CheckBox c2 = (CheckBox) findViewById(R.id.checkBox2);
                     CheckBox c3 = (CheckBox) findViewById(R.id.checkBox3);
 
-                    if (c1.isChecked() || c2.isChecked() || c3.isChecked()) {
+                    if (c1.isChecked()) {
                         startActivity(sendIsChecked(ready));
+                        finish();
+                    }
+                else if(c2.isChecked() || c3.isChecked())
+                    {
+
+                        Intent info = new Intent (Screen2.this, MainActivity.class);
+                        info.putExtra("isChecked","true");
+                        info.putExtra("shpf","0");
+                        startActivity(info);
                         finish();
                     }
                 }

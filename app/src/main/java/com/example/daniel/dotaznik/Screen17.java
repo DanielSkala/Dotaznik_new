@@ -89,7 +89,7 @@ public class Screen17 extends AppCompatActivity {
         if (i.getStringExtra("ksc17") == null)
             s = "true";
         if(s.equals("true")) {
-            SharedPreferences settings = this.getSharedPreferences("Q11", MODE_PRIVATE);
+            SharedPreferences settings = this.getSharedPreferences("Q16", MODE_PRIVATE);
             String restoredText = settings.getString("Q16", null);
             if (restoredText != null) {
                 EditText editText = (EditText) findViewById(R.id.editText3);

@@ -94,6 +94,8 @@ public class TelNumber extends AppCompatActivity {
                 editText.setText(restoredText);
 
             }
+        EditText et = (EditText)findViewById(R.id.editText);
+        et.setSelection(et.getText().length());
 
         init();
         BackPressed();

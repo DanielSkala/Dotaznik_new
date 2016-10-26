@@ -354,15 +354,15 @@ public class Screen9 extends AppCompatActivity {
                     checkBox.setChecked(true);
                 }
                 if (restoredText.equals("13")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox30);
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox29);
                     checkBox.setChecked(true);
                 }
                 if (restoredText.equals("14")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox31);
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox30);
                     checkBox.setChecked(true);
                 }
                 if (restoredText.equals("15")) {
-                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox30);
+                    CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox31);
                     checkBox.setChecked(true);
                 }
 
