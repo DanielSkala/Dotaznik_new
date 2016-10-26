@@ -119,7 +119,7 @@ public class Screen26 extends AppCompatActivity {
         ready.putExtra("sc21", toy.getStringExtra("sc21"));
         ready.putExtra("sc22", toy.getStringExtra("sc22"));
         ready.putExtra("sc23", toy.getStringExtra("sc23"));
-        ready.putExtra("sc25", toy.getStringExtra("sc25"));
+        //ready.putExtra("sc25", toy.getStringExtra("sc25"));
         ready.putExtra("sc26", toy.getStringExtra("sc26"));
         ready.putExtra("sc27", toy.getStringExtra("sc27"));
         ready.putExtra("sc28", toy.getStringExtra("sc28"));
@@ -159,10 +159,9 @@ public class Screen26 extends AppCompatActivity {
         ready.putExtra("ksc21",toy.getStringExtra("ksc21"));
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
-        ready.putExtra("ksc24",sChecked);
-        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
-        ready.putExtra("ksc26",toy.getStringExtra("ksc26"));
-        ready.putExtra("ksc27",toy.getStringExtra("ksc27"));
+        ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",sChecked);
+
 
         return ready;
     }

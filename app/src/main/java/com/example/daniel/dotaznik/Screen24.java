@@ -131,7 +131,7 @@ public class Screen24 extends AppCompatActivity {
                 break;
         }
         Intent i = new Intent(Screen24.this, MainActivity.class);
-        i.putExtra("Sc22", Q23);
+        i.putExtra("Sc23", Q23);
     }
 
     public void init(){
@@ -194,6 +194,8 @@ public class Screen24 extends AppCompatActivity {
         if(s.equals("true")) {
             SharedPreferences settings = this.getSharedPreferences("Q23", MODE_PRIVATE);
             String restoredText = settings.getString("Q23", null);
+
+
             if (restoredText != null) {
                 if (restoredText.equals("1")) {
                     CheckBox checkBox = (CheckBox) findViewById(R.id.checkBox58);
@@ -300,6 +302,7 @@ public class Screen24 extends AppCompatActivity {
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",sChecked);
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
         return ready;
     }

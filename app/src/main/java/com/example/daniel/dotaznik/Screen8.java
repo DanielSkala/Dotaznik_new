@@ -209,6 +209,7 @@ public class Screen8 extends AppCompatActivity {
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
 
         return ready;

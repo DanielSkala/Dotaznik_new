@@ -34,7 +34,7 @@ public class Screen2 extends AppCompatActivity {
         public void onCheckboxClicked(View view) {
         // Is the view now checked?
         boolean checked = ((CheckBox) view).isChecked();
-            SharedPreferences.Editor editor = getSharedPreferences("Q1",MODE_PRIVATE).edit() ;
+            SharedPreferences.Editor editor = getSharedPreferences("Q1",MODE_PRIVATE).edit();
             sChecked = "true";
         // Check which checkbox was clicked
         switch(view.getId()) {
@@ -235,6 +235,7 @@ public class Screen2 extends AppCompatActivity {
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
 
         return ready;

@@ -233,6 +233,7 @@ public class Screen23 extends AppCompatActivity {
         ready.putExtra("ksc22",sChecked);
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
 
         return ready;

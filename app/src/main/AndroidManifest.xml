@@ -14,7 +14,7 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="Dotaznik č.1"
+        android:label="Dotazník"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -93,11 +93,13 @@
         <activity
             android:name=".Screen25"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".Screen26"
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity android:name=".FinalScreen" />
         <activity android:name=".DotaznikReset" />
         <activity android:name=".AudioRecorder" />
         <activity android:name=".TelNumber" />
-        <activity android:name=".Screen26"></activity>
     </application>
 
 </manifest>

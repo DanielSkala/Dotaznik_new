@@ -52,7 +52,6 @@ public class Screen12 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen12.this, Screen11.class);
 
-
                 EditText editText = (EditText) findViewById(R.id.editText17);
                 Q11 = editText.getText().toString();
 
@@ -162,6 +161,7 @@ public class Screen12 extends AppCompatActivity {
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
         return ready;
     }

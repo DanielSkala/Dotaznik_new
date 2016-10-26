@@ -212,7 +212,7 @@ public class Screen11 extends AppCompatActivity {
             public void onClick(View v) {
                 Intent toy = new Intent(Screen11.this, Screen10.class);
                 startActivity(sendIsChecked(toy));
-                finish();;
+                finish();
             }
         });
     }
@@ -377,6 +377,7 @@ public class Screen11 extends AppCompatActivity {
         ready.putExtra("ksc22",toy.getStringExtra("ksc22"));
         ready.putExtra("ksc23",toy.getStringExtra("ksc23"));
         ready.putExtra("ksc24",toy.getStringExtra("ksc24"));
+        ready.putExtra("ksc25",toy.getStringExtra("ksc25"));
 
 
         return ready;

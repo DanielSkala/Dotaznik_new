@@ -60,11 +60,9 @@ String getName,getVek;
                         ready.getStringExtra("sc13"),
                         ready.getStringExtra("sc14"),
                         ready.getStringExtra("sc15"),
-                        /*TODO: vymazat sc16-1 az sc16-6 a zamenit len za sc16*/
                         ready.getStringExtra("sc16"),
                         ready.getStringExtra("sc17"),
                         ready.getStringExtra("sc18"),
-                        /*TODO: to iste s tymito*/
                         ready.getStringExtra("sc18-1"),
                         ready.getStringExtra("sc20"),
                         ready.getStringExtra("sc21"),

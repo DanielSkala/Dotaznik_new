@@ -52,7 +52,7 @@
         android:layout_alignParentEnd="true" />
 
     <TextView
-        android:text="@string/i8"
+        android:text="Dajte respondentovi do ruky zoznam kandidátov z roku 2013 na post predsedu (župana) PSK a zakrúžkujte len jednu možnosť podľa odpovede respondenta."
         android:layout_width="470dp"
         android:layout_height="wrap_content"
         android:id="@+id/textView69"
