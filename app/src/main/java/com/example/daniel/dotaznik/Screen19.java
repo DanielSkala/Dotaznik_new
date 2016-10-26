@@ -36,9 +36,9 @@ public class Screen19 extends AppCompatActivity {
                 editor.putString("Q18",Q18);
                 editor.commit();
 
-                if(Q18 != null) {
-                    finish();
+                if(!Q18.equals("") ){
                     startActivity(sendIsChecked(toy));
+                    finish();
                 }
             }
         });

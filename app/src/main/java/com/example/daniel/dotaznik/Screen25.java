@@ -32,7 +32,7 @@ public class Screen25 extends AppCompatActivity {
                 editor.putString("Q24", Q24);
                 editor.commit();
 
-                if(Q24 != null) {
+                if(!Q24.equals("")) {
                     startActivity(sendIsChecked(toy));
                     finish();
                 }
